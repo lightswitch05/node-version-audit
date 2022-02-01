@@ -1,0 +1,36 @@
+{
+    "name": "node-version-audit",
+    "version": "1.0.0",
+    "description": "Audit your Node version for known CVEs and patches ",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest --coverage",
+        "format": "prettier --write ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lightswitch05/node-version-audit.git"
+    },
+    "engines": {
+        "node": ">=12.0.0"
+    },
+    "keywords": [
+        "security",
+        "audit",
+        "cve",
+        "node",
+        "security-scanner",
+        "cves",
+        "security-audit"
+    ],
+    "author": "Daniel White",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/lightswitch05/node-version-audit/issues"
+    },
+    "homepage": "https://github.com/lightswitch05/node-version-audit#readme",
+    "devDependencies": {
+        "jest": "27.4.7",
+        "prettier": "2.5.1"
+    }
+}
