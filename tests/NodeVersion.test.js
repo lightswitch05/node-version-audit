@@ -2,7 +2,6 @@ const { NodeVersion } = require('../lib/NodeVersion');
 
 describe('NodeVersion.fromString', () => {
     it('parses a simple version', () => {
-        console.log(NodeVersion);
         const version = NodeVersion.fromString('1.2.3');
         expect(version).not.toBeNull();
         expect(version.major).toBe(1);
@@ -109,9 +108,10 @@ describe('NodeVersion.compare', () => {
         const b = new NodeVersion(1, 1, 2);
         const c = new NodeVersion(1, 2, 0);
         const d = new NodeVersion(2, 0, 0);
-        const e = new NodeVersion(2, 0, 10);
-        const f = new NodeVersion(2, 1, 0);
-        const list = [f, e, d, null, b, c, null, a].sort(NodeVersion.compare);
-        expect(list).toEqual([null, null, a, b, c, d, e, f]);
+        const e = new NodeVersion(2, 0, 0);
+        const f = new NodeVersion(2, 0, 10);
+        const g = new NodeVersion(2, 1, 0);
+        const list = [g, f, e, d, null, b, c, null, a].sort(NodeVersion.compare);
+        expect(list).toEqual([null, null, a, b, c, d, e, f, g]);
     });
 });
