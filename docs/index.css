@@ -1,0 +1,93 @@
+:root, :root.darkTheme {
+    --color: #c9d1d9;
+    --background-color: #0d1117;
+    --link-color: #58a6ff;
+}
+
+html {
+    font-family: "Inter", "system-ui";
+    line-height: 1.2;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    color: var(--color);
+    background-color: var(--background-color);
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    margin: 0 5px 0 5px;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.noline:hover {
+    text-decoration: none;
+}
+
+section {
+    border-color: #30363d;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 6px;
+    margin: 0 0 10px 0;
+    padding: 1px 5px 10px 5px;
+}
+
+code, dl {
+    padding: 10px;
+    margin: 10px 10px 0 10px;
+    font-size: 0.9rem;
+    font-family: "Courier New", monospace;
+    line-height: 1.4;
+}
+
+code {
+    display: block;
+    overflow: scroll;
+    white-space: nowrap;
+}
+
+pre {
+    overflow: scroll;
+    font-size: 0.9rem;
+    font-family: "Courier New", monospace;
+    line-height: 1.4;
+}
+
+li {
+    margin-bottom: 3px;
+}
+
+li ul {
+    margin-top: 3px;
+}
+
+.logo {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.avatar {
+    height: 1.5em;
+    vertical-align: bottom;
+    display: inline-block;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 10px;
+}
