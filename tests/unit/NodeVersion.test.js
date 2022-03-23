@@ -1,4 +1,4 @@
-const { NodeVersion } = require('../lib/NodeVersion');
+const { NodeVersion } = require('../../lib/NodeVersion');
 
 describe('NodeVersion.fromString', () => {
     it('parses a simple version', () => {
@@ -113,5 +113,19 @@ describe('NodeVersion.compare', () => {
         const g = new NodeVersion(2, 1, 0);
         const list = [g, f, e, d, null, b, c, null, a].sort(NodeVersion.compare);
         expect(list).toEqual([null, null, a, b, c, d, e, f, g]);
+    });
+});
+
+describe('NodeVersion.toJSON', () => {
+    it('serializes to a string', () => {
+        const version = NodeVersion.fromString('1.2.3');
+        expect(JSON.stringify(version)).toEqual('"1.2.3"');
+    });
+});
+
+describe('NodeVersion.toString', () => {
+    it('serializes to a string', () => {
+        const version = NodeVersion.fromString('1.2.3');
+        expect(`${version}`).toEqual('1.2.3');
     });
 });

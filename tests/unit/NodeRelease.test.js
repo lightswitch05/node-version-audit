@@ -1,6 +1,6 @@
-const { NodeRelease } = require('../lib/NodeRelease');
-const { NodeVersion } = require('../lib/NodeVersion');
-const { CveId } = require('../lib/CveId');
+const { NodeRelease } = require('../../lib/NodeRelease');
+const { NodeVersion } = require('../../lib/NodeVersion');
+const { CveId } = require('../../lib/CveId');
 
 const NODE_VERSION = new NodeVersion(17, 0, 0);
 

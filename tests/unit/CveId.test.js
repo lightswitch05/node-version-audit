@@ -1,6 +1,5 @@
-const { CveId } = require('../lib/CveId');
-const { ParseException } = require('../lib/Exceptions');
-const { NodeVersion } = require('../lib/NodeVersion');
+const { CveId } = require('../../lib/CveId');
+const { ParseException } = require('../../lib/Exceptions');
 
 describe('CveId.fromString', () => {
     it('parses a simple CVE', () => {
@@ -99,5 +98,19 @@ describe('CveId.compare', () => {
         const f = CveId.fromString('CVE-2020-40000');
         const list = [f, e, d, null, b, c, null, a].sort(CveId.compare);
         expect(list).toEqual([null, null, a, b, c, d, e, f]);
+    });
+});
+
+describe('CveId.toJSON', () => {
+    it('serializes to a string', () => {
+        const cve = CveId.fromString('CVE-2021-43803');
+        expect(JSON.stringify(cve)).toEqual('"CVE-2021-43803"');
+    });
+});
+
+describe('CveId.toString', () => {
+    it('serializes to a string', () => {
+        const cve = CveId.fromString('CVE-2021-43803');
+        expect(`${cve}`).toEqual('CVE-2021-43803');
     });
 });
