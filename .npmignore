@@ -1,0 +1,13 @@
+
+.github
+docs/**/*
+tests
+.editorconfig
+.prettierrc.json
+sonar-project.properties
+.idea
+coverage
+tmp
+scripts
+
+!docs/rules-v1.json

@@ -1,0 +1,68 @@
+{
+    "name": "node-version-audit",
+    "version": "1.20220415.0-alpha",
+    "description": "Audit your Node version for known CVEs and patches ",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest --coverage",
+        "test:unit": "jest --coverage --selectProjects unit",
+        "test:functional": "jest --coverage --selectProjects functional",
+        "format": "prettier --write ./tests ./lib ./*.json ./bin/*"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lightswitch05/node-version-audit.git"
+    },
+    "engines": {
+        "node": ">=14.0.0"
+    },
+    "bin": {
+        "node-version-audit": "./bin/node-version-audit"
+    },
+    "keywords": [
+        "security",
+        "audit",
+        "cve",
+        "node",
+        "security-scanner",
+        "cves",
+        "security-audit"
+    ],
+    "author": "Daniel White",
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/lightswitch05/node-version-audit/issues"
+    },
+    "homepage": "https://github.com/lightswitch05/node-version-audit#readme",
+    "devDependencies": {
+        "@casualbot/jest-sonar-reporter": "^2.2.5",
+        "jest": "^27.5.1",
+        "prettier": "^2.6.2"
+    },
+    "jest": {
+        "reporters": [
+            "default",
+            "@casualbot/jest-sonar-reporter"
+        ],
+        "projects": [
+            {
+                "name": "unit",
+                "displayName": "unit",
+                "roots": [
+                    "<rootDir>/tests/unit"
+                ]
+            },
+            {
+                "name": "functional",
+                "displayName": "functional",
+                "roots": [
+                    "<rootDir>/tests/functional"
+                ]
+            }
+        ]
+    },
+    "@casualbot/jest-sonar-reporter": {
+        "outputDirectory": "coverage",
+        "outputName": "jest-report.xml"
+    }
+}

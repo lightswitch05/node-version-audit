@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+
+const { Cli } = require('../lib/Cli.js');
+const cli = new Cli(process.argv);
+cli.run();
