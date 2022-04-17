@@ -9,5 +9,6 @@ sonar-project.properties
 coverage
 tmp
 scripts
+docker
 
 !docs/rules-v1.json
