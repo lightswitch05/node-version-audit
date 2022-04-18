@@ -48,6 +48,7 @@ jobs:
                     npm publish
                 env:
                     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+            -   run: ./scripts/github-commit-auto-updates.sh
 
             -   uses: docker/setup-qemu-action@v1
             -   uses: docker/setup-buildx-action@v1
