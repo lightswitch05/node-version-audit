@@ -1,4 +1,4 @@
-name: CI
+name: Tests
 
 on:
     push:
@@ -57,11 +57,3 @@ jobs:
               run: npm run test:unit
               env: # Override the index file name to prevent concurrency issues
                   NVA_INDEX_FILE_NAME: "index${{ matrix.node-version }}.json"
-
-            #- name: Publish to NPM if main branch and node version
-            #  if: ${{ env.IS_PRIMARY_VERSION && env.PUBLISH }}
-            #  run: |
-            #      ./scripts/bump-version.sh
-            #      npm publish
-            #  env:
-            #      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

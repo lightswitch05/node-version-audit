@@ -6,6 +6,9 @@ on:
         -   cron: '5 1 * * *'
         -   cron: '5 13 * * *'
 
+env:
+    GITHUB_TOKEN: ${{ secrets.GITHUB_PAT }}
+
 jobs:
     run-updates:
         runs-on: ubuntu-latest
@@ -14,7 +17,7 @@ jobs:
                 with:
                     ref: master
                     fetch-depth: 10
-                    token: ${{ secrets.GITHUB_PAT }}
+                    token: ${{ secrets.GH_PAT }}
 
             -   name: Use Node.js 17.x
                 uses: actions/setup-node@v3
@@ -23,7 +26,7 @@ jobs:
                     registry-url: 'https://registry.npmjs.org'
 
             -   name: Change origin to bypass gh-pages issues with actions
-                run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_PAT }}@github.com/lightswitch05/node-version-audit.git
+                run: git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/lightswitch05/node-version-audit.git
             -   name: Ensure latest commit with tags
                 run: git fetch; git fetch --tags --all; git checkout master; git pull
 
