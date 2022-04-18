@@ -4,8 +4,8 @@ WORKDIR /opt/node-version-audit
 COPY ./docker/docker-entrypoint.sh ./docker/docker-entrypoint.sh
 ADD ./package-lock.json .
 ADD ./package.json .
-ADD ./lib .
-ADD ./bin .
+ADD ./lib ./lib/
+ADD ./bin ./bin/
 ADD ./docs/rules-v1.json ./docs/
 RUN npm install
 
