@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2022-04-18T03:28:22.162Z",
+    "lastUpdatedDate": "2022-04-18T13:35:34.977Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "licence": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -3335,13 +3335,6 @@
         }
     },
     "cves": {
-        "CVE-2021-23362": {
-            "id": "CVE-2021-23362",
-            "baseScore": 5.3,
-            "publishedDate": "2021-03-23T17:15:00.000Z",
-            "lastModifiedDate": "2022-04-08T13:31:00.000Z",
-            "description": "The package hosted-git-info before 3.0.8 are vulnerable to Regular Expression Denial of Service (ReDoS) via regular expression shortcutMatch in the fromUrl function in index.js. The affected regular expression exhibits polynomial worst-case time complexity."
-        },
         "CVE-2018-1000168": {
             "id": "CVE-2018-1000168",
             "baseScore": 7.5,
@@ -3992,6 +3985,13 @@
             "publishedDate": "2021-11-03T20:15:00.000Z",
             "lastModifiedDate": "2022-03-29T16:39:00.000Z",
             "description": "The parse function in llhttp < 2.1.4 and < 6.0.6. ignores chunk extensions when parsing the body of chunked requests. This leads to HTTP Request Smuggling (HRS) under certain conditions."
+        },
+        "CVE-2021-23362": {
+            "id": "CVE-2021-23362",
+            "baseScore": 5.3,
+            "publishedDate": "2021-03-23T17:15:00.000Z",
+            "lastModifiedDate": "2022-04-08T13:31:00.000Z",
+            "description": "The package hosted-git-info before 3.0.8 are vulnerable to Regular Expression Denial of Service (ReDoS) via regular expression shortcutMatch in the fromUrl function in index.js. The affected regular expression exhibits polynomial worst-case time complexity."
         },
         "CVE-2021-23840": {
             "id": "CVE-2021-23840",
