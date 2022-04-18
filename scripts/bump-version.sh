@@ -18,4 +18,4 @@ fi
 
 NEW_VERSION="${MAJOR_VERSION}.${NEW_MINOR_VERSION}.${PATCH_VERSION}-alpha"
 
-npm version "${NEW_VERSION}"
+npm version --no-git-tag-version "${NEW_VERSION}"

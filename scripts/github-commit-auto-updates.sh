@@ -23,4 +23,5 @@ git add ./docs/rules-v1.json ./package.json ./package-lock.json
 git commit -m "${COMMIT_MESSAGE}"
 
 NEW_TAG=$(jq --raw-output '.version' < package.json)
+git tag "${NEW_TAG}"
 git push origin : "${NEW_TAG}"
