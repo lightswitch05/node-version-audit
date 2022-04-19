@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2022-04-19T03:04:13.757Z",
+    "lastUpdatedDate": "2022-04-19T13:42:45.439Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "licence": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -3339,28 +3339,28 @@
             "id": "CVE-2022-21824",
             "baseScore": 8.2,
             "publishedDate": "2022-02-24T19:15:00.000Z",
-            "lastModifiedDate": "2022-03-25T08:15:00.000Z",
+            "lastModifiedDate": "2022-04-18T18:36:00.000Z",
             "description": "Due to the formatting logic of the \"console.table()\" function it was not safe to allow user controlled input to be passed to the \"properties\" parameter while simultaneously passing a plain object with at least one property as the first parameter, which could be \"__proto__\". The prototype pollution has very limited control, in that it only allows an empty string to be assigned to numerical keys of the object prototype.Node.js >= 12.22.9, >= 14.18.3, >= 16.13.2, and >= 17.3.1 use a null protoype for the object these properties are being assigned to."
         },
         "CVE-2021-44533": {
             "id": "CVE-2021-44533",
             "baseScore": 5.3,
             "publishedDate": "2022-02-24T19:15:00.000Z",
-            "lastModifiedDate": "2022-03-25T08:15:00.000Z",
+            "lastModifiedDate": "2022-04-18T19:40:00.000Z",
             "description": "Node.js < 12.22.9, < 14.18.3, < 16.13.2, and < 17.3.1 did not handle multi-value Relative Distinguished Names correctly. Attackers could craft certificate subjects containing a single-value Relative Distinguished Name that would be interpreted as a multi-value Relative Distinguished Name, for example, in order to inject a Common Name that would allow bypassing the certificate subject verification.Affected versions of Node.js that do not accept multi-value Relative Distinguished Names and are thus not vulnerable to such attacks themselves. However, third-party code that uses node's ambiguous presentation of certificate subjects may be vulnerable."
         },
         "CVE-2021-44532": {
             "id": "CVE-2021-44532",
             "baseScore": 5.3,
             "publishedDate": "2022-02-24T19:15:00.000Z",
-            "lastModifiedDate": "2022-03-25T08:15:00.000Z",
+            "lastModifiedDate": "2022-04-18T19:38:00.000Z",
             "description": "Node.js < 12.22.9, < 14.18.3, < 16.13.2, and < 17.3.1 converts SANs (Subject Alternative Names) to a string format. It uses this string to check peer certificates against hostnames when validating connections. The string format was subject to an injection vulnerability when name constraints were used within a certificate chain, allowing the bypass of these name constraints.Versions of Node.js with the fix for this escape SANs containing the problematic characters in order to prevent the injection. This behavior can be reverted through the --security-revert command-line option."
         },
         "CVE-2021-44531": {
             "id": "CVE-2021-44531",
             "baseScore": 7.4,
             "publishedDate": "2022-02-24T19:15:00.000Z",
-            "lastModifiedDate": "2022-03-25T08:15:00.000Z",
+            "lastModifiedDate": "2022-04-18T19:37:00.000Z",
             "description": "Accepting arbitrary Subject Alternative Name (SAN) types, unless a PKI is specifically defined to use a particular SAN type, can result in bypassing name-constrained intermediates. Node.js < 12.22.9, < 14.18.3, < 16.13.2, and < 17.3.1 was accepting URI SAN types, which PKIs are often not defined to use. Additionally, when a protocol allows URI SANs, Node.js did not match the URI correctly.Versions of Node.js with the fix for this disable the URI SAN type when checking a certificate against a hostname. This behavior can be reverted through the --security-revert command-line option."
         },
         "CVE-2018-1000168": {
