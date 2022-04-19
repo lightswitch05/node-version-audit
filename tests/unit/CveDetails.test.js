@@ -17,3 +17,26 @@ describe('CveDetails', () => {
         expect(details.description).toBe(description);
     });
 });
+
+describe('CveDetails.compare', () => {
+    it('compares less than', () => {
+        const first = new CveDetails(CveId.fromString('CVE-2022-00001'), 9, new Date(), new Date(), '1');
+        const second = new CveDetails(CveId.fromString('CVE-2022-00002'), 9, new Date(), new Date(), '2');
+        const compareResult = CveDetails.compare(first, second);
+        expect(compareResult).toBeLessThan(0);
+    });
+
+    it('compares greater than', () => {
+        const first = new CveDetails(CveId.fromString('CVE-2022-00002'), 9, new Date(), new Date(), '1');
+        const second = new CveDetails(CveId.fromString('CVE-2022-00001'), 9, new Date(), new Date(), '2');
+        const compareResult = CveDetails.compare(first, second);
+        expect(compareResult).toBeGreaterThan(0);
+    });
+
+    it('compares equal', () => {
+        const first = new CveDetails(CveId.fromString('CVE-2022-00001'), 9, new Date(), new Date(), '1');
+        const second = new CveDetails(CveId.fromString('CVE-2022-00001'), 9, new Date(), new Date(), '2');
+        const compareResult = CveDetails.compare(first, second);
+        expect(compareResult).toBe(0);
+    });
+});
