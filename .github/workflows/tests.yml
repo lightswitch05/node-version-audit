@@ -1,0 +1,51 @@
+name: Tests
+
+on:
+    push:
+        branches: [ master ]
+    pull_request:
+        types: [ opened, synchronize, reopened ]
+
+jobs:
+    build:
+
+        runs-on: ubuntu-latest
+
+        strategy:
+            matrix:
+                node-version: [14.x, 16.x, 17.x]
+
+        env:
+            IS_PRIMARY_VERSION: ${{ matrix.node-version == '17.x' }}
+            PUBLISH: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
+
+        steps:
+            - uses: actions/checkout@v3
+              with:
+                fetch-depth: 0
+
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v3
+              with:
+                  node-version: ${{ matrix.node-version }}
+                  registry-url: 'https://registry.npmjs.org'
+
+            - name: Install dependencies
+              run: npm ci
+
+            - name: Run all tests if primary node version
+              if: ${{ env.IS_PRIMARY_VERSION }}
+              run: npm run test
+
+            - name: SonarScanner if primary node version
+              if: ${{ env.IS_PRIMARY_VERSION }}
+              uses: sonarsource/sonarcloud-github-action@master
+              env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+            - name: Only run unit tests if not primary node version
+              if: ${{ !env.IS_PRIMARY_VERSION }}
+              run: npm run test:unit
+              env: # Override the index file name to prevent concurrency issues
+                  NVA_INDEX_FILE_NAME: "index${{ matrix.node-version }}.json"
