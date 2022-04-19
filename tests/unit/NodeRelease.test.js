@@ -23,3 +23,26 @@ describe('NodeRelease::addPatchedCveId', () => {
         expect(nodeRelease.patchedCveIds).toEqual([a, b, c, d, e]);
     });
 });
+
+describe('NodeRelease::compare', () => {
+    it('compares less than', () => {
+        const first = new NodeRelease(new NodeVersion(17, 0, 0));
+        const second = new NodeRelease(new NodeVersion(18, 0, 0));
+        const compareResult = NodeRelease.compare(first, second);
+        expect(compareResult).toBeLessThan(0);
+    });
+
+    it('compares greater than', () => {
+        const first = new NodeRelease(new NodeVersion(17, 0, 0));
+        const second = new NodeRelease(new NodeVersion(16, 0, 0));
+        const compareResult = NodeRelease.compare(first, second);
+        expect(compareResult).toBeGreaterThan(0);
+    });
+
+    it('compares equal to', () => {
+        const first = new NodeRelease(new NodeVersion(17, 0, 0));
+        const second = new NodeRelease(new NodeVersion(17, 0, 0));
+        const compareResult = NodeRelease.compare(first, second);
+        expect(compareResult).toBe(0);
+    });
+});

@@ -1,6 +1,6 @@
 # Node Version Audit
 
-[![Node Version Audit Logo](file:///Users/daniel/repo/node-version-audit/docs/node-version-audit-logo.svg)](https://www.github.developerdan.com/node-version-audit/)
+[![Node Version Audit Logo](https://www.github.developerdan.com/node-version-audit/node-version-audit-logo.svg)](https://www.github.developerdan.com/node-version-audit/)
 
 [![Github Stars](https://img.shields.io/github/stars/lightswitch05/node-version-audit)](https://github.com/lightswitch05/php-version-audit)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/lightswitch05/node-version-audit/Auto%20Updates)](https://github.com/lightswitch05/node-version-audit/actions?query=workflow%3A%22Auto+Updates%22)
