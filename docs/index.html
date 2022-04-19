@@ -182,10 +182,14 @@
             <p>
                 Want to integrate with Node Version Audit? That is certainly possible.
                 A word caution, this is a very early release. I do not have any plans for breaking changes,
-                but I am also not committed to keeping the interface as-is if there are new features to implement.
-                Docker/CLI is certainly the preferred method to direct invocation.
+                but I am also not committed to keeping the interface code as-is if there are new features to implement.
+                Docker/CLI/JSON is certainly the preferred over direct invocation.
                 <code>
-                    TODO
+                    const { NodeVersionAudit } = require('node-version-audit/lib/NodeVersionAudit');<br/><br/>
+                    const nodeVersionAudit = new NodeVersionAudit('17.8.0', true);<br/>
+                    const auditResults = await nodeVersionAudit.getAllAuditResults();<br/>
+                    auditResults.supportEndDate; //-> 2022-06-01T00:00:00.000Z<br/>
+                    auditResults.hasVulnerabilities(); //-> true<br/>
                 </code>
             </p>
 
