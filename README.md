@@ -37,7 +37,7 @@ staying informed on Node.js releases and security exploits.
     * Patch: 16.13.0 -> 16.13.2
     * Minor: 16.13.0 -> 16.14.2
     * Latest: 16.13.0 -> 17.9.0
-* Rules automatically updated daily. Information is sourced directly from php.net - you'll never be waiting on someone like me to merge a pull request before getting the latest patch information.
+* Rules automatically updated daily. Information is sourced directly from nodejs.org - you'll never be waiting on someone like me to merge a pull request before getting the latest patch information.
 * Multiple interfaces: CLI (via NPM), Docker, direct code import
 * Easily scriptable for use with CI/CD workflows. All Docker/CLI outputs are in JSON format to be consumed with your favorite tools - such as [jq](https://stedolan.github.io/jq/)
 * Configurable exit conditions. Use CLI flags like `--fail-security` to set a failure exit code if the given version of Node.js has a known CVE or is no longer supported.
