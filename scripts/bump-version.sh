@@ -16,6 +16,6 @@ else
     PATCH_VERSION="0"
 fi
 
-NEW_VERSION="${MAJOR_VERSION}.${NEW_MINOR_VERSION}.${PATCH_VERSION}-alpha"
+NEW_VERSION="${MAJOR_VERSION}.${NEW_MINOR_VERSION}.${PATCH_VERSION}-beta"
 
 npm version --no-git-tag-version "${NEW_VERSION}"
