@@ -19,10 +19,10 @@ jobs:
                     fetch-depth: 10
                     token: ${{ secrets.GH_PAT }}
 
-            -   name: Use Node.js 17.x
+            -   name: Use Node.js 18.x
                 uses: actions/setup-node@v3
                 with:
-                    node-version: 17.x
+                    node-version: 18.x
                     registry-url: 'https://registry.npmjs.org'
 
             -   name: Change origin to bypass gh-pages issues with actions
@@ -68,7 +68,7 @@ jobs:
                     context: ./
                     platforms: linux/amd64, linux/arm64
                     build-args: |
-                        NODE_IMAGE_TAG=17
+                        NODE_IMAGE_TAG=18
                     file: ./docker/Dockerfile
                     tags: |
                         lightswitch05/node-version-audit:latest

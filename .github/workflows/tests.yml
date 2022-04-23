@@ -13,10 +13,10 @@ jobs:
 
         strategy:
             matrix:
-                node-version: [14.x, 16.x, 17.x]
+                node-version: [14.x, 16.x, 18.x]
 
         env:
-            IS_PRIMARY_VERSION: ${{ matrix.node-version == '17.x' }}
+            IS_PRIMARY_VERSION: ${{ matrix.node-version == '18.x' }}
             PUBLISH: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
 
         steps:
