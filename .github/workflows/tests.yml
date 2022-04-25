@@ -2,13 +2,12 @@ name: Tests
 
 on:
     push:
-        branches: [ master ]
+        branches: [master]
     pull_request:
-        types: [ opened, synchronize, reopened ]
+        types: [opened, synchronize, reopened]
 
 jobs:
     build:
-
         runs-on: ubuntu-latest
 
         strategy:
@@ -22,7 +21,7 @@ jobs:
         steps:
             - uses: actions/checkout@v3
               with:
-                fetch-depth: 0
+                  fetch-depth: 0
 
             - name: Use Node.js ${{ matrix.node-version }}
               uses: actions/setup-node@v3
@@ -41,11 +40,19 @@ jobs:
               if: ${{ env.IS_PRIMARY_VERSION }}
               uses: sonarsource/sonarcloud-github-action@master
               env:
-                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+            - name: Run cspell if primary node version
+              if: ${{ env.IS_PRIMARY_VERSION }}
+              run: npm run cspell
+
+            - name: Run format:check if primary node version
+              if: ${{ env.IS_PRIMARY_VERSION }}
+              run: npm run format:check
 
             - name: Only run unit tests if not primary node version
               if: ${{ !env.IS_PRIMARY_VERSION }}
               run: npm run test:unit
               env: # Override the index file name to prevent concurrency issues
-                  NVA_INDEX_FILE_NAME: "index${{ matrix.node-version }}.json"
+                  NVA_INDEX_FILE_NAME: 'index${{ matrix.node-version }}.json'

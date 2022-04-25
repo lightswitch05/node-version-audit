@@ -45,7 +45,7 @@ describe('NodeVersion.fromString', () => {
     });
 
     it('does not parse multiline', () => {
-        const version = NodeVersion.fromString('1.2.3\n\nasdfasdf\n');
+        const version = NodeVersion.fromString('1.2.3\n\nextra-stuff\n');
         expect(version).toBeNull();
     });
 
