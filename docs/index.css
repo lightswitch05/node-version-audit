@@ -1,11 +1,12 @@
-:root, :root.darkTheme {
+:root,
+:root.darkTheme {
     --color: #c9d1d9;
     --background-color: #0d1117;
     --link-color: #58a6ff;
 }
 
 html {
-    font-family: "Inter", "system-ui", sans-serif;
+    font-family: 'Inter', 'system-ui', sans-serif;
     line-height: 1.2;
     text-rendering: optimizeLegibility;
 }
@@ -44,11 +45,12 @@ section {
     padding: 1px 5px 10px 5px;
 }
 
-code, dl {
+code,
+dl {
     padding: 10px;
     margin: 10px 10px 0 10px;
     font-size: 0.9rem;
-    font-family: "Courier New", monospace;
+    font-family: 'Courier New', monospace;
     line-height: 1.4;
 }
 
@@ -61,7 +63,7 @@ code {
 pre {
     overflow: scroll;
     font-size: 0.9rem;
-    font-family: "Courier New", monospace;
+    font-family: 'Courier New', monospace;
     line-height: 1.4;
 }
 

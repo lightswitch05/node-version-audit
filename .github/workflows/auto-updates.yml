@@ -3,8 +3,8 @@ name: Auto Updates
 on:
     workflow_dispatch:
     schedule:
-        -   cron: '5 1 * * *'
-        -   cron: '5 13 * * *'
+        - cron: '5 1 * * *'
+        - cron: '5 13 * * *'
 
 env:
     GITHUB_TOKEN: ${{ secrets.GITHUB_PAT }}
@@ -13,65 +13,65 @@ jobs:
     run-updates:
         runs-on: ubuntu-latest
         steps:
-            -   uses: actions/checkout@v3
-                with:
-                    ref: master
-                    fetch-depth: 10
-                    token: ${{ secrets.GH_PAT }}
+            - uses: actions/checkout@v3
+              with:
+                  ref: master
+                  fetch-depth: 10
+                  token: ${{ secrets.GH_PAT }}
 
-            -   name: Use Node.js 18.x
-                uses: actions/setup-node@v3
-                with:
-                    node-version: 18.x
-                    registry-url: 'https://registry.npmjs.org'
+            - name: Use Node.js 18.x
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 18.x
+                  registry-url: 'https://registry.npmjs.org'
 
-            -   name: Change origin to bypass gh-pages issues with actions
-                run: git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/lightswitch05/node-version-audit.git
-            -   name: Ensure latest commit with tags
-                run: git fetch; git fetch --tags --all; git checkout master; git pull
+            - name: Change origin to bypass gh-pages issues with actions
+              run: git remote set-url origin https://x-access-token:${{ secrets.GH_PAT }}@github.com/lightswitch05/node-version-audit.git
+            - name: Ensure latest commit with tags
+              run: git fetch; git fetch --tags --all; git checkout master; git pull
 
-            -   name: Install dependencies
-                run: npm ci
+            - name: Install dependencies
+              run: npm ci
 
-            -   name: Cache downloaded files
-                uses: actions/cache@v2
-                with:
-                    path: ${{ github.workspace }}/tmp
-                    key: ${{ runner.os }}-node-version-audit-${{ hashFiles('**/docs/rules-v1.json') }}
-                    restore-keys: |
-                        ${{ runner.os }}-node-version-audit-
+            - name: Cache downloaded files
+              uses: actions/cache@v2
+              with:
+                  path: ${{ github.workspace }}/tmp
+                  key: ${{ runner.os }}-node-version-audit-${{ hashFiles('**/docs/rules-v1.json') }}
+                  restore-keys: |
+                      ${{ runner.os }}-node-version-audit-
 
-            -   run: npm run test:unit
-            -   run: ./bin/node-version-audit --full-update --no-update --vvv
-            -   run: |
-                    ./scripts/bump-version.sh
-                    npm publish
-                env:
-                    NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-            -   run: ./scripts/github-commit-auto-updates.sh
+            - run: npm run test:unit
+            - run: ./bin/node-version-audit --full-update --no-update --vvv
+            - run: |
+                  ./scripts/bump-version.sh
+                  npm publish
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+            - run: ./scripts/github-commit-auto-updates.sh
 
-            -   uses: docker/setup-qemu-action@v1
-            -   uses: docker/setup-buildx-action@v1
-            -   uses: docker/login-action@v1
-                with:
-                    username: lightswitch05
-                    password: ${{ secrets.DOCKERHUB_TOKEN }}
-            -   uses: docker/login-action@v1
-                with:
-                    registry: ghcr.io
-                    username: lightswitch05
-                    password: ${{ secrets.GITHUB_TOKEN }}
-            -   name: Build and push
-                uses: docker/build-push-action@v2
-                with:
-                    push: true
-                    context: ./
-                    platforms: linux/amd64, linux/arm64
-                    build-args: |
-                        NODE_IMAGE_TAG=18
-                    file: ./docker/Dockerfile
-                    tags: |
-                        lightswitch05/node-version-audit:latest
-                        lightswitch05/node-version-audit:1
-                        ghcr.io/lightswitch05/node-version-audit:latest
-                        ghcr.io/lightswitch05/node-version-audit:1
+            - uses: docker/setup-qemu-action@v1
+            - uses: docker/setup-buildx-action@v1
+            - uses: docker/login-action@v1
+              with:
+                  username: lightswitch05
+                  password: ${{ secrets.DOCKERHUB_TOKEN }}
+            - uses: docker/login-action@v1
+              with:
+                  registry: ghcr.io
+                  username: lightswitch05
+                  password: ${{ secrets.GITHUB_TOKEN }}
+            - name: Build and push
+              uses: docker/build-push-action@v2
+              with:
+                  push: true
+                  context: ./
+                  platforms: linux/amd64, linux/arm64
+                  build-args: |
+                      NODE_IMAGE_TAG=18
+                  file: ./docker/Dockerfile
+                  tags: |
+                      lightswitch05/node-version-audit:latest
+                      lightswitch05/node-version-audit:1
+                      ghcr.io/lightswitch05/node-version-audit:latest
+                      ghcr.io/lightswitch05/node-version-audit:1

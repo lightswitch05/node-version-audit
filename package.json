@@ -7,7 +7,9 @@
         "test": "jest --coverage",
         "test:unit": "jest --coverage --selectProjects unit",
         "test:functional": "jest --coverage --selectProjects functional",
-        "format": "prettier --write ./tests ./lib ./*.json ./bin/*"
+        "format": "prettier --write .",
+        "format:check": "prettier --check .",
+        "cspell": "cspell '**'"
     },
     "repository": {
         "type": "git",
@@ -36,6 +38,7 @@
     "homepage": "https://github.com/lightswitch05/node-version-audit#readme",
     "devDependencies": {
         "@casualbot/jest-sonar-reporter": "^2.2.5",
+        "cspell": "^5.19.7",
         "jest": "^27.5.1",
         "prettier": "^2.6.2"
     },

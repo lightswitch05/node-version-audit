@@ -1,0 +1,30 @@
+{
+    "words": [
+        "lightswitch",
+        "lcov",
+        "gzipped",
+        "netrc",
+        "numstat",
+        "scriptable",
+        "problemtype",
+        "refsource",
+        "Thinkpad",
+        "exploitability",
+        "Insuf",
+        "Vulerabilties",
+        "deref",
+        "richardlau",
+        "mylesborins",
+        "gsmchunk",
+        "Pettersson",
+        "casualbot",
+        "cves",
+        "IOJS",
+        "protoype",
+        "noline",
+        "WORKDIR",
+        "scannerwork"
+    ],
+    "includeRegExpList": ["**"],
+    "ignorePaths": ["node_modules/", "tmp/", "docs/rules-v1.json", "*.svg", "coverage/", ".scannerwork/"]
+}

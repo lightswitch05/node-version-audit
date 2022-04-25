@@ -1,119 +1,176 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Node Version Audit</title>
-    <meta name="description" content="Node Version Audit is a convenience tool to easily check a given Node.js version against a regularly updated list of CVE exploits, new releases, and end of life dates.">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="./fonts/inter.css">
-    <meta property="og:title" content="Node Version Audit" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.github.developerdan.com/node-version-audit/">
-    <meta property="og:image" content="https://www.github.developerdan.com/node-version-audit/node-version-audit-logo.png" />
-    <meta property="og:image:secure_url" content="https://www.github.developerdan.com/node-version-audit/node-version-audit-logo.png">
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="651" />
-    <meta property="og:image:height" content="351" />
-    <meta property="og:image:alt" content="Node Version Audit Logo" />
-    <meta property="og:description" content="Node Version Audit is a convenience tool to easily check a given Node.js version against a regularly updated list of CVE exploits, new releases, and end of life dates.">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="lightswitch05.svg">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="alternate icon" href="favicon.ico">
-</head>
+    <head>
+        <meta charset="utf-8" />
+        <title>Node Version Audit</title>
+        <meta
+            name="description"
+            content="Node Version Audit is a convenience tool to easily check a given Node.js version against a regularly updated list of CVE exploits, new releases, and end of life dates."
+        />
+        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="./fonts/inter.css" />
+        <meta property="og:title" content="Node Version Audit" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.github.developerdan.com/node-version-audit/" />
+        <meta
+            property="og:image"
+            content="https://www.github.developerdan.com/node-version-audit/node-version-audit-logo.png"
+        />
+        <meta
+            property="og:image:secure_url"
+            content="https://www.github.developerdan.com/node-version-audit/node-version-audit-logo.png"
+        />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="651" />
+        <meta property="og:image:height" content="351" />
+        <meta property="og:image:alt" content="Node Version Audit Logo" />
+        <meta
+            property="og:description"
+            content="Node Version Audit is a convenience tool to easily check a given Node.js version against a regularly updated list of CVE exploits, new releases, and end of life dates."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="lightswitch05.svg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+        <link rel="alternate icon" href="favicon.ico" />
+    </head>
 
-<body>
-    <main>
-        <h1>
-            <a href="https://www.github.developerdan.com/" class="noline">
-                <img class="avatar" src="lightswitch05.svg" alt="lightswitch05 avatar">
-            </a>
-            Node Version Audit: <small><a href="https://github.com/lightswitch05/node-version-audit">Source on Github</a></small>
-        </h1>
-        <img class="logo" src="node-version-audit-logo.svg" alt="Node Version Audit Logo">
-        <p>
-            <a href="https://github.com/lightswitch05/node-version-audit" class="noline">
-                <img alt="Github Stars" src="https://img.shields.io/github/stars/lightswitch05/node-version-audit" style="max-width:100%;">
-            </a>
-            <a href="https://github.com/lightswitch05/node-version-audit/actions?query=workflow%3A%22Auto+Updates%22" class="noline">
-                <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/lightswitch05/node-version-audit/Auto Updates" style="max-width:100%;">
-            </a>
-            <a href="https://www.npmjs.com/package/node-version-audit" class="noline">
-                <img alt="NPM Version" src="https://img.shields.io/npm/v/node-version-audit" style="max-width:100%;">
-            </a>
-            <a href="https://hub.docker.com/r/lightswitch05/node-version-audit" class="noline">
-                <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/lightswitch05/node-version-audit" style="max-width:100%;">
-            </a>
-            <a href="https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE" class="noline">
-                <img alt="license" src="https://img.shields.io/github/license/lightswitch05/node-version-audit.svg" style="max-width:100%;">
-            </a>
-            <a href="https://github.com/lightswitch05/node-version-audit/commits/master" class="noline">
-                <img alt="last commit" src="https://img.shields.io/github/last-commit/lightswitch05/node-version-audit.svg" style="max-width:100%;">
-            </a>
-            <a href="https://github.com/lightswitch05/node-version-audit/commits/master" class="noline">
-                <img alt="commit activity" src="https://img.shields.io/github/commit-activity/y/lightswitch05/node-version-audit.svg" style="max-width:100%;">
-            </a>
-        </p>
-        <p>
-            Node Version Audit is a convenience tool to easily check a given Node.js version against a regularly updated
-            list of CVE exploits, new releases, and end of life dates.
-        </p>
-        <p>
-            <strong>Node Version Audit is not:</strong> exploit detection/mitigation, vendor-specific version tracking, a replacement for
-            staying informed on Node.js releases and security exploits.
-        </p>
+    <body>
+        <main>
+            <h1>
+                <a href="https://www.github.developerdan.com/" class="noline">
+                    <img class="avatar" src="lightswitch05.svg" alt="lightswitch05 avatar" />
+                </a>
+                Node Version Audit:
+                <small><a href="https://github.com/lightswitch05/node-version-audit">Source on Github</a></small>
+            </h1>
+            <img class="logo" src="node-version-audit-logo.svg" alt="Node Version Audit Logo" />
+            <p>
+                <a href="https://github.com/lightswitch05/node-version-audit" class="noline">
+                    <img
+                        alt="Github Stars"
+                        src="https://img.shields.io/github/stars/lightswitch05/node-version-audit"
+                        style="max-width: 100%"
+                    />
+                </a>
+                <a
+                    href="https://github.com/lightswitch05/node-version-audit/actions?query=workflow%3A%22Auto+Updates%22"
+                    class="noline"
+                >
+                    <img
+                        alt="GitHub Workflow Status"
+                        src="https://img.shields.io/github/workflow/status/lightswitch05/node-version-audit/Auto Updates"
+                        style="max-width: 100%"
+                    />
+                </a>
+                <a href="https://www.npmjs.com/package/node-version-audit" class="noline">
+                    <img
+                        alt="NPM Version"
+                        src="https://img.shields.io/npm/v/node-version-audit"
+                        style="max-width: 100%"
+                    />
+                </a>
+                <a href="https://hub.docker.com/r/lightswitch05/node-version-audit" class="noline">
+                    <img
+                        alt="Docker Pulls"
+                        src="https://img.shields.io/docker/pulls/lightswitch05/node-version-audit"
+                        style="max-width: 100%"
+                    />
+                </a>
+                <a href="https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE" class="noline">
+                    <img
+                        alt="license"
+                        src="https://img.shields.io/github/license/lightswitch05/node-version-audit.svg"
+                        style="max-width: 100%"
+                    />
+                </a>
+                <a href="https://github.com/lightswitch05/node-version-audit/commits/master" class="noline">
+                    <img
+                        alt="last commit"
+                        src="https://img.shields.io/github/last-commit/lightswitch05/node-version-audit.svg"
+                        style="max-width: 100%"
+                    />
+                </a>
+                <a href="https://github.com/lightswitch05/node-version-audit/commits/master" class="noline">
+                    <img
+                        alt="commit activity"
+                        src="https://img.shields.io/github/commit-activity/y/lightswitch05/node-version-audit.svg"
+                        style="max-width: 100%"
+                    />
+                </a>
+            </p>
+            <p>
+                Node Version Audit is a convenience tool to easily check a given Node.js version against a regularly
+                updated list of CVE exploits, new releases, and end of life dates.
+            </p>
+            <p>
+                <strong>Node Version Audit is not:</strong> exploit detection/mitigation, vendor-specific version
+                tracking, a replacement for staying informed on Node.js releases and security exploits.
+            </p>
 
-        <section id="index">
-            <h2><a href="#index">Index</a></h2>
-            <nav>
+            <section id="index">
+                <h2><a href="#index">Index</a></h2>
+                <nav>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#example">Example</a></li>
+                        <li>
+                            <a href="#usage">Usage</a>
+                            <ul>
+                                <li><a href="#cli">CLI</a></li>
+                                <li><a href="#docker">Docker</a></li>
+                                <li><a href="#direct-invocation">Direct Invocation</a></li>
+                                <li><a href="#json-rules">JSON Rules</a></li>
+                                <li><a href="#options">Options</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#output">Output</a></li>
+                        <li><a href="#project-goals">Project Goals</a></li>
+                        <li><a href="#acknowledgments--license">License &amp Acknowledgments</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section id="features">
+                <h2>Features</h2>
                 <ul>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#example">Example</a></li>
-                    <li><a href="#usage">Usage</a>
+                    <li>List known CVEs for a given version of Node.js</li>
+                    <li>Check either the runtime version of Node.js, or a supplied version</li>
+                    <li>Display end-of-life dates for a given version of Node.js</li>
+                    <li>
+                        Display new releases for a given version of Node.js with configurable specificity
+                        (latest/minor/patch)
                         <ul>
-                            <li><a href="#cli">CLI</a></li>
-                            <li><a href="#docker">Docker</a></li>
-                            <li><a href="#direct-invocation">Direct Invocation</a></li>
-                            <li><a href="#json-rules">JSON Rules</a></li>
-                            <li><a href="#options">Options</a></li>
+                            <li>Patch: 16.13.0 -> 16.13.2</li>
+                            <li>Minor: 16.13.0 -> 16.14.2</li>
+                            <li>Latest: 16.13.0 -> 17.9.0</li>
                         </ul>
                     </li>
-                    <li><a href="#output">Output</a></li>
-                    <li><a href="#project-goals">Project Goals</a></li>
-                    <li><a href="#acknowledgments--license">License &amp Acknowledgments</a></li>
+                    <li>
+                        Rules automatically updated daily. Information is sourced directly from nodejs.org - you'll
+                        never be waiting on someone like me to merge a pull request before getting the latest patch
+                        information.
+                    </li>
+                    <li>Multiple interfaces: CLI (via NPM), Docker, direct code import</li>
+                    <li>
+                        Easily scriptable for use with CI/CD workflows. All Docker/CLI outputs are in JSON format to be
+                        consumed with your favorite tools - such as <a href="https://stedolan.github.io/jq/">jq</a>
+                    </li>
+                    <li>
+                        Configurable exit conditions. Use CLI flags like `--fail-security` to set a failure exit code if
+                        the given version of Node.js has a known CVE or is no longer supported.
+                    </li>
+                    <li>Zero dependencies</li>
                 </ul>
-            </nav>
-        </section>
+            </section>
 
-
-        <section id="features">
-            <h2>Features</h2>
-            <ul>
-                <li>List known CVEs for a given version of Node.js</li>
-                <li>Check either the runtime version of Node.js, or a supplied version</li>
-                <li>Display end-of-life dates for a given version of Node.js</li>
-                <li>Display new releases for a given version of Node.js with configurable specificity (latest/minor/patch)
-                    <ul>
-                        <li>Patch: 16.13.0 -> 16.13.2</li>
-                        <li>Minor: 16.13.0 -> 16.14.2</li>
-                        <li>Latest: 16.13.0 -> 17.9.0</li>
-                    </ul>
-                </li>
-                <li>Rules automatically updated daily. Information is sourced directly from nodejs.org - you'll never be waiting on someone like me to merge a pull request before getting the latest patch information.</li>
-                <li>Multiple interfaces: CLI (via NPM), Docker, direct code import</li>
-                <li>Easily scriptable for use with CI/CD workflows. All Docker/CLI outputs are in JSON format to be consumed with your favorite tools - such as <a href="https://stedolan.github.io/jq/">jq</a></li>
-                <li>Configurable exit conditions. Use CLI flags like `--fail-security` to set a failure exit code if the given version of Node.js has a known CVE or is no longer supported.</li>
-                <li>Zero dependencies</li>
-            </ul>
-        </section>
-
-        <section id="example">
-            <h2>Example</h2>
-            <code>
-<pre>npx node-version-audit@latest --version=16.14.1
+            <section id="example">
+                <h2>Example</h2>
+                <code>
+                    <pre>
+npx node-version-audit@latest --version=16.14.1
 {
     "auditVersion": "16.14.1",
     "hasVulnerabilities": true,
@@ -138,189 +195,219 @@
         }
     }
 }
-</pre>
-            </code>
-        </section>
-
-        <section id="usage">
-            <h2>Usage</h2>
-
-            <h3 id="cli">CLI</h3>
-            <hr/>
-            <p>
-                Running directly with npx is the preferred and easiest way to use Node Version Audit.
-            </p>
-            <p>
-                Execute the script, checking the run-time version of Node.js:
-                <code>npx node-version-audit@latest</code>
-            </p>
-            <p>
-                Produce an exit code if any CVEs are found or support has ended
-                <code>npx node-version-audit@latest --fail-security</code>
-            </p>
-
-            <h3 id="docker">Docker</h3>
-            <hr/>
-            <p>
-                Prefer Docker? Not a problem. It is just as easy to run using Docker:
-            </p>
-            <p>
-                Check a specific version of Node.js using Docker:
-                <code>docker run --rm -t lightswitch05/node-version-audit:latest --version=17.9.0</code>
-            </p>
-            <p>
-                Check the host's Node.js version using Docker:
-                <code>docker run --rm -t lightswitch05/node-version-audit:latest --version=$(node -e "console.log(process.versions.node)")</code>
-            </p>
-            <p>
-                Run behind an HTTPS proxy (for use on restricted networks). Requires a volume mount of a directory with your trusted cert (with .crt extension) - see <a href="https://manpages.debian.org/buster/ca-certificates/update-ca-certificates.8.en.html">update-ca-certificates</a> for more details.
-                <code>docker run --rm -t -e https_proxy='https://your.proxy.server:port/' --volume /full/path/to/trusted/certs/directory:/usr/local/share/ca-certificates lightswitch05/node-version-audit:latest --version=17.9.0</code>
-            </p>
-
-            <h3 id="direct-invocation">Direct Invocation</h3>
-            <hr/>
-            <p>
-                Want to integrate with Node Version Audit? That is certainly possible.
-                A word caution, this is a very early release. I do not have any plans for breaking changes,
-                but I am also not committed to keeping the interface code as-is if there are new features to implement.
-                Docker/CLI/JSON is certainly the preferred over direct invocation.
-                <code>
-                    const { NodeVersionAudit } = require('node-version-audit/lib/NodeVersionAudit');<br/><br/>
-                    const nodeVersionAudit = new NodeVersionAudit('17.8.0', true);<br/>
-                    const auditResults = await nodeVersionAudit.getAllAuditResults();<br/>
-                    auditResults.supportEndDate; //-> 2022-06-01T00:00:00.000Z<br/>
-                    auditResults.hasVulnerabilities(); //-> true<br/>
+</pre
+                    >
                 </code>
-            </p>
+            </section>
 
-            <h3 id="json-rules">JSON Rules</h3>
-            <hr />
-            <p>
-                The data used to drive Node Version Audit is automatically updated on a regular basis
-                and is hosted on GitHub pages. This is the real meat-and-potatoes of Node Version Audit,
-                and you can consume it directly for use in other tools. If you choose to do this,
-                please respect the project license by giving proper attribution notices.
-                Also, I ask any implementations to read the lastUpdatedDate and fail if it has become out of date (2+ weeks).
-                This should not happen since it is automatically updated&#8230; but we all know how fragile software is.
-            </p>
-            <p>
-                Get the latest Node.js 17 release version directly from the rules using
-                <a href="https://curl.haxx.se/">curl</a> and <a href="https://stedolan.github.io/jq/">jq</a>:
-                <code>
-                    curl -s https://www.github.developerdan.com/node-version-audit/rules-v1.json | jq '.latestVersions["17"]'
-                </code>
-            </p>
+            <section id="usage">
+                <h2>Usage</h2>
 
-            <h3 id="options">Options</h3>
-            <hr/>
-            <dl>
-                <dt>--help</dt>
-                <dd>show arguments help message and exit.</dd>
-                <dt>--version=VERSION</dt>
-                <dd>set the Node.js Version to run against. Defaults to the runtime version. This is required when running with docker.</dd>
-                <dt>--fail-security</dt>
-                <dd>generate a 10 exit code if any CVEs are found, or security support has ended.</dd>
-                <dt>--fail-support</dt>
-                <dd>generate a 20 exit code if the version of Node.js no longer gets active (bug) support.</dd>
-                <dt>--fail-patch</dt>
-                <dd>generate a 30 exit code if there is a newer patch-level release.</dd>
-                <dt>--fail-minor</dt>
-                <dd>generate a 40 exit code if there is a newer minor-level release.</dd>
-                <dt>--fail-latest</dt>
-                <dd>generate a 50 exit code if there is a newer release.</dd>
-                <dt>--no-update</dt>
-                <dd>do not download the latest rules. NOT RECOMMENDED!</dd>
-                <dt>--silent</dt>
-                <dd>do not write any error messages to STDERR.</dd>
-                <dt>--v</dt>
-                <dd>Set verbosity. v=warnings, vv=info, vvv=debug. Default is error. All logging writes to STDERR.</dd>
-            </dl>
-        </section>
+                <h3 id="cli">CLI</h3>
+                <hr />
+                <p>Running directly with npx is the preferred and easiest way to use Node Version Audit.</p>
+                <p>
+                    Execute the script, checking the run-time version of Node.js:
+                    <code>npx node-version-audit@latest</code>
+                </p>
+                <p>
+                    Produce an exit code if any CVEs are found or support has ended
+                    <code>npx node-version-audit@latest --fail-security</code>
+                </p>
 
-        <section id="output">
-            <h2>Output</h2>
-            <dl>
-                <dt>&bull; auditVersion: <em>string</em></dt>
-                <dd>The version of Node.js that is being audited.</dd>
-                <dt>&bull; hasVulnerabilities: <em>bool</em></dt>
-                <dd>If the auditVersion has any known CVEs or not.</dd>
-                <dt>&bull; hasSupport: <em>bool</em></dt>
-                <dd>If the auditVersion is still receiving support.</dd>
-                <dt>&bull; supportType: <em>string</em></dt>
-                <dd>The current support status of auditVersion: 'current'|'active'|'maintenance'|'none'.</dd>
-                <dt>&bull; isLatestPatchVersion: <em>bool</em></dt>
-                <dd>If auditVersion is the latest patch-level release (17.9.x).</dd>
-                <dt>&bull; isLatestMinorVersion: <em>bool</em></dt>
-                <dd>If auditVersion is the latest minor-level release (17.x.x).</dd>
-                <dt>&bull; isLatestVersion: <em>bool</em></dt>
-                <dd>If auditVersion is the latest release (x.x.x).</dd>
-                <dt>&bull; latestPatchVersion: <em>string</em></dt>
-                <dd>The latest patch-level version for auditVersion.</dd>
-                <dt>&bull; latestMinorVersion: <em>string</em></dt>
-                <dd>The latest minor-level version for auditVersion.</dd>
-                <dt>&bull; latestVersion: <em>string</em></dt>
-                <dd>The latest Node.js version.</dd>
-                <dt>&bull; activeSupportEndDate: <em>string|null</em></dt>
-                <dd>ISO8601 formatted date for the end of active support for auditVersion.</dd>
-                <dt>&bull; supportEndDate: <em>string|null</em></dt>
-                <dd>ISO8601 formatted date for the end of maintenance support for auditVersion.</dd>
-                <dt>&bull; rulesLastUpdatedDate: <em>string</em></dt>
-                <dd>ISO8601 formatted date for the last time the rules were auto-updated.</dd>
-                <dt>&bull; vulnerabilities: <em>object</em></dt>
-                <dd>CVEs known to affect auditVersion with details about the CVE. CVE Details might be null for recently discovered CVEs.</dd>
-            </dl>
-        </section>
-        <section id="project-goals">
-            <h2>Project Goals</h2>
-            <ul>
-                <li>
-                    Always use update-to-date information and fail if it becomes too stale.
-                    Since this tool is designed to help its users stay informed, it must in turn fail if it becomes outdated.</li>
-                <li>
-                    Fail if the requested information is unavailable. ex. auditing an unknown version of Node.js like 12.50.0, or 0.9.0.
-                    Again, since this tool is designed to help its users stay informed, it must in turn fail if the requested information is unavailable.</li>
-                <li>Work in both open and closed networks (as long as the tool is up-to-date).</li>
-                <li>Minimal footprint and dependencies (no runtime dependencies).</li>
-                <li>Runtime support for the oldest supported version of Node.js.
-                    If you are using this tool with an unsupported version of Node.js,
-                    then you already have all the answers that this tool can give you: Yes, you have vulnerabilities and are out of date.
-                    Of course that is just for the run-time, it is still the goal of this project to supply information about any reasonable version of Node.js.</li>
-            </ul>
-        </section>
-        <section id="acknowledgments--license">
-            <h2>License &amp Acknowledgments</h2>
-            <ul>
-                <li>
-                    This project is released under the <a href="https://raw.githubusercontent.com/lightswitch05/node-version-audit/master/LICENSE">Apache License 2.0</a>.
-                </li>
-                <li>
-                    The accuracy of the information provided by this project cannot be verified or guaranteed.
-                    All functions are provided as convenience only and should not be relied on for accuracy or punctuality.
-                </li>
-                <li>
-                    The logo was created using Mathias Pettersson and Brian Hammond's <a href="https://nodejs.org/en/about/resources/#logo-downloads">Node.js Logo</a> as the base image.
-                    The logo has been modified from its original form to include overlay graphics.
-                </li>
-                <li>
-                    This project and the use of the modified Node.js logo is not endorsed by Mathias Pettersson or Brian Hammond.
-                </li>
-                <li>
-                    This project and the use of the Node.js name is not endorsed by OpenJS Foundation.
-                </li>
-                <li>
-                    CVE details and descriptions are downloaded from National Institute of Standard and Technology's <a href="https://nvd.nist.gov/">National Vulnerability Database</a>.
-                    This project and the use of CVE information is not endorsed by NIST or the NVD.
-                    CVE details are provided as convenience only. The accuracy of the information cannot be verified.
-                </li>
-                <li>
-                    Node.js release details and support dates are generated from
-                    <a href="https://github.com/nodejs/node/tree/master/doc/changelogs">Changelogs</a>
-                    and the <a href="https://github.com/nodejs/Release/blob/main/schedule.json">Release Schedule</a>.
-                    The accuracy of the information cannot be verified.
-                </li>
-            </ul>
-        </section>
-    </main>
-    <footer>Copyright &copy; 2022 Daniel White</footer>
-</body>
+                <h3 id="docker">Docker</h3>
+                <hr />
+                <p>Prefer Docker? Not a problem. It is just as easy to run using Docker:</p>
+                <p>
+                    Check a specific version of Node.js using Docker:
+                    <code>docker run --rm -t lightswitch05/node-version-audit:latest --version=17.9.0</code>
+                </p>
+                <p>
+                    Check the host's Node.js version using Docker:
+                    <code
+                        >docker run --rm -t lightswitch05/node-version-audit:latest --version=$(node -e
+                        "console.log(process.versions.node)")</code
+                    >
+                </p>
+                <p>
+                    Run behind an HTTPS proxy (for use on restricted networks). Requires a volume mount of a directory
+                    with your trusted cert (with .crt extension) - see
+                    <a href="https://manpages.debian.org/buster/ca-certificates/update-ca-certificates.8.en.html"
+                        >update-ca-certificates</a
+                    >
+                    for more details.
+                    <code
+                        >docker run --rm -t -e https_proxy='https://your.proxy.server:port/' --volume
+                        /full/path/to/trusted/certs/directory:/usr/local/share/ca-certificates
+                        lightswitch05/node-version-audit:latest --version=17.9.0</code
+                    >
+                </p>
+
+                <h3 id="direct-invocation">Direct Invocation</h3>
+                <hr />
+                <p>
+                    Want to integrate with Node Version Audit? That is certainly possible. A word caution, this is a
+                    very early release. I do not have any plans for breaking changes, but I am also not committed to
+                    keeping the interface code as-is if there are new features to implement. Docker/CLI/JSON is
+                    certainly the preferred over direct invocation.
+                    <code>
+                        const { NodeVersionAudit } = require('node-version-audit/lib/NodeVersionAudit');<br /><br />
+                        const nodeVersionAudit = new NodeVersionAudit('17.8.0', true);<br />
+                        const auditResults = await nodeVersionAudit.getAllAuditResults();<br />
+                        auditResults.supportEndDate; //-> 2022-06-01T00:00:00.000Z<br />
+                        auditResults.hasVulnerabilities(); //-> true<br />
+                    </code>
+                </p>
+
+                <h3 id="json-rules">JSON Rules</h3>
+                <hr />
+                <p>
+                    The data used to drive Node Version Audit is automatically updated on a regular basis and is hosted
+                    on GitHub pages. This is the real meat-and-potatoes of Node Version Audit, and you can consume it
+                    directly for use in other tools. If you choose to do this, please respect the project license by
+                    giving proper attribution notices. Also, I ask any implementations to read the lastUpdatedDate and
+                    fail if it has become out of date (2+ weeks). This should not happen since it is automatically
+                    updated&#8230; but we all know how fragile software is.
+                </p>
+                <p>
+                    Get the latest Node.js 17 release version directly from the rules using
+                    <a href="https://curl.haxx.se/">curl</a> and <a href="https://stedolan.github.io/jq/">jq</a>:
+                    <code>
+                        curl -s https://www.github.developerdan.com/node-version-audit/rules-v1.json | jq
+                        '.latestVersions["17"]'
+                    </code>
+                </p>
+
+                <h3 id="options">Options</h3>
+                <hr />
+                <dl>
+                    <dt>--help</dt>
+                    <dd>show arguments help message and exit.</dd>
+                    <dt>--version=VERSION</dt>
+                    <dd>
+                        set the Node.js Version to run against. Defaults to the runtime version. This is required when
+                        running with docker.
+                    </dd>
+                    <dt>--fail-security</dt>
+                    <dd>generate a 10 exit code if any CVEs are found, or security support has ended.</dd>
+                    <dt>--fail-support</dt>
+                    <dd>generate a 20 exit code if the version of Node.js no longer gets active (bug) support.</dd>
+                    <dt>--fail-patch</dt>
+                    <dd>generate a 30 exit code if there is a newer patch-level release.</dd>
+                    <dt>--fail-minor</dt>
+                    <dd>generate a 40 exit code if there is a newer minor-level release.</dd>
+                    <dt>--fail-latest</dt>
+                    <dd>generate a 50 exit code if there is a newer release.</dd>
+                    <dt>--no-update</dt>
+                    <dd>do not download the latest rules. NOT RECOMMENDED!</dd>
+                    <dt>--silent</dt>
+                    <dd>do not write any error messages to STDERR.</dd>
+                    <dt>--v</dt>
+                    <dd>
+                        Set verbosity. v=warnings, vv=info, vvv=debug. Default is error. All logging writes to STDERR.
+                    </dd>
+                </dl>
+            </section>
+
+            <section id="output">
+                <h2>Output</h2>
+                <dl>
+                    <dt>&bull; auditVersion: <em>string</em></dt>
+                    <dd>The version of Node.js that is being audited.</dd>
+                    <dt>&bull; hasVulnerabilities: <em>bool</em></dt>
+                    <dd>If the auditVersion has any known CVEs or not.</dd>
+                    <dt>&bull; hasSupport: <em>bool</em></dt>
+                    <dd>If the auditVersion is still receiving support.</dd>
+                    <dt>&bull; supportType: <em>string</em></dt>
+                    <dd>The current support status of auditVersion: 'current'|'active'|'maintenance'|'none'.</dd>
+                    <dt>&bull; isLatestPatchVersion: <em>bool</em></dt>
+                    <dd>If auditVersion is the latest patch-level release (17.9.x).</dd>
+                    <dt>&bull; isLatestMinorVersion: <em>bool</em></dt>
+                    <dd>If auditVersion is the latest minor-level release (17.x.x).</dd>
+                    <dt>&bull; isLatestVersion: <em>bool</em></dt>
+                    <dd>If auditVersion is the latest release (x.x.x).</dd>
+                    <dt>&bull; latestPatchVersion: <em>string</em></dt>
+                    <dd>The latest patch-level version for auditVersion.</dd>
+                    <dt>&bull; latestMinorVersion: <em>string</em></dt>
+                    <dd>The latest minor-level version for auditVersion.</dd>
+                    <dt>&bull; latestVersion: <em>string</em></dt>
+                    <dd>The latest Node.js version.</dd>
+                    <dt>&bull; activeSupportEndDate: <em>string|null</em></dt>
+                    <dd>ISO8601 formatted date for the end of active support for auditVersion.</dd>
+                    <dt>&bull; supportEndDate: <em>string|null</em></dt>
+                    <dd>ISO8601 formatted date for the end of maintenance support for auditVersion.</dd>
+                    <dt>&bull; rulesLastUpdatedDate: <em>string</em></dt>
+                    <dd>ISO8601 formatted date for the last time the rules were auto-updated.</dd>
+                    <dt>&bull; vulnerabilities: <em>object</em></dt>
+                    <dd>
+                        CVEs known to affect auditVersion with details about the CVE. CVE Details might be null for
+                        recently discovered CVEs.
+                    </dd>
+                </dl>
+            </section>
+            <section id="project-goals">
+                <h2>Project Goals</h2>
+                <ul>
+                    <li>
+                        Always use update-to-date information and fail if it becomes too stale. Since this tool is
+                        designed to help its users stay informed, it must in turn fail if it becomes outdated.
+                    </li>
+                    <li>
+                        Fail if the requested information is unavailable. ex. auditing an unknown version of Node.js
+                        like 12.50.0, or 0.9.0. Again, since this tool is designed to help its users stay informed, it
+                        must in turn fail if the requested information is unavailable.
+                    </li>
+                    <li>Work in both open and closed networks (as long as the tool is up-to-date).</li>
+                    <li>Minimal footprint and dependencies (no runtime dependencies).</li>
+                    <li>
+                        Runtime support for the oldest supported version of Node.js. If you are using this tool with an
+                        unsupported version of Node.js, then you already have all the answers that this tool can give
+                        you: Yes, you have vulnerabilities and are out of date. Of course that is just for the run-time,
+                        it is still the goal of this project to supply information about any reasonable version of
+                        Node.js.
+                    </li>
+                </ul>
+            </section>
+            <section id="acknowledgments--license">
+                <h2>License &amp Acknowledgments</h2>
+                <ul>
+                    <li>
+                        This project is released under the
+                        <a href="https://raw.githubusercontent.com/lightswitch05/node-version-audit/master/LICENSE"
+                            >Apache License 2.0</a
+                        >.
+                    </li>
+                    <li>
+                        The accuracy of the information provided by this project cannot be verified or guaranteed. All
+                        functions are provided as convenience only and should not be relied on for accuracy or
+                        punctuality.
+                    </li>
+                    <li>
+                        The logo was created using Mathias Pettersson and Brian Hammond's
+                        <a href="https://nodejs.org/en/about/resources/#logo-downloads">Node.js Logo</a> as the base
+                        image. The logo has been modified from its original form to include overlay graphics.
+                    </li>
+                    <li>
+                        This project and the use of the modified Node.js logo is not endorsed by Mathias Pettersson or
+                        Brian Hammond.
+                    </li>
+                    <li>This project and the use of the Node.js name is not endorsed by OpenJS Foundation.</li>
+                    <li>
+                        CVE details and descriptions are downloaded from National Institute of Standard and Technology's
+                        <a href="https://nvd.nist.gov/">National Vulnerability Database</a>. This project and the use of
+                        CVE information is not endorsed by NIST or the NVD. CVE details are provided as convenience
+                        only. The accuracy of the information cannot be verified.
+                    </li>
+                    <li>
+                        Node.js release details and support dates are generated from
+                        <a href="https://github.com/nodejs/node/tree/master/doc/changelogs">Changelogs</a>
+                        and the
+                        <a href="https://github.com/nodejs/Release/blob/main/schedule.json">Release Schedule</a>. The
+                        accuracy of the information cannot be verified.
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer>Copyright &copy; 2022 Daniel White</footer>
+    </body>
 </html>
