@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2022-04-26T13:44:36.119Z",
+    "lastUpdatedDate": "2022-04-27T03:17:19.415Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -24,7 +24,7 @@
         "13": "13.14.0",
         "14": "14.19.1",
         "15": "15.14.0",
-        "16": "16.14.2",
+        "16": "16.15.0",
         "17": "17.9.0",
         "18": "18.0.0",
         "0.10": "0.10.48",
@@ -259,6 +259,7 @@
         "16.12": "16.12.0",
         "16.13": "16.13.2",
         "16.14": "16.14.2",
+        "16.15": "16.15.0",
         "17.0": "17.0.1",
         "17.1": "17.1.0",
         "17.2": "17.2.0",
@@ -3256,6 +3257,11 @@
                 "CVE-2022-778"
             ]
         },
+        "16.15.0": {
+            "version": "16.15.0",
+            "releaseDate": "2022-04-26T00:00:00.000Z",
+            "patchedCveIds": []
+        },
         "17.0.0": {
             "version": "17.0.0",
             "releaseDate": "2021-10-19T00:00:00.000Z",
@@ -3906,7 +3912,7 @@
             "id": "CVE-2020-10531",
             "baseScore": 8.8,
             "publishedDate": "2020-03-12T19:15:00.000Z",
-            "lastModifiedDate": "2022-04-20T00:15:00.000Z",
+            "lastModifiedDate": "2022-04-26T17:05:00.000Z",
             "description": "An issue was discovered in International Components for Unicode (ICU) for C/C++ through 66.1. An integer overflow, leading to a heap-based buffer overflow, exists in the UnicodeString::doAppend() function in common/unistr.cpp."
         },
         "CVE-2020-11080": {
