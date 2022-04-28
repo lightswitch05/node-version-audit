@@ -14,6 +14,6 @@ describe('Changelogs', () => {
         expect(releaseVersions.length).toBeGreaterThan(503);
         expect(nodeReleases['0.10.0']).toBeDefined();
         expect(releaseVersions[0]).toEqual('0.10.0');
-        expect(releaseVersions[504]).toEqual('17.8.0');
+        expect(releaseVersions[404]).toEqual('13.9.0');
     });
 });
