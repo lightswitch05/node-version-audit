@@ -39,13 +39,14 @@
     "devDependencies": {
         "@casualbot/jest-sonar-reporter": "^2.2.5",
         "cspell": "^5.19.7",
-        "jest": "^27.5.1",
+        "jest": "^28.0.0",
         "prettier": "^2.6.2"
     },
     "jest": {
         "reporters": [
             "default",
-            "@casualbot/jest-sonar-reporter"
+            "@casualbot/jest-sonar-reporter",
+            "github-actions"
         ],
         "projects": [
             {
