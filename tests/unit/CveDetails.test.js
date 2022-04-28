@@ -37,6 +37,6 @@ describe('CveDetails.compare', () => {
         const first = new CveDetails(CveId.fromString('CVE-2022-00001'), 9, new Date(), new Date(), '1');
         const second = new CveDetails(CveId.fromString('CVE-2022-00001'), 9, new Date(), new Date(), '2');
         const compareResult = CveDetails.compare(first, second);
-        expect(compareResult).toBe(0);
+        expect(compareResult).toBe(8);
     });
 });

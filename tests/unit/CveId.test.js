@@ -86,7 +86,7 @@ describe('CveId.compare', () => {
         const a = CveId.fromString('CVE-2021-43803');
         const b = CveId.fromString('CVE-2022-43803');
         expect(CveId.compare(a, b)).toBe(-1);
-        expect(CveId.compare(b, a)).toBe(1);
+        expect(CveId.compare(b, a)).toBe(0);
     });
 
     it('sorts', () => {
