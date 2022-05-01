@@ -39,7 +39,7 @@
     "devDependencies": {
         "@casualbot/jest-sonar-reporter": "^2.2.5",
         "cspell": "^5.19.7",
-        "jest": "^28.0.0",
+        "jest": "^28.0.3",
         "prettier": "^2.6.2"
     },
     "jest": {
@@ -50,14 +50,12 @@
         ],
         "projects": [
             {
-                "name": "unit",
                 "displayName": "unit",
                 "roots": [
                     "<rootDir>/tests/unit"
                 ]
             },
             {
-                "name": "functional",
                 "displayName": "functional",
                 "roots": [
                     "<rootDir>/tests/functional"
