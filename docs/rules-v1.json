@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2022-05-10T13:53:51.792Z",
+    "lastUpdatedDate": "2022-05-11T03:02:17.129Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -3909,7 +3909,7 @@
             "id": "CVE-2020-8277",
             "baseScore": 7.5,
             "publishedDate": "2020-11-19T01:15:00.000Z",
-            "lastModifiedDate": "2022-04-20T00:15:00.000Z",
+            "lastModifiedDate": "2022-05-10T15:25:00.000Z",
             "description": "A Node.js application that allows an attacker to trigger a DNS request for a host of their choice could trigger a Denial of Service in versions < 15.2.1, < 14.15.1, and < 12.19.1 by getting the application to resolve a DNS record with a larger number of responses. This is fixed in 15.2.1, 14.15.1, and 12.19.1."
         },
         "CVE-2020-8287": {
