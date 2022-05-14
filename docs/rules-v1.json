@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2022-05-13T13:58:50.820Z",
+    "lastUpdatedDate": "2022-05-14T03:29:12.627Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4056,7 +4056,7 @@
             "id": "CVE-2021-27290",
             "baseScore": 7.5,
             "publishedDate": "2021-03-12T22:15:00.000Z",
-            "lastModifiedDate": "2022-03-10T17:42:00.000Z",
+            "lastModifiedDate": "2022-05-13T20:51:00.000Z",
             "description": "ssri 5.2.2-8.0.0, fixed in 8.0.1, processes SRIs using a regular expression which is vulnerable to a denial of service. Malicious SRIs could take an extremely long time to process, leading to denial of service. This issue only affects consumers using the strict option."
         },
         "CVE-2021-32803": {
