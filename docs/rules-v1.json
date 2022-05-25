@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2022-05-24T13:49:56.581Z",
+    "lastUpdatedDate": "2022-05-25T03:02:36.943Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -3892,21 +3892,21 @@
             "id": "CVE-2020-8201",
             "baseScore": 7.4,
             "publishedDate": "2020-09-18T21:15:00.000Z",
-            "lastModifiedDate": "2021-01-11T11:15:00.000Z",
+            "lastModifiedDate": "2022-05-24T17:24:00.000Z",
             "description": "Node.js < 12.18.4 and < 14.11 can be exploited to perform HTTP desync attacks and deliver malicious payloads to unsuspecting users. The payloads can be crafted by an attacker to hijack user sessions, poison cookies, perform clickjacking, and a multitude of other attacks depending on the architecture of the underlying system. The attack was possible due to a bug in processing of carrier-return symbols in the HTTP header names."
         },
         "CVE-2020-8251": {
             "id": "CVE-2020-8251",
             "baseScore": 7.5,
             "publishedDate": "2020-09-18T21:15:00.000Z",
-            "lastModifiedDate": "2021-01-11T11:15:00.000Z",
+            "lastModifiedDate": "2022-05-24T16:54:00.000Z",
             "description": "Node.js < 14.11.0 is vulnerable to HTTP denial of service (DoS) attacks based on delayed requests submission which can make the server unable to accept new connections."
         },
         "CVE-2020-8252": {
             "id": "CVE-2020-8252",
             "baseScore": 7.8,
             "publishedDate": "2020-09-18T21:15:00.000Z",
-            "lastModifiedDate": "2020-12-13T04:15:00.000Z",
+            "lastModifiedDate": "2022-05-24T17:16:00.000Z",
             "description": "The implementation of realpath in libuv < 10.22.1, < 12.18.4, and < 14.9.0 used within Node.js incorrectly determined the buffer size which can result in a buffer overflow if the resolved path is longer than 256 bytes."
         },
         "CVE-2020-8265": {
