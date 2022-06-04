@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2022-06-03T13:37:11.171Z",
+    "lastUpdatedDate": "2022-06-04T02:50:17.191Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -3978,7 +3978,7 @@
             "id": "CVE-2021-3672",
             "baseScore": 5.6,
             "publishedDate": "2021-11-23T19:15:00.000Z",
-            "lastModifiedDate": "2022-03-10T17:42:00.000Z",
+            "lastModifiedDate": "2022-06-03T18:10:00.000Z",
             "description": "A flaw was found in c-ares library, where a missing input validation check of host names returned by DNS (Domain Name Servers) can lead to output of wrong hostnames which might potentially lead to Domain Hijacking. The highest threat from this vulnerability is to confidentiality and integrity as well as system availability."
         },
         "CVE-2021-4044": {
