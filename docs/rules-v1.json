@@ -1,10 +1,10 @@
 {
-    "lastUpdatedDate": "2022-07-14T13:49:41.019Z",
+    "lastUpdatedDate": "2022-07-15T03:28:40.128Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
-    "cveCount": 113,
+    "cveCount": 119,
     "supportVersionsCount": 17,
     "latestVersion": "18.6.0",
     "latestVersions": {
@@ -4203,9 +4203,9 @@
         },
         "CVE-2022-2097": {
             "id": "CVE-2022-2097",
-            "baseScore": null,
+            "baseScore": 7.5,
             "publishedDate": "2022-07-05T11:15:00.000Z",
-            "lastModifiedDate": "2022-07-09T04:15:00.000Z",
+            "lastModifiedDate": "2022-07-14T22:05:00.000Z",
             "description": "AES OCB mode for 32-bit x86 platforms using the AES-NI assembly optimised implementation will not encrypt the entirety of the data under some circumstances. This could reveal sixteen bytes of data that was preexisting in the memory that wasn't written. In the special case of \"in place\" encryption, sixteen bytes of the plaintext would be revealed. Since OpenSSL does not support OCB based cipher suites for TLS and DTLS, they are both unaffected. Fixed in OpenSSL 3.0.5 (Affected 3.0.0-3.0.4). Fixed in OpenSSL 1.1.1q (Affected 1.1.1-1.1.1p)."
         },
         "CVE-2022-21824": {
@@ -4214,6 +4214,48 @@
             "publishedDate": "2022-02-24T19:15:00.000Z",
             "lastModifiedDate": "2022-06-28T13:15:00.000Z",
             "description": "Due to the formatting logic of the \"console.table()\" function it was not safe to allow user controlled input to be passed to the \"properties\" parameter while simultaneously passing a plain object with at least one property as the first parameter, which could be \"__proto__\". The prototype pollution has very limited control, in that it only allows an empty string to be assigned to numerical keys of the object prototype.Node.js >= 12.22.9, >= 14.18.3, >= 16.13.2, and >= 17.3.1 use a null protoype for the object these properties are being assigned to."
+        },
+        "CVE-2022-32212": {
+            "id": "CVE-2022-32212",
+            "baseScore": null,
+            "publishedDate": "2022-07-14T15:15:00.000Z",
+            "lastModifiedDate": "2022-07-14T15:19:00.000Z",
+            "description": "A OS Command Injection vulnerability exists in Node.js versions <14.20.0, <16.20.0, <18.5.0 due to an insufficient IsAllowedHost check that can easily be bypassed because IsIPAddress does not properly check if an IP address is invalid before making DBS requests allowing rebinding attacks."
+        },
+        "CVE-2022-32213": {
+            "id": "CVE-2022-32213",
+            "baseScore": null,
+            "publishedDate": "2022-07-14T15:15:00.000Z",
+            "lastModifiedDate": "2022-07-14T15:19:00.000Z",
+            "description": "The llhttp parser in the http module in Node.js v17.x does not correctly parse and validate Transfer-Encoding headers and can lead to HTTP Request Smuggling (HRS)."
+        },
+        "CVE-2022-32214": {
+            "id": "CVE-2022-32214",
+            "baseScore": null,
+            "publishedDate": "2022-07-14T15:15:00.000Z",
+            "lastModifiedDate": "2022-07-14T15:19:00.000Z",
+            "description": "The llhttp parser in the http module in Node.js does not strictly use the CRLF sequence to delimit HTTP requests. This can lead to HTTP Request Smuggling (HRS)."
+        },
+        "CVE-2022-32215": {
+            "id": "CVE-2022-32215",
+            "baseScore": null,
+            "publishedDate": "2022-07-14T15:15:00.000Z",
+            "lastModifiedDate": "2022-07-14T15:19:00.000Z",
+            "description": "The llhttp parser in the http module in Node v17.6.0 does not correctly handle multi-line Transfer-Encoding headers. This can lead to HTTP Request Smuggling (HRS)."
+        },
+        "CVE-2022-32222": {
+            "id": "CVE-2022-32222",
+            "baseScore": null,
+            "publishedDate": "2022-07-14T15:15:00.000Z",
+            "lastModifiedDate": "2022-07-14T15:19:00.000Z",
+            "description": "A cryptographic vulnerability exists on Node.js on linux in versions of 18.x prior to 18.40.0 which allowed a default path for openssl.cnf that might be accessible under some circumstances to a non-admin user instead of /etc/ssl as was the case in versions prior to the upgrade to OpenSSL 3."
+        },
+        "CVE-2022-32223": {
+            "id": "CVE-2022-32223",
+            "baseScore": null,
+            "publishedDate": "2022-07-14T15:15:00.000Z",
+            "lastModifiedDate": "2022-07-14T15:19:00.000Z",
+            "description": "Node.js is vulnerable to Hijack Execution Flow: DLL Hijacking under certain conditions on Windows platforms.This vulnerability can be exploited if the victim has the following dependencies on a Windows machine:* OpenSSL has been installed and “C:\\Program Files\\Common Files\\SSL\\openssl.cnf” exists.Whenever the above conditions are present, `node.exe` will search for `providers.dll` in the current user directory.After that, `node.exe` will try to search for `providers.dll` by the DLL Search Order in Windows.It is possible for an attacker to place the malicious file `providers.dll` under a variety of paths and exploit this vulnerability."
         }
     }
 }
