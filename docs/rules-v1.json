@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2022-07-25T13:50:41.543Z",
+    "lastUpdatedDate": "2022-07-26T03:36:26.766Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4002,21 +4002,21 @@
             "id": "CVE-2021-3449",
             "baseScore": 5.9,
             "publishedDate": "2021-03-25T15:15:00.000Z",
-            "lastModifiedDate": "2022-04-20T00:16:00.000Z",
+            "lastModifiedDate": "2022-07-25T18:16:00.000Z",
             "description": "An OpenSSL TLS server may crash if sent a maliciously crafted renegotiation ClientHello message from a client. If a TLSv1.2 renegotiation ClientHello omits the signature_algorithms extension (where it was present in the initial ClientHello), but includes a signature_algorithms_cert extension then a NULL pointer dereference will result, leading to a crash and a denial of service attack. A server is only vulnerable if it has TLSv1.2 and renegotiation enabled (which is the default configuration). OpenSSL TLS clients are not impacted by this issue. All OpenSSL 1.1.1 versions are affected by this issue. Users of these versions should upgrade to OpenSSL 1.1.1k. OpenSSL 1.0.2 is not impacted by this issue. Fixed in OpenSSL 1.1.1k (Affected 1.1.1-1.1.1j)."
         },
         "CVE-2021-3450": {
             "id": "CVE-2021-3450",
             "baseScore": 7.4,
             "publishedDate": "2021-03-25T15:15:00.000Z",
-            "lastModifiedDate": "2022-04-29T17:50:00.000Z",
+            "lastModifiedDate": "2022-07-25T18:16:00.000Z",
             "description": "The X509_V_FLAG_X509_STRICT flag enables additional security checks of the certificates present in a certificate chain. It is not set by default. Starting from OpenSSL version 1.1.1h a check to disallow certificates in the chain that have explicitly encoded elliptic curve parameters was added as an additional strict check. An error in the implementation of this check meant that the result of a previous check to confirm that certificates in the chain are valid CA certificates was overwritten. This effectively bypasses the check that non-CA certificates must not be able to issue other certificates. If a \"purpose\" has been configured then there is a subsequent opportunity for checks that the certificate is a valid CA. All of the named \"purpose\" values implemented in libcrypto perform this check. Therefore, where a purpose is set the certificate chain will still be rejected even when the strict flag has been used. A purpose is set by default in libssl client and server certificate verification routines, but it can be overridden or removed by an application. In order to be affected, an application must explicitly set the X509_V_FLAG_X509_STRICT verification flag and either not set a purpose for the certificate verification or, in the case of TLS client or server applications, override the default purpose. OpenSSL versions 1.1.1h and newer are affected by this issue. Users of these versions should upgrade to OpenSSL 1.1.1k. OpenSSL 1.0.2 is not impacted by this issue. Fixed in OpenSSL 1.1.1k (Affected 1.1.1h-1.1.1j)."
         },
         "CVE-2021-3672": {
             "id": "CVE-2021-3672",
             "baseScore": 5.6,
             "publishedDate": "2021-11-23T19:15:00.000Z",
-            "lastModifiedDate": "2022-06-03T18:10:00.000Z",
+            "lastModifiedDate": "2022-07-25T18:16:00.000Z",
             "description": "A flaw was found in c-ares library, where a missing input validation check of host names returned by DNS (Domain Name Servers) can lead to output of wrong hostnames which might potentially lead to Domain Hijacking. The highest threat from this vulnerability is to confidentiality and integrity as well as system availability."
         },
         "CVE-2021-4044": {
@@ -4072,21 +4072,21 @@
             "id": "CVE-2021-22931",
             "baseScore": 9.8,
             "publishedDate": "2021-08-16T19:15:00.000Z",
-            "lastModifiedDate": "2022-04-06T14:56:00.000Z",
+            "lastModifiedDate": "2022-07-25T18:15:00.000Z",
             "description": "Node.js before 16.6.0, 14.17.4, and 12.22.4 is vulnerable to Remote Code Execution, XSS, Application crashes due to missing input validation of host names returned by Domain Name Servers in Node.js dns library which can lead to output of wrong hostnames (leading to Domain Hijacking) and injection vulnerabilities in applications using the library."
         },
         "CVE-2021-22939": {
             "id": "CVE-2021-22939",
             "baseScore": 5.3,
             "publishedDate": "2021-08-16T19:15:00.000Z",
-            "lastModifiedDate": "2022-04-06T14:13:00.000Z",
+            "lastModifiedDate": "2022-07-25T18:15:00.000Z",
             "description": "If the Node.js https API was used incorrectly and \"undefined\" was in passed for the \"rejectUnauthorized\" parameter, no error was returned and connections to servers with an expired certificate would have been accepted."
         },
         "CVE-2021-22940": {
             "id": "CVE-2021-22940",
             "baseScore": 7.5,
             "publishedDate": "2021-08-16T19:15:00.000Z",
-            "lastModifiedDate": "2022-04-06T14:12:00.000Z",
+            "lastModifiedDate": "2022-07-25T18:15:00.000Z",
             "description": "Node.js before 16.6.1, 14.17.5, and 12.22.5 is vulnerable to a use after free attack where an attacker might be able to exploit the memory corruption, to change process behavior."
         },
         "CVE-2021-22959": {
@@ -4177,28 +4177,28 @@
             "id": "CVE-2021-44531",
             "baseScore": 7.4,
             "publishedDate": "2022-02-24T19:15:00.000Z",
-            "lastModifiedDate": "2022-06-28T13:15:00.000Z",
+            "lastModifiedDate": "2022-07-25T18:18:00.000Z",
             "description": "Accepting arbitrary Subject Alternative Name (SAN) types, unless a PKI is specifically defined to use a particular SAN type, can result in bypassing name-constrained intermediates. Node.js < 12.22.9, < 14.18.3, < 16.13.2, and < 17.3.1 was accepting URI SAN types, which PKIs are often not defined to use. Additionally, when a protocol allows URI SANs, Node.js did not match the URI correctly.Versions of Node.js with the fix for this disable the URI SAN type when checking a certificate against a hostname. This behavior can be reverted through the --security-revert command-line option."
         },
         "CVE-2021-44532": {
             "id": "CVE-2021-44532",
             "baseScore": 5.3,
             "publishedDate": "2022-02-24T19:15:00.000Z",
-            "lastModifiedDate": "2022-06-28T13:15:00.000Z",
+            "lastModifiedDate": "2022-07-25T18:18:00.000Z",
             "description": "Node.js < 12.22.9, < 14.18.3, < 16.13.2, and < 17.3.1 converts SANs (Subject Alternative Names) to a string format. It uses this string to check peer certificates against hostnames when validating connections. The string format was subject to an injection vulnerability when name constraints were used within a certificate chain, allowing the bypass of these name constraints.Versions of Node.js with the fix for this escape SANs containing the problematic characters in order to prevent the injection. This behavior can be reverted through the --security-revert command-line option."
         },
         "CVE-2021-44533": {
             "id": "CVE-2021-44533",
             "baseScore": 5.3,
             "publishedDate": "2022-02-24T19:15:00.000Z",
-            "lastModifiedDate": "2022-06-28T13:15:00.000Z",
+            "lastModifiedDate": "2022-07-25T18:18:00.000Z",
             "description": "Node.js < 12.22.9, < 14.18.3, < 16.13.2, and < 17.3.1 did not handle multi-value Relative Distinguished Names correctly. Attackers could craft certificate subjects containing a single-value Relative Distinguished Name that would be interpreted as a multi-value Relative Distinguished Name, for example, in order to inject a Common Name that would allow bypassing the certificate subject verification.Affected versions of Node.js that do not accept multi-value Relative Distinguished Names and are thus not vulnerable to such attacks themselves. However, third-party code that uses node's ambiguous presentation of certificate subjects may be vulnerable."
         },
         "CVE-2022-778": {
             "id": "CVE-2022-778",
             "baseScore": 7.5,
             "publishedDate": "2022-03-15T17:15:00.000Z",
-            "lastModifiedDate": "2022-07-18T18:47:00.000Z",
+            "lastModifiedDate": "2022-07-25T18:19:00.000Z",
             "description": "The BN_mod_sqrt() function, which computes a modular square root, contains a bug that can cause it to loop forever for non-prime moduli. Internally this function is used when parsing certificates that contain elliptic curve public keys in compressed form or explicit elliptic curve parameters with a base point encoded in compressed form. It is possible to trigger the infinite loop by crafting a certificate that has invalid explicit curve parameters. Since certificate parsing happens prior to verification of the certificate signature, any process that parses an externally supplied certificate may thus be subject to a denial of service attack. The infinite loop can also be reached when parsing crafted private keys as they can contain explicit elliptic curve parameters. Thus vulnerable situations include: - TLS clients consuming server certificates - TLS servers consuming client certificates - Hosting providers taking certificates or private keys from customers - Certificate authorities parsing certification requests from subscribers - Anything else which parses ASN.1 elliptic curve parameters Also any other applications that use the BN_mod_sqrt() where the attacker can control the parameter values are vulnerable to this DoS issue. In the OpenSSL 1.0.2 version the public key is not parsed during initial parsing of the certificate which makes it slightly harder to trigger the infinite loop. However any operation which requires the public key from the certificate will trigger the infinite loop. In particular the attacker can use a self-signed certificate to trigger the loop during verification of the certificate signature. This issue affects OpenSSL versions 1.0.2, 1.1.1 and 3.0. It was addressed in the releases of 1.1.1n and 3.0.2 on the 15th March 2022. Fixed in OpenSSL 3.0.2 (Affected 3.0.0,3.0.1). Fixed in OpenSSL 1.1.1n (Affected 1.1.1-1.1.1m). Fixed in OpenSSL 1.0.2zd (Affected 1.0.2-1.0.2zc)."
         },
         "CVE-2022-2097": {
@@ -4212,7 +4212,7 @@
             "id": "CVE-2022-21824",
             "baseScore": 8.2,
             "publishedDate": "2022-02-24T19:15:00.000Z",
-            "lastModifiedDate": "2022-06-28T13:15:00.000Z",
+            "lastModifiedDate": "2022-07-25T18:19:00.000Z",
             "description": "Due to the formatting logic of the \"console.table()\" function it was not safe to allow user controlled input to be passed to the \"properties\" parameter while simultaneously passing a plain object with at least one property as the first parameter, which could be \"__proto__\". The prototype pollution has very limited control, in that it only allows an empty string to be assigned to numerical keys of the object prototype.Node.js >= 12.22.9, >= 14.18.3, >= 16.13.2, and >= 17.3.1 use a null protoype for the object these properties are being assigned to."
         },
         "CVE-2022-32212": {
