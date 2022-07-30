@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2022-07-30T03:20:31.598Z",
+    "lastUpdatedDate": "2022-07-30T13:32:22.083Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4218,7 +4218,7 @@
             "id": "CVE-2022-21824",
             "baseScore": 8.2,
             "publishedDate": "2022-02-24T19:15:00.000Z",
-            "lastModifiedDate": "2022-07-29T20:15:00.000Z",
+            "lastModifiedDate": "2022-07-30T02:19:00.000Z",
             "description": "Due to the formatting logic of the \"console.table()\" function it was not safe to allow user controlled input to be passed to the \"properties\" parameter while simultaneously passing a plain object with at least one property as the first parameter, which could be \"__proto__\". The prototype pollution has very limited control, in that it only allows an empty string to be assigned to numerical keys of the object prototype.Node.js >= 12.22.9, >= 14.18.3, >= 16.13.2, and >= 17.3.1 use a null protoype for the object these properties are being assigned to."
         },
         "CVE-2022-32212": {
