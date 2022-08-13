@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2022-08-12T13:48:30.478Z",
+    "lastUpdatedDate": "2022-08-13T03:01:03.750Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -3455,7 +3455,7 @@
             "id": "CVE-2014-9748",
             "baseScore": 8.1,
             "publishedDate": "2020-02-11T17:15:00.000Z",
-            "lastModifiedDate": "2020-02-25T17:39:00.000Z",
+            "lastModifiedDate": "2022-08-12T18:28:00.000Z",
             "description": "The uv_rwlock_t fallback implementation for Windows XP and Server 2003 in libuv before 1.7.4 does not properly prevent threads from releasing the locks of other threads, which allows attackers to cause a denial of service (deadlock) or possibly have unspecified other impact by leveraging a race condition."
         },
         "CVE-2015-278": {
@@ -3847,35 +3847,35 @@
             "id": "CVE-2019-9511",
             "baseScore": 7.5,
             "publishedDate": "2019-08-13T21:15:00.000Z",
-            "lastModifiedDate": "2022-02-22T19:27:00.000Z",
+            "lastModifiedDate": "2022-08-12T18:43:00.000Z",
             "description": "Some HTTP/2 implementations are vulnerable to window size manipulation and stream prioritization manipulation, potentially leading to a denial of service. The attacker requests a large amount of data from a specified resource over multiple streams. They manipulate window size and stream priority to force the server to queue the data in 1-byte chunks. Depending on how efficiently this data is queued, this can consume excess CPU, memory, or both."
         },
         "CVE-2019-9512": {
             "id": "CVE-2019-9512",
             "baseScore": 7.5,
             "publishedDate": "2019-08-13T21:15:00.000Z",
-            "lastModifiedDate": "2020-12-09T00:15:00.000Z",
+            "lastModifiedDate": "2022-08-12T18:41:00.000Z",
             "description": "Some HTTP/2 implementations are vulnerable to ping floods, potentially leading to a denial of service. The attacker sends continual pings to an HTTP/2 peer, causing the peer to build an internal queue of responses. Depending on how efficiently this data is queued, this can consume excess CPU, memory, or both."
         },
         "CVE-2019-9513": {
             "id": "CVE-2019-9513",
             "baseScore": 7.5,
             "publishedDate": "2019-08-13T21:15:00.000Z",
-            "lastModifiedDate": "2022-02-22T19:27:00.000Z",
+            "lastModifiedDate": "2022-08-12T18:41:00.000Z",
             "description": "Some HTTP/2 implementations are vulnerable to resource loops, potentially leading to a denial of service. The attacker creates multiple request streams and continually shuffles the priority of the streams in a way that causes substantial churn to the priority tree. This can consume excess CPU."
         },
         "CVE-2019-9514": {
             "id": "CVE-2019-9514",
             "baseScore": 7.5,
             "publishedDate": "2019-08-13T21:15:00.000Z",
-            "lastModifiedDate": "2020-12-09T00:15:00.000Z",
+            "lastModifiedDate": "2022-08-12T18:41:00.000Z",
             "description": "Some HTTP/2 implementations are vulnerable to a reset flood, potentially leading to a denial of service. The attacker opens a number of streams and sends an invalid request over each stream that should solicit a stream of RST_STREAM frames from the peer. Depending on how the peer queues the RST_STREAM frames, this can consume excess memory, CPU, or both."
         },
         "CVE-2019-9515": {
             "id": "CVE-2019-9515",
             "baseScore": 7.5,
             "publishedDate": "2019-08-13T21:15:00.000Z",
-            "lastModifiedDate": "2020-10-22T17:22:00.000Z",
+            "lastModifiedDate": "2022-08-12T18:40:00.000Z",
             "description": "Some HTTP/2 implementations are vulnerable to a settings flood, potentially leading to a denial of service. The attacker sends a stream of SETTINGS frames to the peer. Since the RFC requires that the peer reply with one acknowledgement per SETTINGS frame, an empty SETTINGS frame is almost equivalent in behavior to a ping. Depending on how efficiently this data is queued, this can consume excess CPU, memory, or both."
         },
         "CVE-2019-9516": {
@@ -3889,14 +3889,14 @@
             "id": "CVE-2019-9517",
             "baseScore": 7.5,
             "publishedDate": "2019-08-13T21:15:00.000Z",
-            "lastModifiedDate": "2021-06-06T11:15:00.000Z",
+            "lastModifiedDate": "2022-08-12T18:40:00.000Z",
             "description": "Some HTTP/2 implementations are vulnerable to unconstrained interal data buffering, potentially leading to a denial of service. The attacker opens the HTTP/2 window so the peer can send without constraint; however, they leave the TCP window closed so the peer cannot actually write (many of) the bytes on the wire. The attacker then sends a stream of requests for a large response object. Depending on how the servers queue the responses, this can consume excess memory, CPU, or both."
         },
         "CVE-2019-9518": {
             "id": "CVE-2019-9518",
             "baseScore": 7.5,
             "publishedDate": "2019-08-13T21:15:00.000Z",
-            "lastModifiedDate": "2021-05-27T16:21:00.000Z",
+            "lastModifiedDate": "2022-08-12T18:40:00.000Z",
             "description": "Some HTTP/2 implementations are vulnerable to a flood of empty frames, potentially leading to a denial of service. The attacker sends a stream of frames with an empty payload and without the end-of-stream flag. These frames can be DATA, HEADERS, CONTINUATION and/or PUSH_PROMISE. The peer spends time processing each frame disproportionate to attack bandwidth. This can consume excess CPU."
         },
         "CVE-2019-15604": {
@@ -3994,7 +3994,7 @@
             "id": "CVE-2020-10531",
             "baseScore": 8.8,
             "publishedDate": "2020-03-12T19:15:00.000Z",
-            "lastModifiedDate": "2022-04-26T17:05:00.000Z",
+            "lastModifiedDate": "2022-08-12T18:28:00.000Z",
             "description": "An issue was discovered in International Components for Unicode (ICU) for C/C++ through 66.1. An integer overflow, leading to a heap-based buffer overflow, exists in the UnicodeString::doAppend() function in common/unistr.cpp."
         },
         "CVE-2020-11080": {
@@ -4078,7 +4078,7 @@
             "id": "CVE-2021-22931",
             "baseScore": 9.8,
             "publishedDate": "2021-08-16T19:15:00.000Z",
-            "lastModifiedDate": "2022-07-25T18:15:00.000Z",
+            "lastModifiedDate": "2022-08-12T18:27:00.000Z",
             "description": "Node.js before 16.6.0, 14.17.4, and 12.22.4 is vulnerable to Remote Code Execution, XSS, Application crashes due to missing input validation of host names returned by Domain Name Servers in Node.js dns library which can lead to output of wrong hostnames (leading to Domain Hijacking) and injection vulnerabilities in applications using the library."
         },
         "CVE-2021-22939": {
@@ -4169,7 +4169,7 @@
             "id": "CVE-2021-39134",
             "baseScore": 7.8,
             "publishedDate": "2021-08-31T17:15:00.000Z",
-            "lastModifiedDate": "2022-04-25T20:06:00.000Z",
+            "lastModifiedDate": "2022-08-12T17:49:00.000Z",
             "description": "`@npmcli/arborist`, the library that calculates dependency trees and manages the `node_modules` folder hierarchy for the npm command line interface, aims to guarantee that package dependency contracts will be met, and the extraction of package contents will always be performed into the expected folder. This is, in part, accomplished by resolving dependency specifiers defined in `package.json` manifests for dependencies with a specific name, and nesting folders to resolve conflicting dependencies. When multiple dependencies differ only in the case of their name, Arborist's internal data structure saw them as separate items that could coexist within the same level in the `node_modules` hierarchy. However, on case-insensitive file systems (such as macOS and Windows), this is not the case. Combined with a symlink dependency such as `file:/some/path`, this allowed an attacker to create a situation in which arbitrary contents could be written to any location on the filesystem. For example, a package `pwn-a` could define a dependency in their `package.json` file such as `\"foo\": \"file:/some/path\"`. Another package, `pwn-b` could define a dependency such as `FOO: \"file:foo.tgz\"`. On case-insensitive file systems, if `pwn-a` was installed, and then `pwn-b` was installed afterwards, the contents of `foo.tgz` would be written to `/some/path`, and any existing contents of `/some/path` would be removed. Anyone using npm v7.20.6 or earlier on a case-insensitive filesystem is potentially affected. This is patched in @npmcli/arborist 2.8.2 which is included in npm v7.20.7 and above."
         },
         "CVE-2021-39135": {
