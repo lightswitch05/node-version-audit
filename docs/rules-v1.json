@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2022-08-19T03:24:58.869Z",
+    "lastUpdatedDate": "2022-08-19T13:47:38.662Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -3487,9 +3487,9 @@
         },
         "CVE-2015-3193": {
             "id": "CVE-2015-3193",
-            "baseScore": 5,
+            "baseScore": 7.5,
             "publishedDate": "2015-12-06T20:59:00.000Z",
-            "lastModifiedDate": "2017-11-30T02:29:00.000Z",
+            "lastModifiedDate": "2022-08-19T11:14:00.000Z",
             "description": "The Montgomery squaring implementation in crypto/bn/asm/x86_64-mont5.pl in OpenSSL 1.0.2 before 1.0.2e on the x86_64 platform, as used by the BN_mod_exp function, mishandles carry propagation and produces incorrect output, which makes it easier for remote attackers to obtain sensitive private-key information via an attack against use of a (1) Diffie-Hellman (DH) or (2) Diffie-Hellman Ephemeral (DHE) ciphersuite."
         },
         "CVE-2015-3194": {
@@ -3657,7 +3657,7 @@
             "id": "CVE-2017-3738",
             "baseScore": 5.9,
             "publishedDate": "2017-12-07T16:29:00.000Z",
-            "lastModifiedDate": "2019-04-23T19:30:00.000Z",
+            "lastModifiedDate": "2022-08-19T11:49:00.000Z",
             "description": "There is an overflow bug in the AVX2 Montgomery multiplication procedure used in exponentiation with 1024-bit moduli. No EC algorithms are affected. Analysis suggests that attacks against RSA and DSA as a result of this defect would be very difficult to perform and are not believed likely. Attacks against DH1024 are considered just feasible, because most of the work necessary to deduce information about a private key may be performed offline. The amount of resources required for such an attack would be significant. However, for an attack on TLS to be meaningful, the server would have to share the DH1024 private key among multiple clients, which is no longer an option since CVE-2016-0701. This only affects processors that support the AVX2 but not ADX extensions like Intel Haswell (4th generation). Note: The impact from this issue is similar to CVE-2017-3736, CVE-2017-3732 and CVE-2015-3193. OpenSSL version 1.0.2-1.0.2m and 1.1.0-1.1.0g are affected. Fixed in OpenSSL 1.0.2n. Due to the low severity of this issue we are not issuing a new release of OpenSSL 1.1.0 at this time. The fix will be included in OpenSSL 1.1.0h when it becomes available. The fix is also available in commit e502cc86d in the OpenSSL git repository."
         },
         "CVE-2017-14919": {
@@ -3832,7 +3832,7 @@
             "id": "CVE-2019-1559",
             "baseScore": 5.9,
             "publishedDate": "2019-02-27T23:29:00.000Z",
-            "lastModifiedDate": "2022-03-24T19:47:00.000Z",
+            "lastModifiedDate": "2022-08-19T11:14:00.000Z",
             "description": "If an application encounters a fatal protocol error and then calls SSL_shutdown() twice (once to send a close_notify, and once to receive one) then OpenSSL can respond differently to the calling application if a 0 byte record is received with invalid padding compared to if a 0 byte record is received with an invalid MAC. If the application then behaves differently based on that in a way that is detectable to the remote peer, then this amounts to a padding oracle that could be used to decrypt data. In order for this to be exploitable \"non-stitched\" ciphersuites must be in use. Stitched ciphersuites are optimised implementations of certain commonly used ciphersuites. Also the application must call SSL_shutdown() twice even if a protocol error has occurred (applications should not do this but some do anyway). Fixed in OpenSSL 1.0.2r (Affected 1.0.2-1.0.2q)."
         },
         "CVE-2019-5737": {
