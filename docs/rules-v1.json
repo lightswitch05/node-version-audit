@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2022-08-29T13:48:28.517Z",
+    "lastUpdatedDate": "2022-08-30T03:50:47.243Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -3607,7 +3607,7 @@
             "id": "CVE-2016-5172",
             "baseScore": 6.5,
             "publishedDate": "2016-09-25T20:59:00.000Z",
-            "lastModifiedDate": "2018-01-05T02:30:00.000Z",
+            "lastModifiedDate": "2022-08-29T20:43:00.000Z",
             "description": "The parser in Google V8, as used in Google Chrome before 53.0.2785.113, mishandles scopes, which allows remote attackers to obtain sensitive information from arbitrary memory locations via crafted JavaScript code."
         },
         "CVE-2016-5180": {
@@ -3642,7 +3642,7 @@
             "id": "CVE-2016-6306",
             "baseScore": 5.9,
             "publishedDate": "2016-09-26T19:59:00.000Z",
-            "lastModifiedDate": "2021-11-17T22:15:00.000Z",
+            "lastModifiedDate": "2022-08-29T20:43:00.000Z",
             "description": "The certificate parser in OpenSSL before 1.0.1u and 1.0.2 before 1.0.2i might allow remote attackers to cause a denial of service (out-of-bounds read) via crafted certificate operations, related to s3_clnt.c and s3_srvr.c."
         },
         "CVE-2016-7052": {
@@ -3705,14 +3705,14 @@
             "id": "CVE-2018-734",
             "baseScore": 5.9,
             "publishedDate": "2018-10-30T12:29:00.000Z",
-            "lastModifiedDate": "2020-08-24T17:37:00.000Z",
+            "lastModifiedDate": "2022-08-29T20:41:00.000Z",
             "description": "The OpenSSL DSA signature algorithm has been shown to be vulnerable to a timing side channel attack. An attacker could use variations in the signing algorithm to recover the private key. Fixed in OpenSSL 1.1.1a (Affected 1.1.1). Fixed in OpenSSL 1.1.0j (Affected 1.1.0-1.1.0i). Fixed in OpenSSL 1.0.2q (Affected 1.0.2-1.0.2p)."
         },
         "CVE-2018-735": {
             "id": "CVE-2018-735",
             "baseScore": 5.9,
             "publishedDate": "2018-10-29T13:29:00.000Z",
-            "lastModifiedDate": "2020-08-24T17:37:00.000Z",
+            "lastModifiedDate": "2022-08-29T20:41:00.000Z",
             "description": "The OpenSSL ECDSA signature algorithm has been shown to be vulnerable to a timing side channel attack. An attacker could use variations in the signing algorithm to recover the private key. Fixed in OpenSSL 1.1.0j (Affected 1.1.0-1.1.0i). Fixed in OpenSSL 1.1.1a (Affected 1.1.1)."
         },
         "CVE-2018-5407": {
@@ -3726,7 +3726,7 @@
             "id": "CVE-2018-7158",
             "baseScore": 7.5,
             "publishedDate": "2018-05-17T14:29:00.000Z",
-            "lastModifiedDate": "2020-02-13T16:51:00.000Z",
+            "lastModifiedDate": "2022-08-29T20:22:00.000Z",
             "description": "The `'path'` module in the Node.js 4.x release line contains a potential regular expression denial of service (ReDoS) vector. The code in question was replaced in Node.js 6.x and later so this vulnerability only impacts all versions of Node.js 4.x. The regular expression, `splitPathRe`, used within the `'path'` module for the various path parsing functions, including `path.dirname()`, `path.extname()` and `path.parse()` was structured in such a way as to allow an attacker to craft a string, that when passed through one of these functions, could take a significant amount of time to evaluate, potentially leading to a full denial of service."
         },
         "CVE-2018-7159": {
@@ -3761,7 +3761,7 @@
             "id": "CVE-2018-7164",
             "baseScore": 7.5,
             "publishedDate": "2018-06-13T16:29:00.000Z",
-            "lastModifiedDate": "2020-03-20T21:15:00.000Z",
+            "lastModifiedDate": "2022-08-29T20:21:00.000Z",
             "description": "Node.js versions 9.7.0 and later and 10.x are vulnerable and the severity is MEDIUM. A bug introduced in 9.7.0 increases the memory consumed when reading from the network into JavaScript using the net.Socket object directly as a stream. An attacker could use this cause a denial of service by sending tiny chunks of data in short succession. This vulnerability was restored by reverting to the prior behaviour."
         },
         "CVE-2018-7166": {
@@ -3775,7 +3775,7 @@
             "id": "CVE-2018-7167",
             "baseScore": 7.5,
             "publishedDate": "2018-06-13T16:29:00.000Z",
-            "lastModifiedDate": "2020-03-20T21:15:00.000Z",
+            "lastModifiedDate": "2022-08-29T20:24:00.000Z",
             "description": "Calling Buffer.fill() or Buffer.alloc() with some parameters can lead to a hang which could result in a Denial of Service. In order to address this vulnerability, the implementations of Buffer.alloc() and Buffer.fill() were updated so that they zero fill instead of hanging in these cases. All versions of Node.js 6.x (LTS \"Boron\"), 8.x (LTS \"Carbon\"), and 9.x are vulnerable. All versions of Node.js 10.x (Current) are NOT vulnerable."
         },
         "CVE-2018-12115": {
@@ -3789,7 +3789,7 @@
             "id": "CVE-2018-12116",
             "baseScore": 7.5,
             "publishedDate": "2018-11-28T17:29:00.000Z",
-            "lastModifiedDate": "2020-03-20T21:15:00.000Z",
+            "lastModifiedDate": "2022-08-29T20:24:00.000Z",
             "description": "Node.js: All versions prior to Node.js 6.15.0 and 8.14.0: HTTP request splitting: If Node.js can be convinced to use unsanitized user-provided Unicode data for the `path` option of an HTTP request, then data can be provided which will trigger a second, unexpected, and user-defined HTTP request to made to the same server."
         },
         "CVE-2018-12120": {
@@ -3810,7 +3810,7 @@
             "id": "CVE-2018-12122",
             "baseScore": 7.5,
             "publishedDate": "2018-11-28T17:29:00.000Z",
-            "lastModifiedDate": "2020-03-20T21:15:00.000Z",
+            "lastModifiedDate": "2022-08-29T20:23:00.000Z",
             "description": "Node.js: All versions prior to Node.js 6.15.0, 8.14.0, 10.14.0 and 11.3.0: Slowloris HTTP Denial of Service: An attacker can cause a Denial of Service (DoS) by sending headers very slowly keeping HTTP or HTTPS connections and associated resources alive for a long period of time."
         },
         "CVE-2018-12123": {
@@ -3936,7 +3936,7 @@
             "id": "CVE-2020-1971",
             "baseScore": 5.9,
             "publishedDate": "2020-12-08T16:15:00.000Z",
-            "lastModifiedDate": "2022-05-12T14:47:00.000Z",
+            "lastModifiedDate": "2022-08-29T20:27:00.000Z",
             "description": "The X.509 GeneralName type is a generic type for representing different types of names. One of those name types is known as EDIPartyName. OpenSSL provides a function GENERAL_NAME_cmp which compares different instances of a GENERAL_NAME to see if they are equal or not. This function behaves incorrectly when both GENERAL_NAMEs contain an EDIPARTYNAME. A NULL pointer dereference and a crash may occur leading to a possible denial of service attack. OpenSSL itself uses the GENERAL_NAME_cmp function for two purposes: 1) Comparing CRL distribution point names between an available CRL and a CRL distribution point embedded in an X509 certificate 2) When verifying that a timestamp response token signer matches the timestamp authority name (exposed via the API functions TS_RESP_verify_response and TS_RESP_verify_token) If an attacker can control both items being compared then that attacker could trigger a crash. For example if the attacker can trick a client or server into checking a malicious certificate against a malicious CRL then this may occur. Note that some applications automatically download CRLs based on a URL embedded in a certificate. This checking happens prior to the signatures on the certificate and CRL being verified. OpenSSL's s_server, s_client and verify tools have support for the \"-crl_download\" option which implements automatic CRL downloading and this attack has been demonstrated to work against those tools. Note that an unrelated bug means that affected versions of OpenSSL cannot parse or construct correct encodings of EDIPARTYNAME. However it is possible to construct a malformed EDIPARTYNAME that OpenSSL's parser will accept and hence trigger this attack. All OpenSSL 1.1.1 and 1.0.2 versions are affected by this issue. Other OpenSSL releases are out of support and have not been checked. Fixed in OpenSSL 1.1.1i (Affected 1.1.1-1.1.1h). Fixed in OpenSSL 1.0.2x (Affected 1.0.2-1.0.2w)."
         },
         "CVE-2020-7774": {
@@ -4013,14 +4013,14 @@
             "id": "CVE-2020-11080",
             "baseScore": 7.5,
             "publishedDate": "2020-06-03T23:15:00.000Z",
-            "lastModifiedDate": "2022-05-12T15:00:00.000Z",
+            "lastModifiedDate": "2022-08-29T20:41:00.000Z",
             "description": "In nghttp2 before version 1.41.0, the overly large HTTP/2 SETTINGS frame payload causes denial of service. The proof of concept attack involves a malicious client constructing a SETTINGS frame with a length of 14,400 bytes (2400 individual settings entries) over and over again. The attack causes the CPU to spike at 100%. nghttp2 v1.41.0 fixes this vulnerability. There is a workaround to this vulnerability. Implement nghttp2_on_frame_recv_callback callback, and if received frame is SETTINGS frame and the number of settings entries are large (e.g., > 32), then drop the connection."
         },
         "CVE-2021-3449": {
             "id": "CVE-2021-3449",
             "baseScore": 5.9,
             "publishedDate": "2021-03-25T15:15:00.000Z",
-            "lastModifiedDate": "2022-07-25T18:16:00.000Z",
+            "lastModifiedDate": "2022-08-29T20:27:00.000Z",
             "description": "An OpenSSL TLS server may crash if sent a maliciously crafted renegotiation ClientHello message from a client. If a TLSv1.2 renegotiation ClientHello omits the signature_algorithms extension (where it was present in the initial ClientHello), but includes a signature_algorithms_cert extension then a NULL pointer dereference will result, leading to a crash and a denial of service attack. A server is only vulnerable if it has TLSv1.2 and renegotiation enabled (which is the default configuration). OpenSSL TLS clients are not impacted by this issue. All OpenSSL 1.1.1 versions are affected by this issue. Users of these versions should upgrade to OpenSSL 1.1.1k. OpenSSL 1.0.2 is not impacted by this issue. Fixed in OpenSSL 1.1.1k (Affected 1.1.1-1.1.1j)."
         },
         "CVE-2021-3450": {
@@ -4034,14 +4034,14 @@
             "id": "CVE-2021-3672",
             "baseScore": 5.6,
             "publishedDate": "2021-11-23T19:15:00.000Z",
-            "lastModifiedDate": "2022-07-25T18:16:00.000Z",
+            "lastModifiedDate": "2022-08-29T20:27:00.000Z",
             "description": "A flaw was found in c-ares library, where a missing input validation check of host names returned by DNS (Domain Name Servers) can lead to output of wrong hostnames which might potentially lead to Domain Hijacking. The highest threat from this vulnerability is to confidentiality and integrity as well as system availability."
         },
         "CVE-2021-4044": {
             "id": "CVE-2021-4044",
             "baseScore": 7.5,
             "publishedDate": "2021-12-14T19:15:00.000Z",
-            "lastModifiedDate": "2022-02-10T15:12:00.000Z",
+            "lastModifiedDate": "2022-08-29T20:26:00.000Z",
             "description": "Internally libssl in OpenSSL calls X509_verify_cert() on the client side to verify a certificate supplied by a server. That function may return a negative return value to indicate an internal error (for example out of memory). Such a negative return value is mishandled by OpenSSL and will cause an IO function (such as SSL_connect() or SSL_do_handshake()) to not indicate success and a subsequent call to SSL_get_error() to return the value SSL_ERROR_WANT_RETRY_VERIFY. This return value is only supposed to be returned by OpenSSL if the application has previously called SSL_CTX_set_cert_verify_callback(). Since most applications do not do this the SSL_ERROR_WANT_RETRY_VERIFY return value from SSL_get_error() will be totally unexpected and applications may not behave correctly as a result. The exact behaviour will depend on the application but it could result in crashes, infinite loops or other similar incorrect responses. This issue is made more serious in combination with a separate bug in OpenSSL 3.0 that will cause X509_verify_cert() to indicate an internal error when processing a certificate chain. This will occur where a certificate does not include the Subject Alternative Name extension but where a Certificate Authority has enforced name constraints. This issue can occur even with valid chains. By combining the two issues an attacker could induce incorrect, application dependent behaviour. Fixed in OpenSSL 3.0.1 (Affected 3.0.0)."
         },
         "CVE-2021-21148": {
@@ -4132,7 +4132,7 @@
             "id": "CVE-2021-23840",
             "baseScore": 7.5,
             "publishedDate": "2021-02-16T17:15:00.000Z",
-            "lastModifiedDate": "2022-05-12T14:34:00.000Z",
+            "lastModifiedDate": "2022-08-29T20:27:00.000Z",
             "description": "Calls to EVP_CipherUpdate, EVP_EncryptUpdate and EVP_DecryptUpdate may overflow the output length argument in some cases where the input length is close to the maximum permissable length for an integer on the platform. In such cases the return value from the function call will be 1 (indicating success), but the output length value will be negative. This could cause applications to behave incorrectly or crash. OpenSSL versions 1.1.1i and below are affected by this issue. Users of these versions should upgrade to OpenSSL 1.1.1j. OpenSSL versions 1.0.2x and below are affected by this issue. However OpenSSL 1.0.2 is out of support and no longer receiving public updates. Premium support customers of OpenSSL 1.0.2 should upgrade to 1.0.2y. Other users should upgrade to 1.1.1j. Fixed in OpenSSL 1.1.1j (Affected 1.1.1-1.1.1i). Fixed in OpenSSL 1.0.2y (Affected 1.0.2-1.0.2x)."
         },
         "CVE-2021-27290": {
@@ -4216,7 +4216,7 @@
             "id": "CVE-2022-778",
             "baseScore": 7.5,
             "publishedDate": "2022-03-15T17:15:00.000Z",
-            "lastModifiedDate": "2022-07-25T18:19:00.000Z",
+            "lastModifiedDate": "2022-08-29T20:26:00.000Z",
             "description": "The BN_mod_sqrt() function, which computes a modular square root, contains a bug that can cause it to loop forever for non-prime moduli. Internally this function is used when parsing certificates that contain elliptic curve public keys in compressed form or explicit elliptic curve parameters with a base point encoded in compressed form. It is possible to trigger the infinite loop by crafting a certificate that has invalid explicit curve parameters. Since certificate parsing happens prior to verification of the certificate signature, any process that parses an externally supplied certificate may thus be subject to a denial of service attack. The infinite loop can also be reached when parsing crafted private keys as they can contain explicit elliptic curve parameters. Thus vulnerable situations include: - TLS clients consuming server certificates - TLS servers consuming client certificates - Hosting providers taking certificates or private keys from customers - Certificate authorities parsing certification requests from subscribers - Anything else which parses ASN.1 elliptic curve parameters Also any other applications that use the BN_mod_sqrt() where the attacker can control the parameter values are vulnerable to this DoS issue. In the OpenSSL 1.0.2 version the public key is not parsed during initial parsing of the certificate which makes it slightly harder to trigger the infinite loop. However any operation which requires the public key from the certificate will trigger the infinite loop. In particular the attacker can use a self-signed certificate to trigger the loop during verification of the certificate signature. This issue affects OpenSSL versions 1.0.2, 1.1.1 and 3.0. It was addressed in the releases of 1.1.1n and 3.0.2 on the 15th March 2022. Fixed in OpenSSL 3.0.2 (Affected 3.0.0,3.0.1). Fixed in OpenSSL 1.1.1n (Affected 1.1.1-1.1.1m). Fixed in OpenSSL 1.0.2zd (Affected 1.0.2-1.0.2zc)."
         },
         "CVE-2022-2097": {
