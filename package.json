@@ -1,6 +1,6 @@
 {
     "name": "node-version-audit",
-    "version": "1.20220901.1",
+    "version": "1.20220902.0",
     "description": "Audit your Node version for known CVEs and patches ",
     "main": "index.js",
     "scripts": {
