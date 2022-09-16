@@ -23,6 +23,14 @@ describe('NodeVersionAudit', () => {
         const auditResults = await versionAudit.getAllAuditResults();
         expect(auditResults).toBeDefined();
         expect(auditResults.auditVersion).toEqual(NodeVersion.fromString('17.8.0'));
+        expect(auditResults.supportType).toBe('none');
+    });
+
+    it('get the audit results of 18.9.0', async () => {
+        const versionAudit = new NodeVersionAudit('18.9.0', false);
+        const auditResults = await versionAudit.getAllAuditResults();
+        expect(auditResults).toBeDefined();
+        expect(auditResults.auditVersion).toEqual(NodeVersion.fromString('18.9.0'));
         expect(auditResults.supportType).not.toBe('none');
     });
 
