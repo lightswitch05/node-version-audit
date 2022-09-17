@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2022-09-16T13:58:10.535Z",
+    "lastUpdatedDate": "2022-09-17T03:32:04.290Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4250,14 +4250,14 @@
             "id": "CVE-2022-32213",
             "baseScore": 9.1,
             "publishedDate": "2022-07-14T15:15:00.000Z",
-            "lastModifiedDate": "2022-09-15T18:15:00.000Z",
+            "lastModifiedDate": "2022-09-16T19:51:00.000Z",
             "description": "The llhttp parser in the http module in Node.js v17.x does not correctly parse and validate Transfer-Encoding headers and can lead to HTTP Request Smuggling (HRS)."
         },
         "CVE-2022-32214": {
             "id": "CVE-2022-32214",
             "baseScore": 9.1,
             "publishedDate": "2022-07-14T15:15:00.000Z",
-            "lastModifiedDate": "2022-09-15T18:15:00.000Z",
+            "lastModifiedDate": "2022-09-16T19:50:00.000Z",
             "description": "The llhttp parser in the http module in Node.js does not strictly use the CRLF sequence to delimit HTTP requests. This can lead to HTTP Request Smuggling (HRS)."
         },
         "CVE-2022-32215": {
