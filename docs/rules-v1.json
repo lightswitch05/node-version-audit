@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2022-10-05T03:13:52.309Z",
+    "lastUpdatedDate": "2022-10-05T14:23:41.675Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4238,7 +4238,7 @@
             "id": "CVE-2021-44531",
             "baseScore": 7.4,
             "publishedDate": "2022-02-24T19:15:00.000Z",
-            "lastModifiedDate": "2022-07-25T18:18:00.000Z",
+            "lastModifiedDate": "2022-10-05T13:56:00.000Z",
             "description": "Accepting arbitrary Subject Alternative Name (SAN) types, unless a PKI is specifically defined to use a particular SAN type, can result in bypassing name-constrained intermediates. Node.js < 12.22.9, < 14.18.3, < 16.13.2, and < 17.3.1 was accepting URI SAN types, which PKIs are often not defined to use. Additionally, when a protocol allows URI SANs, Node.js did not match the URI correctly.Versions of Node.js with the fix for this disable the URI SAN type when checking a certificate against a hostname. This behavior can be reverted through the --security-revert command-line option."
         },
         "CVE-2021-44532": {
