@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2022-10-06T03:12:32.682Z",
+    "lastUpdatedDate": "2022-10-06T14:03:35.769Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4252,7 +4252,7 @@
             "id": "CVE-2021-44533",
             "baseScore": 5.3,
             "publishedDate": "2022-02-24T19:15:00.000Z",
-            "lastModifiedDate": "2022-07-25T18:18:00.000Z",
+            "lastModifiedDate": "2022-10-06T02:28:00.000Z",
             "description": "Node.js < 12.22.9, < 14.18.3, < 16.13.2, and < 17.3.1 did not handle multi-value Relative Distinguished Names correctly. Attackers could craft certificate subjects containing a single-value Relative Distinguished Name that would be interpreted as a multi-value Relative Distinguished Name, for example, in order to inject a Common Name that would allow bypassing the certificate subject verification.Affected versions of Node.js that do not accept multi-value Relative Distinguished Names and are thus not vulnerable to such attacks themselves. However, third-party code that uses node's ambiguous presentation of certificate subjects may be vulnerable."
         },
         "CVE-2022-778": {
