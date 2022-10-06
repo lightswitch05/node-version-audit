@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2022-10-05T14:23:41.675Z",
+    "lastUpdatedDate": "2022-10-06T03:12:32.682Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -3972,7 +3972,7 @@
             "id": "CVE-2019-15606",
             "baseScore": 9.8,
             "publishedDate": "2020-02-07T15:15:00.000Z",
-            "lastModifiedDate": "2021-07-20T23:15:00.000Z",
+            "lastModifiedDate": "2022-10-05T20:47:00.000Z",
             "description": "Including trailing white space in HTTP header values in Nodejs 10, 12, and 13 causes bypass of authorization based on header value comparisons"
         },
         "CVE-2020-1971": {
@@ -4245,7 +4245,7 @@
             "id": "CVE-2021-44532",
             "baseScore": 5.3,
             "publishedDate": "2022-02-24T19:15:00.000Z",
-            "lastModifiedDate": "2022-07-25T18:18:00.000Z",
+            "lastModifiedDate": "2022-10-05T14:00:00.000Z",
             "description": "Node.js < 12.22.9, < 14.18.3, < 16.13.2, and < 17.3.1 converts SANs (Subject Alternative Names) to a string format. It uses this string to check peer certificates against hostnames when validating connections. The string format was subject to an injection vulnerability when name constraints were used within a certificate chain, allowing the bypass of these name constraints.Versions of Node.js with the fix for this escape SANs containing the problematic characters in order to prevent the injection. This behavior can be reverted through the --security-revert command-line option."
         },
         "CVE-2021-44533": {
