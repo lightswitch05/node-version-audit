@@ -1,10 +1,10 @@
 {
-    "lastUpdatedDate": "2022-10-25T14:09:37.258Z",
+    "lastUpdatedDate": "2022-10-26T03:19:55.997Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
-    "releasesCount": 531,
+    "releasesCount": 532,
     "cveCount": 119,
     "supportVersionsCount": 17,
     "latestVersion": "19.0.0",
@@ -27,7 +27,7 @@
         "15": "15.14.0",
         "16": "16.18.0",
         "17": "17.9.1",
-        "18": "18.11.0",
+        "18": "18.12.0",
         "19": "19.0.0",
         "0.10": "0.10.48",
         "0.12": "0.12.18",
@@ -288,6 +288,7 @@
         "18.9": "18.9.1",
         "18.10": "18.10.0",
         "18.11": "18.11.0",
+        "18.12": "18.12.0",
         "19.0": "19.0.0"
     },
     "supportEndDates": {
@@ -3498,6 +3499,11 @@
             "releaseDate": "2022-10-13T00:00:00.000Z",
             "patchedCveIds": []
         },
+        "18.12.0": {
+            "version": "18.12.0",
+            "releaseDate": "2022-10-25T00:00:00.000Z",
+            "patchedCveIds": []
+        },
         "19.0.0": {
             "version": "19.0.0",
             "releaseDate": "2022-10-18T00:00:00.000Z",
@@ -4251,7 +4257,7 @@
             "id": "CVE-2021-39135",
             "baseScore": 7.8,
             "publishedDate": "2021-08-31T17:15:00.000Z",
-            "lastModifiedDate": "2022-04-25T19:51:00.000Z",
+            "lastModifiedDate": "2022-10-25T18:03:00.000Z",
             "description": "`@npmcli/arborist`, the library that calculates dependency trees and manages the node_modules folder hierarchy for the npm command line interface, aims to guarantee that package dependency contracts will be met, and the extraction of package contents will always be performed into the expected folder. This is accomplished by extracting package contents into a project's `node_modules` folder. If the `node_modules` folder of the root project or any of its dependencies is somehow replaced with a symbolic link, it could allow Arborist to write package dependencies to any arbitrary location on the file system. Note that symbolic links contained within package artifact contents are filtered out, so another means of creating a `node_modules` symbolic link would have to be employed. 1. A `preinstall` script could replace `node_modules` with a symlink. (This is prevented by using `--ignore-scripts`.) 2. An attacker could supply the target with a git repository, instructing them to run `npm install --ignore-scripts` in the root. This may be successful, because `npm install --ignore-scripts` is typically not capable of making changes outside of the project directory, so it may be deemed safe. This is patched in @npmcli/arborist 2.8.2 which is included in npm v7.20.7 and above. For more information including workarounds please see the referenced GHSA-gmw6-94gg-2rc2."
         },
         "CVE-2021-44531": {
