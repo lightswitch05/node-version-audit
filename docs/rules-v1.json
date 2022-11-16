@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2022-11-16T02:57:04.849Z",
+    "lastUpdatedDate": "2022-11-16T13:45:34.497Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4028,14 +4028,14 @@
             "id": "CVE-2019-15604",
             "baseScore": 7.5,
             "publishedDate": "2020-02-07T15:15:00.000Z",
-            "lastModifiedDate": "2021-07-20T23:15:00.000Z",
+            "lastModifiedDate": "2022-11-16T03:02:00.000Z",
             "description": "Improper Certificate Validation in Node.js 10, 12, and 13 causes the process to abort when sending a crafted X.509 certificate"
         },
         "CVE-2019-15605": {
             "id": "CVE-2019-15605",
             "baseScore": 9.8,
             "publishedDate": "2020-02-07T15:15:00.000Z",
-            "lastModifiedDate": "2021-07-20T23:15:00.000Z",
+            "lastModifiedDate": "2022-11-16T02:55:00.000Z",
             "description": "HTTP request smuggling in Node.js 10, 12, and 13 causes malicious payload delivery when transfer-encoding is malformed"
         },
         "CVE-2019-15606": {
