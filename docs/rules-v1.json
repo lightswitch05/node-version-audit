@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2022-11-29T02:36:01.106Z",
+    "lastUpdatedDate": "2022-11-29T13:33:51.869Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4364,14 +4364,14 @@
             "id": "CVE-2022-32212",
             "baseScore": 8.1,
             "publishedDate": "2022-07-14T15:15:00.000Z",
-            "lastModifiedDate": "2022-10-07T16:38:00.000Z",
+            "lastModifiedDate": "2022-11-29T04:15:00.000Z",
             "description": "A OS Command Injection vulnerability exists in Node.js versions <14.20.0, <16.16.0, <18.5.0 due to an insufficient IsAllowedHost check that can easily be bypassed because IsIPAddress does not properly check if an IP address is invalid before making DBS requests allowing rebinding attacks."
         },
         "CVE-2022-32213": {
             "id": "CVE-2022-32213",
             "baseScore": 6.5,
             "publishedDate": "2022-07-14T15:15:00.000Z",
-            "lastModifiedDate": "2022-11-23T14:43:00.000Z",
+            "lastModifiedDate": "2022-11-29T04:15:00.000Z",
             "description": "The llhttp parser <v14.20.1, <v16.17.1 and <v18.9.1 in the http module in Node.js does not correctly parse and validate Transfer-Encoding headers and can lead to HTTP Request Smuggling (HRS)."
         },
         "CVE-2022-32214": {
@@ -4385,7 +4385,7 @@
             "id": "CVE-2022-32215",
             "baseScore": 6.5,
             "publishedDate": "2022-07-14T15:15:00.000Z",
-            "lastModifiedDate": "2022-11-23T14:43:00.000Z",
+            "lastModifiedDate": "2022-11-29T04:15:00.000Z",
             "description": "The llhttp parser <v14.20.1, <v16.17.1 and <v18.9.1 in the http module in Node.js does not correctly handle multi-line Transfer-Encoding headers. This can lead to HTTP Request Smuggling (HRS)."
         },
         "CVE-2022-32222": {
