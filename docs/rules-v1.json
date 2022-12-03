@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2022-12-02T13:28:42.556Z",
+    "lastUpdatedDate": "2022-12-03T02:16:15.057Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4062,7 +4062,7 @@
             "id": "CVE-2020-7774",
             "baseScore": 9.8,
             "publishedDate": "2020-11-17T13:15:00.000Z",
-            "lastModifiedDate": "2022-10-14T15:15:00.000Z",
+            "lastModifiedDate": "2022-12-02T19:40:00.000Z",
             "description": "The package y18n before 3.2.2, 4.0.1 and 5.0.5, is vulnerable to Prototype Pollution."
         },
         "CVE-2020-8172": {
