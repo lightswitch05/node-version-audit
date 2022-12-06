@@ -1,11 +1,11 @@
 {
-    "lastUpdatedDate": "2022-12-05T13:29:17.787Z",
+    "lastUpdatedDate": "2022-12-06T02:21:56.405Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
     "releasesCount": 539,
-    "cveCount": 121,
+    "cveCount": 124,
     "supportVersionsCount": 17,
     "latestVersion": "19.2.0",
     "latestVersions": {
@@ -4118,7 +4118,7 @@
             "id": "CVE-2020-8287",
             "baseScore": 6.5,
             "publishedDate": "2021-01-06T21:15:00.000Z",
-            "lastModifiedDate": "2022-04-06T16:27:00.000Z",
+            "lastModifiedDate": "2022-12-05T15:15:00.000Z",
             "description": "Node.js versions before 10.23.1, 12.20.1, 14.15.4, 15.5.1 allow two copies of a header field in an HTTP request (for example, two Transfer-Encoding header fields). In this case, Node.js identifies the first header field and ignores the second. This can lead to HTTP Request Smuggling."
         },
         "CVE-2020-10531": {
@@ -4407,6 +4407,27 @@
             "publishedDate": "2022-07-14T15:15:00.000Z",
             "lastModifiedDate": "2022-10-28T18:29:00.000Z",
             "description": "Node.js is vulnerable to Hijack Execution Flow: DLL Hijacking under certain conditions on Windows platforms.This vulnerability can be exploited if the victim has the following dependencies on a Windows machine:* OpenSSL has been installed and “C:\\Program Files\\Common Files\\SSL\\openssl.cnf” exists.Whenever the above conditions are present, `node.exe` will search for `providers.dll` in the current user directory.After that, `node.exe` will try to search for `providers.dll` by the DLL Search Order in Windows.It is possible for an attacker to place the malicious file `providers.dll` under a variety of paths and exploit this vulnerability."
+        },
+        "CVE-2022-35255": {
+            "id": "CVE-2022-35255",
+            "baseScore": null,
+            "publishedDate": "2022-12-05T22:15:00.000Z",
+            "lastModifiedDate": "2022-12-05T23:40:00.000Z",
+            "description": "A weak randomness in WebCrypto keygen vulnerability exists in Node.js 18 due to a change with EntropySource() in SecretKeyGenTraits::DoKeyGen() in src/crypto/crypto_keygen.cc. There are two problems with this: 1) It does not check the return value, it assumes EntropySource() always succeeds, but it can (and sometimes will) fail. 2) The random data returned byEntropySource() may not be cryptographically strong and therefore not suitable as keying material."
+        },
+        "CVE-2022-35256": {
+            "id": "CVE-2022-35256",
+            "baseScore": null,
+            "publishedDate": "2022-12-05T22:15:00.000Z",
+            "lastModifiedDate": "2022-12-05T23:40:00.000Z",
+            "description": "The llhttp parser in the http module in Node v18.7.0 does not correctly handle header fields that are not terminated with CLRF. This may result in HTTP Request Smuggling."
+        },
+        "CVE-2022-43548": {
+            "id": "CVE-2022-43548",
+            "baseScore": null,
+            "publishedDate": "2022-12-05T22:15:00.000Z",
+            "lastModifiedDate": "2022-12-05T23:40:00.000Z",
+            "description": "A OS Command Injection vulnerability exists in Node.js versions <14.21.1, <16.18.1, <18.12.1, <19.0.1 due to an insufficient IsAllowedHost check that can easily be bypassed because IsIPAddress does not properly check if an IP address is invalid before making DBS requests allowing rebinding attacks.The fix for this issue in https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32212 was incomplete and this new CVE is to complete the fix."
         }
     }
 }
