@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2022-12-09T13:28:49.710Z",
+    "lastUpdatedDate": "2022-12-10T02:19:01.738Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4230,7 +4230,7 @@
             "id": "CVE-2021-22959",
             "baseScore": 6.5,
             "publishedDate": "2021-11-15T15:15:00.000Z",
-            "lastModifiedDate": "2022-06-28T13:15:00.000Z",
+            "lastModifiedDate": "2022-12-09T16:14:00.000Z",
             "description": "The parser in accepts requests with a space (SP) right after the header name before the colon. This can lead to HTTP Request Smuggling (HRS) in llhttp < v2.1.4 and < v6.0.6."
         },
         "CVE-2021-22960": {
