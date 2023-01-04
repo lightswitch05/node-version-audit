@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2023-01-03T13:27:18.835Z",
+    "lastUpdatedDate": "2023-01-04T02:19:54.876Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4434,9 +4434,9 @@
         },
         "CVE-2022-35256": {
             "id": "CVE-2022-35256",
-            "baseScore": 9.8,
+            "baseScore": 6.5,
             "publishedDate": "2022-12-05T22:15:00.000Z",
-            "lastModifiedDate": "2022-12-08T19:38:00.000Z",
+            "lastModifiedDate": "2023-01-03T15:16:00.000Z",
             "description": "The llhttp parser in the http module in Node v18.7.0 does not correctly handle header fields that are not terminated with CLRF. This may result in HTTP Request Smuggling."
         },
         "CVE-2022-43548": {
