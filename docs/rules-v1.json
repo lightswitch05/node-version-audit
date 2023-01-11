@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2023-01-10T13:29:22.364Z",
+    "lastUpdatedDate": "2023-01-11T02:21:32.592Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4371,7 +4371,7 @@
             "id": "CVE-2022-2097",
             "baseScore": 5.3,
             "publishedDate": "2022-07-05T11:15:00.000Z",
-            "lastModifiedDate": "2022-10-28T20:40:00.000Z",
+            "lastModifiedDate": "2023-01-10T13:15:00.000Z",
             "description": "AES OCB mode for 32-bit x86 platforms using the AES-NI assembly optimised implementation will not encrypt the entirety of the data under some circumstances. This could reveal sixteen bytes of data that was preexisting in the memory that wasn't written. In the special case of \"in place\" encryption, sixteen bytes of the plaintext would be revealed. Since OpenSSL does not support OCB based cipher suites for TLS and DTLS, they are both unaffected. Fixed in OpenSSL 3.0.5 (Affected 3.0.0-3.0.4). Fixed in OpenSSL 1.1.1q (Affected 1.1.1-1.1.1p)."
         },
         "CVE-2022-3602": {
@@ -4399,14 +4399,14 @@
             "id": "CVE-2022-32212",
             "baseScore": 8.1,
             "publishedDate": "2022-07-14T15:15:00.000Z",
-            "lastModifiedDate": "2022-11-29T04:15:00.000Z",
+            "lastModifiedDate": "2023-01-10T13:15:00.000Z",
             "description": "A OS Command Injection vulnerability exists in Node.js versions <14.20.0, <16.16.0, <18.5.0 due to an insufficient IsAllowedHost check that can easily be bypassed because IsIPAddress does not properly check if an IP address is invalid before making DBS requests allowing rebinding attacks."
         },
         "CVE-2022-32213": {
             "id": "CVE-2022-32213",
             "baseScore": 6.5,
             "publishedDate": "2022-07-14T15:15:00.000Z",
-            "lastModifiedDate": "2022-11-29T04:15:00.000Z",
+            "lastModifiedDate": "2023-01-10T13:15:00.000Z",
             "description": "The llhttp parser <v14.20.1, <v16.17.1 and <v18.9.1 in the http module in Node.js does not correctly parse and validate Transfer-Encoding headers and can lead to HTTP Request Smuggling (HRS)."
         },
         "CVE-2022-32214": {
@@ -4420,14 +4420,14 @@
             "id": "CVE-2022-32215",
             "baseScore": 6.5,
             "publishedDate": "2022-07-14T15:15:00.000Z",
-            "lastModifiedDate": "2022-11-29T04:15:00.000Z",
+            "lastModifiedDate": "2023-01-10T13:15:00.000Z",
             "description": "The llhttp parser <v14.20.1, <v16.17.1 and <v18.9.1 in the http module in Node.js does not correctly handle multi-line Transfer-Encoding headers. This can lead to HTTP Request Smuggling (HRS)."
         },
         "CVE-2022-32222": {
             "id": "CVE-2022-32222",
             "baseScore": 5.3,
             "publishedDate": "2022-07-14T15:15:00.000Z",
-            "lastModifiedDate": "2022-10-27T16:38:00.000Z",
+            "lastModifiedDate": "2023-01-10T13:15:00.000Z",
             "description": "A cryptographic vulnerability exists on Node.js on linux in versions of 18.x prior to 18.40.0 which allowed a default path for openssl.cnf that might be accessible under some circumstances to a non-admin user instead of /etc/ssl as was the case in versions prior to the upgrade to OpenSSL 3."
         },
         "CVE-2022-32223": {
@@ -4441,14 +4441,14 @@
             "id": "CVE-2022-35255",
             "baseScore": 9.1,
             "publishedDate": "2022-12-05T22:15:00.000Z",
-            "lastModifiedDate": "2022-12-08T15:58:00.000Z",
+            "lastModifiedDate": "2023-01-10T13:15:00.000Z",
             "description": "A weak randomness in WebCrypto keygen vulnerability exists in Node.js 18 due to a change with EntropySource() in SecretKeyGenTraits::DoKeyGen() in src/crypto/crypto_keygen.cc. There are two problems with this: 1) It does not check the return value, it assumes EntropySource() always succeeds, but it can (and sometimes will) fail. 2) The random data returned byEntropySource() may not be cryptographically strong and therefore not suitable as keying material."
         },
         "CVE-2022-35256": {
             "id": "CVE-2022-35256",
             "baseScore": 6.5,
             "publishedDate": "2022-12-05T22:15:00.000Z",
-            "lastModifiedDate": "2023-01-03T15:16:00.000Z",
+            "lastModifiedDate": "2023-01-10T13:15:00.000Z",
             "description": "The llhttp parser in the http module in Node v18.7.0 does not correctly handle header fields that are not terminated with CLRF. This may result in HTTP Request Smuggling."
         },
         "CVE-2022-43548": {
