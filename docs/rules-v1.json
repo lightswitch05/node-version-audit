@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2023-01-20T02:27:47.779Z",
+    "lastUpdatedDate": "2023-01-20T13:28:37.168Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4266,7 +4266,7 @@
             "id": "CVE-2021-22960",
             "baseScore": 6.5,
             "publishedDate": "2021-11-03T20:15:00.000Z",
-            "lastModifiedDate": "2022-06-28T13:15:00.000Z",
+            "lastModifiedDate": "2023-01-20T02:04:00.000Z",
             "description": "The parse function in llhttp < 2.1.4 and < 6.0.6. ignores chunk extensions when parsing the body of chunked requests. This leads to HTTP Request Smuggling (HRS) under certain conditions."
         },
         "CVE-2021-23362": {
