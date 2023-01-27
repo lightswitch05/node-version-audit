@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2023-01-26T13:31:55.810Z",
+    "lastUpdatedDate": "2023-01-27T02:22:26.043Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4405,28 +4405,28 @@
             "id": "CVE-2022-32212",
             "baseScore": 8.1,
             "publishedDate": "2022-07-14T15:15:00.000Z",
-            "lastModifiedDate": "2023-01-10T13:15:00.000Z",
+            "lastModifiedDate": "2023-01-26T21:15:00.000Z",
             "description": "A OS Command Injection vulnerability exists in Node.js versions <14.20.0, <16.16.0, <18.5.0 due to an insufficient IsAllowedHost check that can easily be bypassed because IsIPAddress does not properly check if an IP address is invalid before making DBS requests allowing rebinding attacks."
         },
         "CVE-2022-32213": {
             "id": "CVE-2022-32213",
             "baseScore": 6.5,
             "publishedDate": "2022-07-14T15:15:00.000Z",
-            "lastModifiedDate": "2023-01-10T13:15:00.000Z",
+            "lastModifiedDate": "2023-01-26T21:15:00.000Z",
             "description": "The llhttp parser <v14.20.1, <v16.17.1 and <v18.9.1 in the http module in Node.js does not correctly parse and validate Transfer-Encoding headers and can lead to HTTP Request Smuggling (HRS)."
         },
         "CVE-2022-32214": {
             "id": "CVE-2022-32214",
             "baseScore": 6.5,
             "publishedDate": "2022-07-14T15:15:00.000Z",
-            "lastModifiedDate": "2022-11-23T14:43:00.000Z",
+            "lastModifiedDate": "2023-01-26T21:15:00.000Z",
             "description": "The llhttp parser <v14.20.1, <v16.17.1 and <v18.9.1 in the http module in Node.js does not strictly use the CRLF sequence to delimit HTTP requests. This can lead to HTTP Request Smuggling (HRS)."
         },
         "CVE-2022-32215": {
             "id": "CVE-2022-32215",
             "baseScore": 6.5,
             "publishedDate": "2022-07-14T15:15:00.000Z",
-            "lastModifiedDate": "2023-01-10T13:15:00.000Z",
+            "lastModifiedDate": "2023-01-26T21:15:00.000Z",
             "description": "The llhttp parser <v14.20.1, <v16.17.1 and <v18.9.1 in the http module in Node.js does not correctly handle multi-line Transfer-Encoding headers. This can lead to HTTP Request Smuggling (HRS)."
         },
         "CVE-2022-32222": {
@@ -4447,21 +4447,21 @@
             "id": "CVE-2022-35255",
             "baseScore": 9.1,
             "publishedDate": "2022-12-05T22:15:00.000Z",
-            "lastModifiedDate": "2023-01-13T09:15:00.000Z",
+            "lastModifiedDate": "2023-01-26T21:15:00.000Z",
             "description": "A weak randomness in WebCrypto keygen vulnerability exists in Node.js 18 due to a change with EntropySource() in SecretKeyGenTraits::DoKeyGen() in src/crypto/crypto_keygen.cc. There are two problems with this: 1) It does not check the return value, it assumes EntropySource() always succeeds, but it can (and sometimes will) fail. 2) The random data returned byEntropySource() may not be cryptographically strong and therefore not suitable as keying material."
         },
         "CVE-2022-35256": {
             "id": "CVE-2022-35256",
             "baseScore": 6.5,
             "publishedDate": "2022-12-05T22:15:00.000Z",
-            "lastModifiedDate": "2023-01-10T13:15:00.000Z",
+            "lastModifiedDate": "2023-01-26T21:15:00.000Z",
             "description": "The llhttp parser in the http module in Node v18.7.0 does not correctly handle header fields that are not terminated with CLRF. This may result in HTTP Request Smuggling."
         },
         "CVE-2022-43548": {
             "id": "CVE-2022-43548",
             "baseScore": 8.1,
             "publishedDate": "2022-12-05T22:15:00.000Z",
-            "lastModifiedDate": "2023-01-20T19:15:00.000Z",
+            "lastModifiedDate": "2023-01-26T21:17:00.000Z",
             "description": "A OS Command Injection vulnerability exists in Node.js versions <14.21.1, <16.18.1, <18.12.1, <19.0.1 due to an insufficient IsAllowedHost check that can easily be bypassed because IsIPAddress does not properly check if an IP address is invalid before making DBS requests allowing rebinding attacks.The fix for this issue in https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32212 was incomplete and this new CVE is to complete the fix."
         }
     }
