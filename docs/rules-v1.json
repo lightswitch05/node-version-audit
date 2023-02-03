@@ -1,13 +1,13 @@
 {
-    "lastUpdatedDate": "2023-02-02T13:32:39.314Z",
+    "lastUpdatedDate": "2023-02-03T02:31:32.861Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
-    "releasesCount": 545,
+    "releasesCount": 547,
     "cveCount": 124,
     "supportVersionsCount": 17,
-    "latestVersion": "19.5.0",
+    "latestVersion": "19.6.0",
     "latestVersions": {
         "0": "0.12.18",
         "1": "1.8.4",
@@ -27,8 +27,8 @@
         "15": "15.14.0",
         "16": "16.19.0",
         "17": "17.9.1",
-        "18": "18.13.0",
-        "19": "19.5.0",
+        "18": "18.14.0",
+        "19": "19.6.0",
         "0.10": "0.10.48",
         "0.12": "0.12.18",
         "1.0": "1.0.4",
@@ -292,12 +292,14 @@
         "18.11": "18.11.0",
         "18.12": "18.12.1",
         "18.13": "18.13.0",
+        "18.14": "18.14.0",
         "19.0": "19.0.1",
         "19.1": "19.1.0",
         "19.2": "19.2.0",
         "19.3": "19.3.0",
         "19.4": "19.4.0",
-        "19.5": "19.5.0"
+        "19.5": "19.5.0",
+        "19.6": "19.6.0"
     },
     "supportEndDates": {
         "4": {
@@ -3555,6 +3557,11 @@
             "releaseDate": "2023-01-05T00:00:00.000Z",
             "patchedCveIds": []
         },
+        "18.14.0": {
+            "version": "18.14.0",
+            "releaseDate": "2023-02-02T00:00:00.000Z",
+            "patchedCveIds": []
+        },
         "19.0.0": {
             "version": "19.0.0",
             "releaseDate": "2022-10-18T00:00:00.000Z",
@@ -3592,6 +3599,11 @@
         "19.5.0": {
             "version": "19.5.0",
             "releaseDate": "2023-01-24T00:00:00.000Z",
+            "patchedCveIds": []
+        },
+        "19.6.0": {
+            "version": "19.6.0",
+            "releaseDate": "2023-02-02T00:00:00.000Z",
             "patchedCveIds": []
         }
     },
@@ -3747,8 +3759,8 @@
             "id": "CVE-2016-2183",
             "baseScore": 7.5,
             "publishedDate": "2016-09-01T00:59:00.000Z",
-            "lastModifiedDate": "2022-12-13T12:15:00.000Z",
-            "description": "The DES and Triple DES ciphers, as used in the TLS, SSH, and IPSec protocols and other protocols and products, have a birthday bound of approximately four billion blocks, which makes it easier for remote attackers to obtain cleartext data via a birthday attack against a long-duration encrypted session, as demonstrated by an HTTPS session using Triple DES in CBC mode, aka a \"Sweet32\" attack."
+            "lastModifiedDate": "2023-02-02T21:16:00.000Z",
+            "description": "A flaw was found in the way the DES/3DES cipher was used as part of the TLS/SSL protocol. A man-in-the-middle attacker could use this flaw to recover some plaintext data by capturing large amounts of encrypted traffic between TLS/SSL server and client if the communication used a DES/3DES based ciphersuite."
         },
         "CVE-2016-2216": {
             "id": "CVE-2016-2216",
