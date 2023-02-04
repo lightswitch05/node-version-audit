@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2023-02-03T13:28:11.642Z",
+    "lastUpdatedDate": "2023-02-04T02:17:07.568Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4165,7 +4165,7 @@
             "id": "CVE-2020-8287",
             "baseScore": 6.5,
             "publishedDate": "2021-01-06T21:15:00.000Z",
-            "lastModifiedDate": "2022-12-05T15:15:00.000Z",
+            "lastModifiedDate": "2023-02-03T19:12:00.000Z",
             "description": "Node.js versions before 10.23.1, 12.20.1, 14.15.4, 15.5.1 allow two copies of a header field in an HTTP request (for example, two Transfer-Encoding header fields). In this case, Node.js identifies the first header field and ignores the second. This can lead to HTTP Request Smuggling."
         },
         "CVE-2020-10531": {
