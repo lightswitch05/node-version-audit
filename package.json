@@ -37,10 +37,10 @@
     },
     "homepage": "https://github.com/lightswitch05/node-version-audit#readme",
     "devDependencies": {
-        "@casualbot/jest-sonar-reporter": "^2.2.5",
-        "cspell": "^6.12.0",
-        "jest": "^29.2.1",
-        "prettier": "^2.7.1"
+        "@casualbot/jest-sonar-reporter": "^2.2.7",
+        "cspell": "^6.22.0",
+        "jest": "^29.4.1",
+        "prettier": "^2.8.3"
     },
     "jest": {
         "reporters": [
