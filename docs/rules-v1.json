@@ -1,13 +1,13 @@
 {
-    "lastUpdatedDate": "2023-02-16T13:35:17.390Z",
+    "lastUpdatedDate": "2023-02-17T13:29:00.551Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
-    "releasesCount": 547,
-    "cveCount": 124,
+    "releasesCount": 551,
+    "cveCount": 126,
     "supportVersionsCount": 17,
-    "latestVersion": "19.6.0",
+    "latestVersion": "19.6.1",
     "latestVersions": {
         "0": "0.12.18",
         "1": "1.8.4",
@@ -23,12 +23,12 @@
         "11": "11.15.0",
         "12": "12.22.12",
         "13": "13.14.0",
-        "14": "14.21.2",
+        "14": "14.21.3",
         "15": "15.14.0",
-        "16": "16.19.0",
+        "16": "16.19.1",
         "17": "17.9.1",
-        "18": "18.14.0",
-        "19": "19.6.0",
+        "18": "18.14.1",
+        "19": "19.6.1",
         "0.10": "0.10.48",
         "0.12": "0.12.18",
         "1.0": "1.0.4",
@@ -232,7 +232,7 @@
         "14.18": "14.18.3",
         "14.19": "14.19.3",
         "14.20": "14.20.1",
-        "14.21": "14.21.2",
+        "14.21": "14.21.3",
         "15.0": "15.0.1",
         "15.1": "15.1.0",
         "15.2": "15.2.1",
@@ -267,7 +267,7 @@
         "16.16": "16.16.0",
         "16.17": "16.17.1",
         "16.18": "16.18.1",
-        "16.19": "16.19.0",
+        "16.19": "16.19.1",
         "17.0": "17.0.1",
         "17.1": "17.1.0",
         "17.2": "17.2.0",
@@ -292,14 +292,14 @@
         "18.11": "18.11.0",
         "18.12": "18.12.1",
         "18.13": "18.13.0",
-        "18.14": "18.14.0",
+        "18.14": "18.14.1",
         "19.0": "19.0.1",
         "19.1": "19.1.0",
         "19.2": "19.2.0",
         "19.3": "19.3.0",
         "19.4": "19.4.0",
         "19.5": "19.5.0",
-        "19.6": "19.6.0"
+        "19.6": "19.6.1"
     },
     "supportEndDates": {
         "4": {
@@ -3073,6 +3073,14 @@
             "releaseDate": "2022-12-13T00:00:00.000Z",
             "patchedCveIds": []
         },
+        "14.21.3": {
+            "version": "14.21.3",
+            "releaseDate": "2023-02-16T00:00:00.000Z",
+            "patchedCveIds": [
+                "CVE-2023-23918",
+                "CVE-2023-23920"
+            ]
+        },
         "15.0.0": {
             "version": "15.0.0",
             "releaseDate": "2020-10-20T00:00:00.000Z",
@@ -3374,6 +3382,17 @@
             "releaseDate": "2022-12-13T00:00:00.000Z",
             "patchedCveIds": []
         },
+        "16.19.1": {
+            "version": "16.19.1",
+            "releaseDate": "2023-02-16T00:00:00.000Z",
+            "patchedCveIds": [
+                "CVE-2023-23918",
+                "CVE-2023-23919",
+                "CVE-2023-23920",
+                "CVE-2023-23936",
+                "CVE-2023-24807"
+            ]
+        },
         "17.0.0": {
             "version": "17.0.0",
             "releaseDate": "2021-10-19T00:00:00.000Z",
@@ -3562,6 +3581,17 @@
             "releaseDate": "2023-02-02T00:00:00.000Z",
             "patchedCveIds": []
         },
+        "18.14.1": {
+            "version": "18.14.1",
+            "releaseDate": "2023-02-16T00:00:00.000Z",
+            "patchedCveIds": [
+                "CVE-2023-23918",
+                "CVE-2023-23919",
+                "CVE-2023-23920",
+                "CVE-2023-23936",
+                "CVE-2023-24807"
+            ]
+        },
         "19.0.0": {
             "version": "19.0.0",
             "releaseDate": "2022-10-18T00:00:00.000Z",
@@ -3605,6 +3635,15 @@
             "version": "19.6.0",
             "releaseDate": "2023-02-02T00:00:00.000Z",
             "patchedCveIds": []
+        },
+        "19.6.1": {
+            "version": "19.6.1",
+            "releaseDate": "2023-02-16T00:00:00.000Z",
+            "patchedCveIds": [
+                "CVE-2023-23918",
+                "CVE-2023-23919",
+                "CVE-2023-23920"
+            ]
         }
     },
     "cves": {
@@ -4475,6 +4514,20 @@
             "publishedDate": "2022-12-05T22:15:00.000Z",
             "lastModifiedDate": "2023-01-26T21:17:00.000Z",
             "description": "A OS Command Injection vulnerability exists in Node.js versions <14.21.1, <16.18.1, <18.12.1, <19.0.1 due to an insufficient IsAllowedHost check that can easily be bypassed because IsIPAddress does not properly check if an IP address is invalid before making DBS requests allowing rebinding attacks.The fix for this issue in https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32212 was incomplete and this new CVE is to complete the fix."
+        },
+        "CVE-2023-23936": {
+            "id": "CVE-2023-23936",
+            "baseScore": null,
+            "publishedDate": "2023-02-16T18:15:00.000Z",
+            "lastModifiedDate": "2023-02-16T19:39:00.000Z",
+            "description": "Undici is an HTTP/1.1 client for Node.js. Starting with version 2.0.0 and prior to version 5.19.1, the undici library does not protect `host` HTTP header from CRLF injection vulnerabilities. This issue is patched in Undici v5.19.1. As a workaround, sanitize the `headers.host` string before passing to undici."
+        },
+        "CVE-2023-24807": {
+            "id": "CVE-2023-24807",
+            "baseScore": null,
+            "publishedDate": "2023-02-16T18:15:00.000Z",
+            "lastModifiedDate": "2023-02-16T19:39:00.000Z",
+            "description": "Undici is an HTTP/1.1 client for Node.js. Prior to version 5.19.1, the `Headers.set()` and `Headers.append()` methods are vulnerable to Regular Expression Denial of Service (ReDoS) attacks when untrusted values are passed into the functions. This is due to the inefficient regular expression used to normalize the values in the `headerValueNormalize()` utility function. This vulnerability was patched in v5.19.1. No known workarounds are available."
         }
     }
 }
