@@ -43,6 +43,8 @@ jobs:
 
             - run: npm run test:unit
             - run: ./bin/node-version-audit --full-update --no-update --vvv
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             - run: |
                   ./scripts/bump-version.sh
                   npm publish
