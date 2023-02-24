@@ -1,11 +1,11 @@
 {
-    "lastUpdatedDate": "2023-02-23T13:36:18.582Z",
+    "lastUpdatedDate": "2023-02-24T02:24:49.267Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
     "releasesCount": 553,
-    "cveCount": 126,
+    "cveCount": 129,
     "supportVersionsCount": 17,
     "latestVersion": "19.7.0",
     "latestVersions": {
@@ -4439,7 +4439,7 @@
             "id": "CVE-2022-2097",
             "baseScore": 5.3,
             "publishedDate": "2022-07-05T11:15:00.000Z",
-            "lastModifiedDate": "2023-02-20T13:15:00.000Z",
+            "lastModifiedDate": "2023-02-23T16:14:00.000Z",
             "description": "AES OCB mode for 32-bit x86 platforms using the AES-NI assembly optimised implementation will not encrypt the entirety of the data under some circumstances. This could reveal sixteen bytes of data that was preexisting in the memory that wasn't written. In the special case of \"in place\" encryption, sixteen bytes of the plaintext would be revealed. Since OpenSSL does not support OCB based cipher suites for TLS and DTLS, they are both unaffected. Fixed in OpenSSL 3.0.5 (Affected 3.0.0-3.0.4). Fixed in OpenSSL 1.1.1q (Affected 1.1.1-1.1.1p)."
         },
         "CVE-2022-3602": {
@@ -4467,36 +4467,36 @@
             "id": "CVE-2022-32212",
             "baseScore": 8.1,
             "publishedDate": "2022-07-14T15:15:00.000Z",
-            "lastModifiedDate": "2023-02-09T01:46:00.000Z",
-            "description": "A OS Command Injection vulnerability exists in Node.js versions <14.20.0, <16.16.0, <18.5.0 due to an insufficient IsAllowedHost check that can easily be bypassed because IsIPAddress does not properly check if an IP address is invalid before making DBS requests allowing rebinding attacks."
+            "lastModifiedDate": "2023-02-23T20:15:00.000Z",
+            "description": "A OS Command Injection vulnerability exists in Node.js versions <14.20.0, <16.20.0, <18.5.0 due to an insufficient IsAllowedHost check that can easily be bypassed because IsIPAddress does not properly check if an IP address is invalid before making DBS requests allowing rebinding attacks."
         },
         "CVE-2022-32213": {
             "id": "CVE-2022-32213",
             "baseScore": 6.5,
             "publishedDate": "2022-07-14T15:15:00.000Z",
-            "lastModifiedDate": "2023-01-26T21:15:00.000Z",
+            "lastModifiedDate": "2023-02-23T16:32:00.000Z",
             "description": "The llhttp parser <v14.20.1, <v16.17.1 and <v18.9.1 in the http module in Node.js does not correctly parse and validate Transfer-Encoding headers and can lead to HTTP Request Smuggling (HRS)."
         },
         "CVE-2022-32214": {
             "id": "CVE-2022-32214",
             "baseScore": 6.5,
             "publishedDate": "2022-07-14T15:15:00.000Z",
-            "lastModifiedDate": "2023-01-26T21:15:00.000Z",
+            "lastModifiedDate": "2023-02-23T16:32:00.000Z",
             "description": "The llhttp parser <v14.20.1, <v16.17.1 and <v18.9.1 in the http module in Node.js does not strictly use the CRLF sequence to delimit HTTP requests. This can lead to HTTP Request Smuggling (HRS)."
         },
         "CVE-2022-32215": {
             "id": "CVE-2022-32215",
             "baseScore": 6.5,
             "publishedDate": "2022-07-14T15:15:00.000Z",
-            "lastModifiedDate": "2023-01-26T21:15:00.000Z",
+            "lastModifiedDate": "2023-02-23T16:31:00.000Z",
             "description": "The llhttp parser <v14.20.1, <v16.17.1 and <v18.9.1 in the http module in Node.js does not correctly handle multi-line Transfer-Encoding headers. This can lead to HTTP Request Smuggling (HRS)."
         },
         "CVE-2022-32222": {
             "id": "CVE-2022-32222",
             "baseScore": 5.3,
             "publishedDate": "2022-07-14T15:15:00.000Z",
-            "lastModifiedDate": "2023-01-23T16:15:00.000Z",
-            "description": "A cryptographic vulnerability exists on Node.js on linux in versions of 18.x prior to 18.4.0 which allowed a default path for openssl.cnf that might be accessible under some circumstances to a non-admin user instead of /etc/ssl as was the case in versions prior to the upgrade to OpenSSL 3."
+            "lastModifiedDate": "2023-02-23T20:15:00.000Z",
+            "description": "A cryptographic vulnerability exists on Node.js on linux in versions of 18.x prior to 18.40.0 which allowed a default path for openssl.cnf that might be accessible under some circumstances to a non-admin user instead of /etc/ssl as was the case in versions prior to the upgrade to OpenSSL 3."
         },
         "CVE-2022-32223": {
             "id": "CVE-2022-32223",
@@ -4525,6 +4525,27 @@
             "publishedDate": "2022-12-05T22:15:00.000Z",
             "lastModifiedDate": "2023-01-26T21:17:00.000Z",
             "description": "A OS Command Injection vulnerability exists in Node.js versions <14.21.1, <16.18.1, <18.12.1, <19.0.1 due to an insufficient IsAllowedHost check that can easily be bypassed because IsIPAddress does not properly check if an IP address is invalid before making DBS requests allowing rebinding attacks.The fix for this issue in https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32212 was incomplete and this new CVE is to complete the fix."
+        },
+        "CVE-2023-23918": {
+            "id": "CVE-2023-23918",
+            "baseScore": null,
+            "publishedDate": "2023-02-23T20:15:00.000Z",
+            "lastModifiedDate": "2023-02-23T22:58:00.000Z",
+            "description": "A privilege escalation vulnerability exists in Node.js <19.6.1, <18.14.1, <16.19.1 and <14.21.3 that made it possible to bypass the experimental Permissions (https://nodejs.org/api/permissions.html) feature in Node.js and access non authorized modules by using process.mainModule.require(). This only affects users who had enabled the experimental permissions option with --experimental-policy."
+        },
+        "CVE-2023-23919": {
+            "id": "CVE-2023-23919",
+            "baseScore": null,
+            "publishedDate": "2023-02-23T20:15:00.000Z",
+            "lastModifiedDate": "2023-02-23T22:58:00.000Z",
+            "description": "A cryptographic vulnerability exists in Node.js <19.2.0, <18.14.1, <16.19.1, <14.21.3 that in some cases did does not clear the OpenSSL error stack after operations that may set it. This may lead to false positive errors during subsequent cryptographic operations that happen to be on the same thread. This in turn could be used to cause a denial of service."
+        },
+        "CVE-2023-23920": {
+            "id": "CVE-2023-23920",
+            "baseScore": null,
+            "publishedDate": "2023-02-23T20:15:00.000Z",
+            "lastModifiedDate": "2023-02-23T22:58:00.000Z",
+            "description": "An untrusted search path vulnerability exists in Node.js. <19.6.1, <18.14.1, <16.19.1, and <14.21.3 that could allow an attacker to search and potentially load ICU data when running with elevated privileges."
         },
         "CVE-2023-23936": {
             "id": "CVE-2023-23936",
