@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2023-02-24T13:30:09.017Z",
+    "lastUpdatedDate": "2023-02-25T02:31:13.532Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4549,16 +4549,16 @@
         },
         "CVE-2023-23936": {
             "id": "CVE-2023-23936",
-            "baseScore": null,
+            "baseScore": 5.4,
             "publishedDate": "2023-02-16T18:15:00.000Z",
-            "lastModifiedDate": "2023-02-16T19:39:00.000Z",
+            "lastModifiedDate": "2023-02-24T19:14:00.000Z",
             "description": "Undici is an HTTP/1.1 client for Node.js. Starting with version 2.0.0 and prior to version 5.19.1, the undici library does not protect `host` HTTP header from CRLF injection vulnerabilities. This issue is patched in Undici v5.19.1. As a workaround, sanitize the `headers.host` string before passing to undici."
         },
         "CVE-2023-24807": {
             "id": "CVE-2023-24807",
-            "baseScore": null,
+            "baseScore": 7.5,
             "publishedDate": "2023-02-16T18:15:00.000Z",
-            "lastModifiedDate": "2023-02-16T19:39:00.000Z",
+            "lastModifiedDate": "2023-02-24T18:38:00.000Z",
             "description": "Undici is an HTTP/1.1 client for Node.js. Prior to version 5.19.1, the `Headers.set()` and `Headers.append()` methods are vulnerable to Regular Expression Denial of Service (ReDoS) attacks when untrusted values are passed into the functions. This is due to the inefficient regular expression used to normalize the values in the `headerValueNormalize()` utility function. This vulnerability was patched in v5.19.1. No known workarounds are available."
         }
     }
