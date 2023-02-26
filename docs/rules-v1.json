@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2023-02-26T02:39:02.217Z",
+    "lastUpdatedDate": "2023-02-26T13:27:31.711Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4523,7 +4523,7 @@
             "id": "CVE-2022-43548",
             "baseScore": 8.1,
             "publishedDate": "2022-12-05T22:15:00.000Z",
-            "lastModifiedDate": "2023-01-26T21:17:00.000Z",
+            "lastModifiedDate": "2023-02-26T03:15:00.000Z",
             "description": "A OS Command Injection vulnerability exists in Node.js versions <14.21.1, <16.18.1, <18.12.1, <19.0.1 due to an insufficient IsAllowedHost check that can easily be bypassed because IsIPAddress does not properly check if an IP address is invalid before making DBS requests allowing rebinding attacks.The fix for this issue in https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32212 was incomplete and this new CVE is to complete the fix."
         },
         "CVE-2023-23918": {
@@ -4544,7 +4544,7 @@
             "id": "CVE-2023-23920",
             "baseScore": null,
             "publishedDate": "2023-02-23T20:15:00.000Z",
-            "lastModifiedDate": "2023-02-23T22:58:00.000Z",
+            "lastModifiedDate": "2023-02-26T03:15:00.000Z",
             "description": "An untrusted search path vulnerability exists in Node.js. <19.6.1, <18.14.1, <16.19.1, and <14.21.3 that could allow an attacker to search and potentially load ICU data when running with elevated privileges."
         },
         "CVE-2023-23936": {
