@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2023-03-03T13:29:10.827Z",
+    "lastUpdatedDate": "2023-03-04T02:24:00.563Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4528,23 +4528,23 @@
         },
         "CVE-2023-23918": {
             "id": "CVE-2023-23918",
-            "baseScore": null,
+            "baseScore": 7.5,
             "publishedDate": "2023-02-23T20:15:00.000Z",
-            "lastModifiedDate": "2023-02-23T22:58:00.000Z",
+            "lastModifiedDate": "2023-03-03T19:44:00.000Z",
             "description": "A privilege escalation vulnerability exists in Node.js <19.6.1, <18.14.1, <16.19.1 and <14.21.3 that made it possible to bypass the experimental Permissions (https://nodejs.org/api/permissions.html) feature in Node.js and access non authorized modules by using process.mainModule.require(). This only affects users who had enabled the experimental permissions option with --experimental-policy."
         },
         "CVE-2023-23919": {
             "id": "CVE-2023-23919",
-            "baseScore": null,
+            "baseScore": 7.5,
             "publishedDate": "2023-02-23T20:15:00.000Z",
-            "lastModifiedDate": "2023-02-23T22:58:00.000Z",
+            "lastModifiedDate": "2023-03-03T20:17:00.000Z",
             "description": "A cryptographic vulnerability exists in Node.js <19.2.0, <18.14.1, <16.19.1, <14.21.3 that in some cases did does not clear the OpenSSL error stack after operations that may set it. This may lead to false positive errors during subsequent cryptographic operations that happen to be on the same thread. This in turn could be used to cause a denial of service."
         },
         "CVE-2023-23920": {
             "id": "CVE-2023-23920",
-            "baseScore": null,
+            "baseScore": 4.2,
             "publishedDate": "2023-02-23T20:15:00.000Z",
-            "lastModifiedDate": "2023-02-26T03:15:00.000Z",
+            "lastModifiedDate": "2023-03-03T20:06:00.000Z",
             "description": "An untrusted search path vulnerability exists in Node.js. <19.6.1, <18.14.1, <16.19.1, and <14.21.3 that could allow an attacker to search and potentially load ICU data when running with elevated privileges."
         },
         "CVE-2023-23936": {
