@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2023-04-27T13:28:43.217Z",
+    "lastUpdatedDate": "2023-04-28T02:10:43.773Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4565,7 +4565,7 @@
             "id": "CVE-2022-43548",
             "baseScore": 8.1,
             "publishedDate": "2022-12-05T22:15:00.000Z",
-            "lastModifiedDate": "2023-03-01T16:36:00.000Z",
+            "lastModifiedDate": "2023-04-27T15:15:00.000Z",
             "description": "A OS Command Injection vulnerability exists in Node.js versions <14.21.1, <16.18.1, <18.12.1, <19.0.1 due to an insufficient IsAllowedHost check that can easily be bypassed because IsIPAddress does not properly check if an IP address is invalid before making DBS requests allowing rebinding attacks.The fix for this issue in https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-32212 was incomplete and this new CVE is to complete the fix."
         },
         "CVE-2023-23918": {
