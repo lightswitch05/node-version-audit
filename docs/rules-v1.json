@@ -1,11 +1,11 @@
 {
-    "lastUpdatedDate": "2023-07-01T02:47:01.367Z",
+    "lastUpdatedDate": "2023-07-01T13:25:59.099Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
     "releasesCount": 566,
-    "cveCount": 129,
+    "cveCount": 131,
     "supportVersionsCount": 17,
     "latestVersion": "20.3.1",
     "latestVersions": {
@@ -4658,6 +4658,20 @@
             "publishedDate": "2023-02-16T18:15:00.000Z",
             "lastModifiedDate": "2023-02-24T18:38:00.000Z",
             "description": "Undici is an HTTP/1.1 client for Node.js. Prior to version 5.19.1, the `Headers.set()` and `Headers.append()` methods are vulnerable to Regular Expression Denial of Service (ReDoS) attacks when untrusted values are passed into the functions. This is due to the inefficient regular expression used to normalize the values in the `headerValueNormalize()` utility function. This vulnerability was patched in v5.19.1. No known workarounds are available."
+        },
+        "CVE-2023-30586": {
+            "id": "CVE-2023-30586",
+            "baseScore": null,
+            "publishedDate": "2023-07-01T00:15:00.000Z",
+            "lastModifiedDate": "2023-07-01T00:15:00.000Z",
+            "description": "A privilege escalation vulnerability exists in Node.js 20 that allowed loading arbitrary OpenSSL engines when the experimental permission model is enabled, which can bypass and/or disable the permission model. The attack complexity is high. However, the crypto.setEngine() API can be used to bypass the permission model when called with a compatible OpenSSL engine. The OpenSSL engine can, for example, disable the permission model in the host process by manipulating the process's stack memory to locate the permission model Permission::enabled_ in the host process's heap memory. Please note that at the time this CVE was issued, the permission model is an experimental feature of Node.js."
+        },
+        "CVE-2023-30589": {
+            "id": "CVE-2023-30589",
+            "baseScore": null,
+            "publishedDate": "2023-07-01T00:15:00.000Z",
+            "lastModifiedDate": "2023-07-01T00:15:00.000Z",
+            "description": "The llhttp parser in the http module in Node v20.2.0 does not strictly use the CRLF sequence to delimit HTTP requests. This can lead to HTTP Request Smuggling (HRS).\r\n\r\nThe CR character (without LF) is sufficient to delimit HTTP header fields in the llhttp parser. According to RFC7230 section 3, only the CRLF sequence should delimit each header-field. This impacts all Node.js active versions: v16, v18, and, v20\r\n"
         }
     }
 }
