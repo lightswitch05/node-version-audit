@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2023-07-10T13:31:09.394Z",
+    "lastUpdatedDate": "2023-07-11T02:32:27.083Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4667,9 +4667,9 @@
         },
         "CVE-2023-30586": {
             "id": "CVE-2023-30586",
-            "baseScore": null,
+            "baseScore": 7.5,
             "publishedDate": "2023-07-01T00:15:00.000Z",
-            "lastModifiedDate": "2023-07-03T01:10:00.000Z",
+            "lastModifiedDate": "2023-07-10T14:01:00.000Z",
             "description": "A privilege escalation vulnerability exists in Node.js 20 that allowed loading arbitrary OpenSSL engines when the experimental permission model is enabled, which can bypass and/or disable the permission model. The attack complexity is high. However, the crypto.setEngine() API can be used to bypass the permission model when called with a compatible OpenSSL engine. The OpenSSL engine can, for example, disable the permission model in the host process by manipulating the process's stack memory to locate the permission model Permission::enabled_ in the host process's heap memory. Please note that at the time this CVE was issued, the permission model is an experimental feature of Node.js."
         },
         "CVE-2023-30589": {
