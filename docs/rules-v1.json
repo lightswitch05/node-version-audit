@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2023-07-19T03:26:02.681Z",
+    "lastUpdatedDate": "2023-07-19T13:26:00.226Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4584,21 +4584,21 @@
             "id": "CVE-2022-32213",
             "baseScore": 6.5,
             "publishedDate": "2022-07-14T15:15:00.000Z",
-            "lastModifiedDate": "2023-02-23T16:32:00.000Z",
+            "lastModifiedDate": "2023-07-19T00:56:00.000Z",
             "description": "The llhttp parser <v14.20.1, <v16.17.1 and <v18.9.1 in the http module in Node.js does not correctly parse and validate Transfer-Encoding headers and can lead to HTTP Request Smuggling (HRS)."
         },
         "CVE-2022-32214": {
             "id": "CVE-2022-32214",
             "baseScore": 6.5,
             "publishedDate": "2022-07-14T15:15:00.000Z",
-            "lastModifiedDate": "2023-02-23T16:32:00.000Z",
+            "lastModifiedDate": "2023-07-19T00:55:00.000Z",
             "description": "The llhttp parser <v14.20.1, <v16.17.1 and <v18.9.1 in the http module in Node.js does not strictly use the CRLF sequence to delimit HTTP requests. This can lead to HTTP Request Smuggling (HRS)."
         },
         "CVE-2022-32215": {
             "id": "CVE-2022-32215",
             "baseScore": 6.5,
             "publishedDate": "2022-07-14T15:15:00.000Z",
-            "lastModifiedDate": "2023-02-23T16:31:00.000Z",
+            "lastModifiedDate": "2023-07-19T00:56:00.000Z",
             "description": "The llhttp parser <v14.20.1, <v16.17.1 and <v18.9.1 in the http module in Node.js does not correctly handle multi-line Transfer-Encoding headers. This can lead to HTTP Request Smuggling (HRS)."
         },
         "CVE-2022-32222": {
@@ -4682,7 +4682,7 @@
             "id": "CVE-2023-30589",
             "baseScore": 7.5,
             "publishedDate": "2023-07-01T00:15:00.000Z",
-            "lastModifiedDate": "2023-07-11T17:21:00.000Z",
+            "lastModifiedDate": "2023-07-19T06:15:00.000Z",
             "description": "The llhttp parser in the http module in Node v20.2.0 does not strictly use the CRLF sequence to delimit HTTP requests. This can lead to HTTP Request Smuggling (HRS).\r\n\r\nThe CR character (without LF) is sufficient to delimit HTTP header fields in the llhttp parser. According to RFC7230 section 3, only the CRLF sequence should delimit each header-field. This impacts all Node.js active versions: v16, v18, and, v20\r\n"
         }
     }
