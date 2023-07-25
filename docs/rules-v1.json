@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2023-07-24T13:26:10.020Z",
+    "lastUpdatedDate": "2023-07-25T02:23:53.330Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4611,7 +4611,7 @@
             "id": "CVE-2022-32222",
             "baseScore": 5.3,
             "publishedDate": "2022-07-14T15:15:00.000Z",
-            "lastModifiedDate": "2023-02-23T20:15:00.000Z",
+            "lastModifiedDate": "2023-07-24T13:16:00.000Z",
             "description": "A cryptographic vulnerability exists on Node.js on linux in versions of 18.x prior to 18.40.0 which allowed a default path for openssl.cnf that might be accessible under some circumstances to a non-admin user instead of /etc/ssl as was the case in versions prior to the upgrade to OpenSSL 3."
         },
         "CVE-2022-32223": {
