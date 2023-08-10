@@ -1,13 +1,13 @@
 {
-    "lastUpdatedDate": "2023-08-09T13:25:24.693Z",
+    "lastUpdatedDate": "2023-08-10T02:11:13.816Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
-    "releasesCount": 569,
+    "releasesCount": 572,
     "cveCount": 131,
     "supportVersionsCount": 17,
-    "latestVersion": "20.5.0",
+    "latestVersion": "20.5.1",
     "latestVersions": {
         "0": "0.12.18",
         "1": "1.8.4",
@@ -25,11 +25,11 @@
         "13": "13.14.0",
         "14": "14.21.3",
         "15": "15.14.0",
-        "16": "16.20.1",
+        "16": "16.20.2",
         "17": "17.9.1",
-        "18": "18.17.0",
+        "18": "18.17.1",
         "19": "19.9.0",
-        "20": "20.5.0",
+        "20": "20.5.1",
         "0.10": "0.10.48",
         "0.12": "0.12.18",
         "1.0": "1.0.4",
@@ -269,7 +269,7 @@
         "16.17": "16.17.1",
         "16.18": "16.18.1",
         "16.19": "16.19.1",
-        "16.20": "16.20.1",
+        "16.20": "16.20.2",
         "17.0": "17.0.1",
         "17.1": "17.1.0",
         "17.2": "17.2.0",
@@ -297,7 +297,7 @@
         "18.14": "18.14.2",
         "18.15": "18.15.0",
         "18.16": "18.16.1",
-        "18.17": "18.17.0",
+        "18.17": "18.17.1",
         "19.0": "19.0.1",
         "19.1": "19.1.0",
         "19.2": "19.2.0",
@@ -313,7 +313,7 @@
         "20.2": "20.2.0",
         "20.3": "20.3.1",
         "20.4": "20.4.0",
-        "20.5": "20.5.0"
+        "20.5": "20.5.1"
     },
     "supportEndDates": {
         "4": {
@@ -3423,6 +3423,15 @@
                 "CVE-2023-30590"
             ]
         },
+        "16.20.2": {
+            "version": "16.20.2",
+            "releaseDate": "2023-08-09T00:00:00.000Z",
+            "patchedCveIds": [
+                "CVE-2023-32002",
+                "CVE-2023-32006",
+                "CVE-2023-32559"
+            ]
+        },
         "17.0.0": {
             "version": "17.0.0",
             "releaseDate": "2021-10-19T00:00:00.000Z",
@@ -3653,6 +3662,15 @@
             "releaseDate": "2023-07-18T00:00:00.000Z",
             "patchedCveIds": []
         },
+        "18.17.1": {
+            "version": "18.17.1",
+            "releaseDate": "2023-08-09T00:00:00.000Z",
+            "patchedCveIds": [
+                "CVE-2023-32002",
+                "CVE-2023-32006",
+                "CVE-2023-32559"
+            ]
+        },
         "19.0.0": {
             "version": "19.0.0",
             "releaseDate": "2022-10-18T00:00:00.000Z",
@@ -3771,6 +3789,19 @@
             "version": "20.5.0",
             "releaseDate": "2023-07-18T00:00:00.000Z",
             "patchedCveIds": []
+        },
+        "20.5.1": {
+            "version": "20.5.1",
+            "releaseDate": "2023-08-09T00:00:00.000Z",
+            "patchedCveIds": [
+                "CVE-2023-32002",
+                "CVE-2023-32003",
+                "CVE-2023-32004",
+                "CVE-2023-32005",
+                "CVE-2023-32006",
+                "CVE-2023-32558",
+                "CVE-2023-32559"
+            ]
         }
     },
     "cves": {
@@ -4457,7 +4488,7 @@
             "id": "CVE-2021-23362",
             "baseScore": 5.3,
             "publishedDate": "2021-03-23T17:15:00.000Z",
-            "lastModifiedDate": "2022-04-08T13:31:00.000Z",
+            "lastModifiedDate": "2023-08-08T14:22:00.000Z",
             "description": "The package hosted-git-info before 3.0.8 are vulnerable to Regular Expression Denial of Service (ReDoS) via regular expression shortcutMatch in the fromUrl function in index.js. The affected regular expression exhibits polynomial worst-case time complexity."
         },
         "CVE-2021-23840": {
@@ -4555,14 +4586,14 @@
             "id": "CVE-2022-2097",
             "baseScore": 5.3,
             "publishedDate": "2022-07-05T11:15:00.000Z",
-            "lastModifiedDate": "2023-04-20T09:15:00.000Z",
+            "lastModifiedDate": "2023-08-08T14:22:00.000Z",
             "description": "AES OCB mode for 32-bit x86 platforms using the AES-NI assembly optimised implementation will not encrypt the entirety of the data under some circumstances. This could reveal sixteen bytes of data that was preexisting in the memory that wasn't written. In the special case of \"in place\" encryption, sixteen bytes of the plaintext would be revealed. Since OpenSSL does not support OCB based cipher suites for TLS and DTLS, they are both unaffected. Fixed in OpenSSL 3.0.5 (Affected 3.0.0-3.0.4). Fixed in OpenSSL 1.1.1q (Affected 1.1.1-1.1.1p)."
         },
         "CVE-2022-3602": {
             "id": "CVE-2022-3602",
             "baseScore": 7.5,
             "publishedDate": "2022-11-01T18:15:00.000Z",
-            "lastModifiedDate": "2023-01-19T15:48:00.000Z",
+            "lastModifiedDate": "2023-08-08T14:21:00.000Z",
             "description": "A buffer overrun can be triggered in X.509 certificate verification, specifically in name constraint checking. Note that this occurs after certificate chain signature verification and requires either a CA to have signed the malicious certificate or for the application to continue certificate verification despite failure to construct a path to a trusted issuer. An attacker can craft a malicious email address to overflow four attacker-controlled bytes on the stack. This buffer overflow could result in a crash (causing a denial of service) or potentially remote code execution. Many platforms implement stack overflow protections which would mitigate against the risk of remote code execution. The risk may be further mitigated based on stack layout for any given platform/compiler. Pre-announcements of CVE-2022-3602 described this issue as CRITICAL. Further analysis based on some of the mitigating factors described above have led this to be downgraded to HIGH. Users are still encouraged to upgrade to a new version as soon as possible. In a TLS client, this can be triggered by connecting to a malicious server. In a TLS server, this can be triggered if the server requests client authentication and a malicious client connects. Fixed in OpenSSL 3.0.7 (Affected 3.0.0,3.0.1,3.0.2,3.0.3,3.0.4,3.0.5,3.0.6)."
         },
         "CVE-2022-3786": {
