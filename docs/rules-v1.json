@@ -1,11 +1,11 @@
 {
-    "lastUpdatedDate": "2023-08-15T13:21:40.764Z",
+    "lastUpdatedDate": "2023-08-16T01:52:57.309Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
     "releasesCount": 572,
-    "cveCount": 131,
+    "cveCount": 134,
     "supportVersionsCount": 17,
     "latestVersion": "20.5.1",
     "latestVersions": {
@@ -4721,6 +4721,27 @@
             "publishedDate": "2023-07-01T00:15:00.000Z",
             "lastModifiedDate": "2023-08-07T03:15:00.000Z",
             "description": "The llhttp parser in the http module in Node v20.2.0 does not strictly use the CRLF sequence to delimit HTTP requests. This can lead to HTTP Request Smuggling (HRS).\r\n\r\nThe CR character (without LF) is sufficient to delimit HTTP header fields in the llhttp parser. According to RFC7230 section 3, only the CRLF sequence should delimit each header-field. This impacts all Node.js active versions: v16, v18, and, v20\r\n"
+        },
+        "CVE-2023-32003": {
+            "id": "CVE-2023-32003",
+            "baseScore": null,
+            "publishedDate": "2023-08-15T16:15:00.000Z",
+            "lastModifiedDate": "2023-08-15T17:15:00.000Z",
+            "description": "`fs.mkdtemp()` and `fs.mkdtempSync()` can be used to bypass the permission model check using a path traversal attack. This flaw arises from a missing check in the fs.mkdtemp() API and the impact is a malicious actor could create an arbitrary directory.\n\nThis vulnerability affects all users using the experimental permission model in Node.js 20.\n\nPlease note that at the time this CVE was issued, the permission model is an experimental feature of Node.js."
+        },
+        "CVE-2023-32004": {
+            "id": "CVE-2023-32004",
+            "baseScore": null,
+            "publishedDate": "2023-08-15T16:15:00.000Z",
+            "lastModifiedDate": "2023-08-15T17:15:00.000Z",
+            "description": "A vulnerability has been discovered in Node.js version 20, specifically within the experimental permission model. This flaw relates to improper handling of Buffers in file system APIs causing a traversal path to bypass when verifying file permissions.\n\nThis vulnerability affects all users using the experimental permission model in Node.js 20.\n\nPlease note that at the time this CVE was issued, the permission model is an experimental feature of Node.js."
+        },
+        "CVE-2023-32006": {
+            "id": "CVE-2023-32006",
+            "baseScore": null,
+            "publishedDate": "2023-08-15T16:15:00.000Z",
+            "lastModifiedDate": "2023-08-15T17:15:00.000Z",
+            "description": "The use of `module.constructor.createRequire()` can bypass the policy mechanism and require modules outside of the policy.json definition for a given module.\n\nThis vulnerability affects all users using the experimental policy mechanism in all active release lines: 16.x, 18.x, and, 20.x.\n\nPlease note that at the time this CVE was issued, the policy is an experimental feature of Node.js."
         }
     }
 }
