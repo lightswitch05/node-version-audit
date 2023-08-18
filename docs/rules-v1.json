@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2023-08-17T13:24:56.268Z",
+    "lastUpdatedDate": "2023-08-18T01:52:14.940Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4719,7 +4719,7 @@
             "id": "CVE-2023-30589",
             "baseScore": 7.5,
             "publishedDate": "2023-07-01T00:15:00.000Z",
-            "lastModifiedDate": "2023-08-07T03:15:00.000Z",
+            "lastModifiedDate": "2023-08-17T19:15:00.000Z",
             "description": "The llhttp parser in the http module in Node v20.2.0 does not strictly use the CRLF sequence to delimit HTTP requests. This can lead to HTTP Request Smuggling (HRS).\r\n\r\nThe CR character (without LF) is sufficient to delimit HTTP header fields in the llhttp parser. According to RFC7230 section 3, only the CRLF sequence should delimit each header-field. This impacts all Node.js active versions: v16, v18, and, v20\r\n"
         },
         "CVE-2023-32003": {
