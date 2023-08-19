@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2023-08-19T01:49:40.970Z",
+    "lastUpdatedDate": "2023-08-19T13:21:01.517Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4726,21 +4726,21 @@
             "id": "CVE-2023-32003",
             "baseScore": null,
             "publishedDate": "2023-08-15T16:15:00.000Z",
-            "lastModifiedDate": "2023-08-16T03:15:00.000Z",
+            "lastModifiedDate": "2023-08-19T03:15:00.000Z",
             "description": "`fs.mkdtemp()` and `fs.mkdtempSync()` can be used to bypass the permission model check using a path traversal attack. This flaw arises from a missing check in the fs.mkdtemp() API and the impact is a malicious actor could create an arbitrary directory.\n\nThis vulnerability affects all users using the experimental permission model in Node.js 20.\n\nPlease note that at the time this CVE was issued, the permission model is an experimental feature of Node.js."
         },
         "CVE-2023-32004": {
             "id": "CVE-2023-32004",
             "baseScore": null,
             "publishedDate": "2023-08-15T16:15:00.000Z",
-            "lastModifiedDate": "2023-08-16T03:15:00.000Z",
+            "lastModifiedDate": "2023-08-19T03:15:00.000Z",
             "description": "A vulnerability has been discovered in Node.js version 20, specifically within the experimental permission model. This flaw relates to improper handling of Buffers in file system APIs causing a traversal path to bypass when verifying file permissions.\n\nThis vulnerability affects all users using the experimental permission model in Node.js 20.\n\nPlease note that at the time this CVE was issued, the permission model is an experimental feature of Node.js."
         },
         "CVE-2023-32006": {
             "id": "CVE-2023-32006",
             "baseScore": null,
             "publishedDate": "2023-08-15T16:15:00.000Z",
-            "lastModifiedDate": "2023-08-16T03:15:00.000Z",
+            "lastModifiedDate": "2023-08-19T03:15:00.000Z",
             "description": "The use of `module.constructor.createRequire()` can bypass the policy mechanism and require modules outside of the policy.json definition for a given module.\n\nThis vulnerability affects all users using the experimental policy mechanism in all active release lines: 16.x, 18.x, and, 20.x.\n\nPlease note that at the time this CVE was issued, the policy is an experimental feature of Node.js."
         }
     }
