@@ -1,11 +1,11 @@
 {
-    "lastUpdatedDate": "2023-08-21T13:23:11.370Z",
+    "lastUpdatedDate": "2023-08-22T01:53:50.965Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
     "releasesCount": 572,
-    "cveCount": 134,
+    "cveCount": 135,
     "supportVersionsCount": 17,
     "latestVersion": "20.5.1",
     "latestVersions": {
@@ -4721,6 +4721,13 @@
             "publishedDate": "2023-07-01T00:15:00.000Z",
             "lastModifiedDate": "2023-08-17T19:15:00.000Z",
             "description": "The llhttp parser in the http module in Node v20.2.0 does not strictly use the CRLF sequence to delimit HTTP requests. This can lead to HTTP Request Smuggling (HRS).\r\n\r\nThe CR character (without LF) is sufficient to delimit HTTP header fields in the llhttp parser. According to RFC7230 section 3, only the CRLF sequence should delimit each header-field. This impacts all Node.js active versions: v16, v18, and, v20\r\n"
+        },
+        "CVE-2023-32002": {
+            "id": "CVE-2023-32002",
+            "baseScore": null,
+            "publishedDate": "2023-08-21T17:15:00.000Z",
+            "lastModifiedDate": "2023-08-21T18:35:00.000Z",
+            "description": "The use of `Module._load()` can bypass the policy mechanism and require modules outside of the policy.json definition for a given module.\n\nThis vulnerability affects all users using the experimental policy mechanism in all active release lines: 16.x, 18.x and, 20.x.\n\nPlease note that at the time this CVE was issued, the policy is an experimental feature of Node.js."
         },
         "CVE-2023-32003": {
             "id": "CVE-2023-32003",
