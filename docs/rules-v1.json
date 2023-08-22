@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2023-08-22T01:53:50.965Z",
+    "lastUpdatedDate": "2023-08-22T13:22:24.934Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4731,9 +4731,9 @@
         },
         "CVE-2023-32003": {
             "id": "CVE-2023-32003",
-            "baseScore": null,
+            "baseScore": 5.3,
             "publishedDate": "2023-08-15T16:15:00.000Z",
-            "lastModifiedDate": "2023-08-19T03:15:00.000Z",
+            "lastModifiedDate": "2023-08-22T01:55:00.000Z",
             "description": "`fs.mkdtemp()` and `fs.mkdtempSync()` can be used to bypass the permission model check using a path traversal attack. This flaw arises from a missing check in the fs.mkdtemp() API and the impact is a malicious actor could create an arbitrary directory.\n\nThis vulnerability affects all users using the experimental permission model in Node.js 20.\n\nPlease note that at the time this CVE was issued, the permission model is an experimental feature of Node.js."
         },
         "CVE-2023-32004": {
