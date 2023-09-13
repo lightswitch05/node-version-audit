@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2023-09-13T01:56:00.397Z",
+    "lastUpdatedDate": "2023-09-13T13:24:07.873Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4751,7 +4751,7 @@
             "id": "CVE-2023-32004",
             "baseScore": 8.8,
             "publishedDate": "2023-08-15T16:15:00.000Z",
-            "lastModifiedDate": "2023-08-22T14:13:00.000Z",
+            "lastModifiedDate": "2023-09-12T19:54:00.000Z",
             "description": "A vulnerability has been discovered in Node.js version 20, specifically within the experimental permission model. This flaw relates to improper handling of Buffers in file system APIs causing a traversal path to bypass when verifying file permissions.\n\nThis vulnerability affects all users using the experimental permission model in Node.js 20.\n\nPlease note that at the time this CVE was issued, the permission model is an experimental feature of Node.js."
         },
         "CVE-2023-32005": {
