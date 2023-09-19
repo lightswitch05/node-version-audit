@@ -1,13 +1,13 @@
 {
-    "lastUpdatedDate": "2023-09-18T13:22:40.113Z",
+    "lastUpdatedDate": "2023-09-19T01:56:48.409Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
-    "releasesCount": 574,
+    "releasesCount": 576,
     "cveCount": 138,
     "supportVersionsCount": 17,
-    "latestVersion": "20.6.1",
+    "latestVersion": "20.7.0",
     "latestVersions": {
         "0": "0.12.18",
         "1": "1.8.4",
@@ -27,9 +27,9 @@
         "15": "15.14.0",
         "16": "16.20.2",
         "17": "17.9.1",
-        "18": "18.17.1",
+        "18": "18.18.0",
         "19": "19.9.0",
-        "20": "20.6.1",
+        "20": "20.7.0",
         "0.10": "0.10.48",
         "0.12": "0.12.18",
         "1.0": "1.0.4",
@@ -298,6 +298,7 @@
         "18.15": "18.15.0",
         "18.16": "18.16.1",
         "18.17": "18.17.1",
+        "18.18": "18.18.0",
         "19.0": "19.0.1",
         "19.1": "19.1.0",
         "19.2": "19.2.0",
@@ -314,7 +315,8 @@
         "20.3": "20.3.1",
         "20.4": "20.4.0",
         "20.5": "20.5.1",
-        "20.6": "20.6.1"
+        "20.6": "20.6.1",
+        "20.7": "20.7.0"
     },
     "supportEndDates": {
         "4": {
@@ -3672,6 +3674,11 @@
                 "CVE-2023-32559"
             ]
         },
+        "18.18.0": {
+            "version": "18.18.0",
+            "releaseDate": "2023-09-18T00:00:00.000Z",
+            "patchedCveIds": []
+        },
         "19.0.0": {
             "version": "19.0.0",
             "releaseDate": "2022-10-18T00:00:00.000Z",
@@ -3812,6 +3819,11 @@
         "20.6.1": {
             "version": "20.6.1",
             "releaseDate": "2023-09-08T00:00:00.000Z",
+            "patchedCveIds": []
+        },
+        "20.7.0": {
+            "version": "20.7.0",
+            "releaseDate": "2023-09-18T00:00:00.000Z",
             "patchedCveIds": []
         }
     },
