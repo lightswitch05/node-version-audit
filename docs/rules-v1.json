@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2023-09-19T01:56:48.409Z",
+    "lastUpdatedDate": "2023-09-19T13:24:10.840Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4000,7 +4000,7 @@
             "id": "CVE-2016-5180",
             "baseScore": 9.8,
             "publishedDate": "2016-10-03T15:59:00.000Z",
-            "lastModifiedDate": "2022-08-16T13:17:00.000Z",
+            "lastModifiedDate": "2023-09-15T11:42:00.000Z",
             "description": "Heap-based buffer overflow in the ares_create_query function in c-ares 1.x before 1.12.0 allows remote attackers to cause a denial of service (out-of-bounds write) or possibly execute arbitrary code via a hostname with an escaped trailing dot."
         },
         "CVE-2016-5325": {
@@ -4077,7 +4077,7 @@
             "id": "CVE-2017-1000381",
             "baseScore": 7.5,
             "publishedDate": "2017-07-07T17:29:00.000Z",
-            "lastModifiedDate": "2022-08-16T13:01:00.000Z",
+            "lastModifiedDate": "2023-09-15T11:42:00.000Z",
             "description": "The c-ares function `ares_parse_naptr_reply()`, which is used for parsing NAPTR responses, could be triggered to read memory outside of the given input buffer if the passed in DNS response packet was crafted in a particular way."
         },
         "CVE-2018-732": {
@@ -4749,21 +4749,21 @@
             "id": "CVE-2023-32002",
             "baseScore": 9.8,
             "publishedDate": "2023-08-21T17:15:00.000Z",
-            "lastModifiedDate": "2023-08-24T21:09:00.000Z",
+            "lastModifiedDate": "2023-09-15T14:15:00.000Z",
             "description": "The use of `Module._load()` can bypass the policy mechanism and require modules outside of the policy.json definition for a given module.\n\nThis vulnerability affects all users using the experimental policy mechanism in all active release lines: 16.x, 18.x and, 20.x.\n\nPlease note that at the time this CVE was issued, the policy is an experimental feature of Node.js."
         },
         "CVE-2023-32003": {
             "id": "CVE-2023-32003",
             "baseScore": 5.3,
             "publishedDate": "2023-08-15T16:15:00.000Z",
-            "lastModifiedDate": "2023-08-22T01:55:00.000Z",
+            "lastModifiedDate": "2023-09-15T14:15:00.000Z",
             "description": "`fs.mkdtemp()` and `fs.mkdtempSync()` can be used to bypass the permission model check using a path traversal attack. This flaw arises from a missing check in the fs.mkdtemp() API and the impact is a malicious actor could create an arbitrary directory.\n\nThis vulnerability affects all users using the experimental permission model in Node.js 20.\n\nPlease note that at the time this CVE was issued, the permission model is an experimental feature of Node.js."
         },
         "CVE-2023-32004": {
             "id": "CVE-2023-32004",
             "baseScore": 8.8,
             "publishedDate": "2023-08-15T16:15:00.000Z",
-            "lastModifiedDate": "2023-09-12T19:54:00.000Z",
+            "lastModifiedDate": "2023-09-15T14:15:00.000Z",
             "description": "A vulnerability has been discovered in Node.js version 20, specifically within the experimental permission model. This flaw relates to improper handling of Buffers in file system APIs causing a traversal path to bypass when verifying file permissions.\n\nThis vulnerability affects all users using the experimental permission model in Node.js 20.\n\nPlease note that at the time this CVE was issued, the permission model is an experimental feature of Node.js."
         },
         "CVE-2023-32005": {
@@ -4777,14 +4777,14 @@
             "id": "CVE-2023-32006",
             "baseScore": 8.8,
             "publishedDate": "2023-08-15T16:15:00.000Z",
-            "lastModifiedDate": "2023-08-22T17:41:00.000Z",
+            "lastModifiedDate": "2023-09-15T14:15:00.000Z",
             "description": "The use of `module.constructor.createRequire()` can bypass the policy mechanism and require modules outside of the policy.json definition for a given module.\n\nThis vulnerability affects all users using the experimental policy mechanism in all active release lines: 16.x, 18.x, and, 20.x.\n\nPlease note that at the time this CVE was issued, the policy is an experimental feature of Node.js."
         },
         "CVE-2023-32558": {
             "id": "CVE-2023-32558",
-            "baseScore": null,
+            "baseScore": 7.5,
             "publishedDate": "2023-09-12T02:15:00.000Z",
-            "lastModifiedDate": "2023-09-12T11:52:00.000Z",
+            "lastModifiedDate": "2023-09-15T17:12:00.000Z",
             "description": "The use of the deprecated API `process.binding()` can bypass the permission model through path traversal. \n\nThis vulnerability affects all users using the experimental permission model in Node.js 20.x.\n\nPlease note that at the time this CVE was issued, the permission model is an experimental feature of Node.js."
         },
         "CVE-2023-32559": {
