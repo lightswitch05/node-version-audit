@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2023-09-20T13:24:56.993Z",
+    "lastUpdatedDate": "2023-09-21T01:54:56.571Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4768,9 +4768,9 @@
         },
         "CVE-2023-32005": {
             "id": "CVE-2023-32005",
-            "baseScore": null,
+            "baseScore": 5.3,
             "publishedDate": "2023-09-12T02:15:00.000Z",
-            "lastModifiedDate": "2023-09-12T11:52:00.000Z",
+            "lastModifiedDate": "2023-09-20T14:11:00.000Z",
             "description": "A vulnerability has been identified in Node.js version 20, affecting users of the experimental permission model when the --allow-fs-read flag is used with a non-* argument.\n\nThis flaw arises from an inadequate permission model that fails to restrict file stats through the `fs.statfs` API. As a result, malicious actors can retrieve stats from files that they do not have explicit read access to.\n\nThis vulnerability affects all users using the experimental permission model in Node.js 20.\n\nPlease note that at the time this CVE was issued, the permission model is an experimental feature of Node.js."
         },
         "CVE-2023-32006": {
