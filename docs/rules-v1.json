@@ -1,13 +1,13 @@
 {
-    "lastUpdatedDate": "2023-10-13T13:25:44.912Z",
+    "lastUpdatedDate": "2023-10-14T01:54:01.350Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
-    "releasesCount": 578,
-    "cveCount": 138,
+    "releasesCount": 580,
+    "cveCount": 140,
     "supportVersionsCount": 21,
-    "latestVersion": "20.8.0",
+    "latestVersion": "20.8.1",
     "latestVersions": {
         "0": "0.12.18",
         "1": "1.8.4",
@@ -27,9 +27,9 @@
         "15": "15.14.0",
         "16": "16.20.2",
         "17": "17.9.1",
-        "18": "18.18.1",
+        "18": "18.18.2",
         "19": "19.9.0",
-        "20": "20.8.0",
+        "20": "20.8.1",
         "0.10": "0.10.48",
         "0.12": "0.12.18",
         "1.0": "1.0.4",
@@ -298,7 +298,7 @@
         "18.15": "18.15.0",
         "18.16": "18.16.1",
         "18.17": "18.17.1",
-        "18.18": "18.18.1",
+        "18.18": "18.18.2",
         "19.0": "19.0.1",
         "19.1": "19.1.0",
         "19.2": "19.2.0",
@@ -317,7 +317,7 @@
         "20.5": "20.5.1",
         "20.6": "20.6.1",
         "20.7": "20.7.0",
-        "20.8": "20.8.0"
+        "20.8": "20.8.1"
     },
     "supportEndDates": {
         "4": {
@@ -3707,6 +3707,16 @@
             "releaseDate": "2023-10-10T00:00:00.000Z",
             "patchedCveIds": []
         },
+        "18.18.2": {
+            "version": "18.18.2",
+            "releaseDate": "2023-10-13T00:00:00.000Z",
+            "patchedCveIds": [
+                "CVE-2023-38552",
+                "CVE-2023-39333",
+                "CVE-2023-44487",
+                "CVE-2023-45143"
+            ]
+        },
         "19.0.0": {
             "version": "19.0.0",
             "releaseDate": "2022-10-18T00:00:00.000Z",
@@ -3858,6 +3868,18 @@
             "version": "20.8.0",
             "releaseDate": "2023-09-28T00:00:00.000Z",
             "patchedCveIds": []
+        },
+        "20.8.1": {
+            "version": "20.8.1",
+            "releaseDate": "2023-10-13T00:00:00.000Z",
+            "patchedCveIds": [
+                "CVE-2023-38552",
+                "CVE-2023-39331",
+                "CVE-2023-39332",
+                "CVE-2023-39333",
+                "CVE-2023-44487",
+                "CVE-2023-45143"
+            ]
         }
     },
     "cves": {
@@ -4826,6 +4848,20 @@
             "publishedDate": "2023-08-24T02:15:00.000Z",
             "lastModifiedDate": "2023-10-06T15:15:00.000Z",
             "description": "A privilege escalation vulnerability exists in the experimental policy mechanism in all active release lines: 16.x, 18.x and, 20.x. The use of the deprecated API `process.binding()` can bypass the policy mechanism by requiring internal modules and eventually take advantage of `process.binding('spawn_sync')` run arbitrary code, outside of the limits defined in a `policy.json` file. Please note that at the time this CVE was issued, the policy is an experimental feature of Node.js."
+        },
+        "CVE-2023-44487": {
+            "id": "CVE-2023-44487",
+            "baseScore": 7.5,
+            "publishedDate": "2023-10-10T14:15:00.000Z",
+            "lastModifiedDate": "2023-10-13T21:15:00.000Z",
+            "description": "The HTTP/2 protocol allows a denial of service (server resource consumption) because request cancellation can reset many streams quickly, as exploited in the wild in August through October 2023."
+        },
+        "CVE-2023-45143": {
+            "id": "CVE-2023-45143",
+            "baseScore": null,
+            "publishedDate": "2023-10-12T17:15:00.000Z",
+            "lastModifiedDate": "2023-10-12T19:42:00.000Z",
+            "description": "Undici is an HTTP/1.1 client written from scratch for Node.js. Prior to version 5.26.2, Undici already cleared Authorization headers on cross-origin redirects, but did not clear `Cookie` headers. By design, `cookie` headers are forbidden request headers, disallowing them to be set in RequestInit.headers in browser environments. Since undici handles headers more liberally than the spec, there was a disconnect from the assumptions the spec made, and undici's implementation of fetch. As such this may lead to accidental leakage of cookie to a third-party site or a malicious attacker who can control the redirection target (ie. an open redirector) to leak the cookie to the third party site. This was patched in version 5.26.2. There are no known workarounds."
         }
     }
 }
