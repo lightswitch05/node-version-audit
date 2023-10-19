@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2023-10-19T01:56:55.602Z",
+    "lastUpdatedDate": "2023-10-19T13:28:24.550Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4328,7 +4328,7 @@
             "id": "CVE-2019-9514",
             "baseScore": 7.5,
             "publishedDate": "2019-08-13T21:15:00.000Z",
-            "lastModifiedDate": "2022-08-12T18:41:00.000Z",
+            "lastModifiedDate": "2023-10-19T03:15:00.000Z",
             "description": "Some HTTP/2 implementations are vulnerable to a reset flood, potentially leading to a denial of service. The attacker opens a number of streams and sends an invalid request over each stream that should solicit a stream of RST_STREAM frames from the peer. Depending on how the peer queues the RST_STREAM frames, this can consume excess memory, CPU, or both."
         },
         "CVE-2019-9515": {
@@ -4881,7 +4881,7 @@
             "id": "CVE-2023-44487",
             "baseScore": 7.5,
             "publishedDate": "2023-10-10T14:15:00.000Z",
-            "lastModifiedDate": "2023-10-18T21:15:00.000Z",
+            "lastModifiedDate": "2023-10-19T03:15:00.000Z",
             "description": "The HTTP/2 protocol allows a denial of service (server resource consumption) because request cancellation can reset many streams quickly, as exploited in the wild in August through October 2023."
         },
         "CVE-2023-45143": {
