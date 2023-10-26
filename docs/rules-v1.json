@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2023-10-25T13:23:44.208Z",
+    "lastUpdatedDate": "2023-10-26T01:55:02.856Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4870,37 +4870,37 @@
         },
         "CVE-2023-38552": {
             "id": "CVE-2023-38552",
-            "baseScore": null,
+            "baseScore": 7.5,
             "publishedDate": "2023-10-18T04:15:00.000Z",
-            "lastModifiedDate": "2023-10-18T12:46:00.000Z",
+            "lastModifiedDate": "2023-10-25T18:17:00.000Z",
             "description": "When the Node.js policy feature checks the integrity of a resource against a trusted manifest, the application can intercept the operation and return a forged checksum to the node's policy implementation, thus effectively disabling the integrity check.\nImpacts:\nThis vulnerability affects all users using the experimental policy mechanism in all active release lines: 18.x and, 20.x.\nPlease note that at the time this CVE was issued, the policy mechanism is an experimental feature of Node.js."
         },
         "CVE-2023-39331": {
             "id": "CVE-2023-39331",
-            "baseScore": null,
+            "baseScore": 7.5,
             "publishedDate": "2023-10-18T04:15:00.000Z",
-            "lastModifiedDate": "2023-10-18T12:46:00.000Z",
+            "lastModifiedDate": "2023-10-25T17:40:00.000Z",
             "description": "A previously disclosed vulnerability (CVE-2023-30584) was patched insufficiently in commit 205f1e6. The new path traversal vulnerability arises because the implementation does not protect itself against the application overwriting built-in utility functions with user-defined implementations.\n\nPlease note that at the time this CVE was issued, the permission model is an experimental feature of Node.js."
         },
         "CVE-2023-39332": {
             "id": "CVE-2023-39332",
-            "baseScore": null,
+            "baseScore": 9.8,
             "publishedDate": "2023-10-18T04:15:00.000Z",
-            "lastModifiedDate": "2023-10-18T12:46:00.000Z",
+            "lastModifiedDate": "2023-10-25T17:39:00.000Z",
             "description": "Various `node:fs` functions allow specifying paths as either strings or `Uint8Array` objects. In Node.js environments, the `Buffer` class extends the `Uint8Array` class. Node.js prevents path traversal through strings (see CVE-2023-30584) and `Buffer` objects (see CVE-2023-32004), but not through non-`Buffer` `Uint8Array` objects.\n\nThis is distinct from CVE-2023-32004 ([report 2038134](https://hackerone.com/reports/2038134)), which only referred to `Buffer` objects. However, the vulnerability follows the same pattern using `Uint8Array` instead of `Buffer`.\n\nImpacts:\n\nThis vulnerability affects all users using the experimental permission model in Node.js 20.\n\nPlease note that at the time this CVE was issued, the permission model is an experimental feature of Node.js."
         },
         "CVE-2023-44487": {
             "id": "CVE-2023-44487",
             "baseScore": 7.5,
             "publishedDate": "2023-10-10T14:15:00.000Z",
-            "lastModifiedDate": "2023-10-24T12:58:00.000Z",
+            "lastModifiedDate": "2023-10-25T18:17:00.000Z",
             "description": "The HTTP/2 protocol allows a denial of service (server resource consumption) because request cancellation can reset many streams quickly, as exploited in the wild in August through October 2023."
         },
         "CVE-2023-45143": {
             "id": "CVE-2023-45143",
             "baseScore": 3.5,
             "publishedDate": "2023-10-12T17:15:00.000Z",
-            "lastModifiedDate": "2023-10-18T18:21:00.000Z",
+            "lastModifiedDate": "2023-10-25T18:17:00.000Z",
             "description": "Undici is an HTTP/1.1 client written from scratch for Node.js. Prior to version 5.26.2, Undici already cleared Authorization headers on cross-origin redirects, but did not clear `Cookie` headers. By design, `cookie` headers are forbidden request headers, disallowing them to be set in RequestInit.headers in browser environments. Since undici handles headers more liberally than the spec, there was a disconnect from the assumptions the spec made, and undici's implementation of fetch. As such this may lead to accidental leakage of cookie to a third-party site or a malicious attacker who can control the redirection target (ie. an open redirector) to leak the cookie to the third party site. This was patched in version 5.26.2. There are no known workarounds."
         }
     }
