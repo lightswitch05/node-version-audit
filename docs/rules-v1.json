@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2023-11-03T01:57:45.178Z",
+    "lastUpdatedDate": "2023-11-03T13:24:21.693Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4893,7 +4893,7 @@
             "id": "CVE-2023-44487",
             "baseScore": 7.5,
             "publishedDate": "2023-10-10T14:15:00.000Z",
-            "lastModifiedDate": "2023-10-31T16:15:00.000Z",
+            "lastModifiedDate": "2023-11-03T05:15:00.000Z",
             "description": "The HTTP/2 protocol allows a denial of service (server resource consumption) because request cancellation can reset many streams quickly, as exploited in the wild in August through October 2023."
         },
         "CVE-2023-45143": {
