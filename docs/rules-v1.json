@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2023-11-07T13:22:53.644Z",
+    "lastUpdatedDate": "2023-11-08T01:58:37.524Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -3906,7 +3906,7 @@
             "id": "CVE-2013-2882",
             "baseScore": 7.5,
             "publishedDate": "2013-07-31T13:20:00.000Z",
-            "lastModifiedDate": "2022-08-16T13:29:00.000Z",
+            "lastModifiedDate": "2023-11-07T02:15:00.000Z",
             "description": "Google V8, as used in Google Chrome before 28.0.1500.95, allows remote attackers to cause a denial of service or possibly have unspecified other impact via vectors that leverage \"type confusion.\""
         },
         "CVE-2013-6668": {
@@ -3920,14 +3920,14 @@
             "id": "CVE-2014-224",
             "baseScore": 7.4,
             "publishedDate": "2014-06-05T21:55:00.000Z",
-            "lastModifiedDate": "2022-08-16T13:30:00.000Z",
+            "lastModifiedDate": "2023-11-07T02:18:00.000Z",
             "description": "OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h does not properly restrict processing of ChangeCipherSpec messages, which allows man-in-the-middle attackers to trigger use of a zero-length master key in certain OpenSSL-to-OpenSSL communications, and consequently hijack sessions or obtain sensitive information, via a crafted TLS handshake, aka the \"CCS Injection\" vulnerability."
         },
         "CVE-2014-9748": {
             "id": "CVE-2014-9748",
             "baseScore": 8.1,
             "publishedDate": "2020-02-11T17:15:00.000Z",
-            "lastModifiedDate": "2022-08-12T18:28:00.000Z",
+            "lastModifiedDate": "2023-11-07T02:23:00.000Z",
             "description": "The uv_rwlock_t fallback implementation for Windows XP and Server 2003 in libuv before 1.7.4 does not properly prevent threads from releasing the locks of other threads, which allows attackers to cause a denial of service (deadlock) or possibly have unspecified other impact by leveraging a race condition."
         },
         "CVE-2015-278": {
@@ -3948,7 +3948,7 @@
             "id": "CVE-2015-1793",
             "baseScore": 6.5,
             "publishedDate": "2015-07-09T19:17:00.000Z",
-            "lastModifiedDate": "2018-11-30T21:30:00.000Z",
+            "lastModifiedDate": "2023-11-07T02:24:00.000Z",
             "description": "The X509_verify_cert function in crypto/x509/x509_vfy.c in OpenSSL 1.0.1n, 1.0.1o, 1.0.2b, and 1.0.2c does not properly process X.509 Basic Constraints cA values during identification of alternative certificate chains, which allows remote attackers to spoof a Certification Authority role and trigger unintended certificate verifications via a valid leaf certificate."
         },
         "CVE-2015-3193": {
@@ -3962,14 +3962,14 @@
             "id": "CVE-2015-3194",
             "baseScore": 7.5,
             "publishedDate": "2015-12-06T20:59:00.000Z",
-            "lastModifiedDate": "2022-12-13T12:15:00.000Z",
+            "lastModifiedDate": "2023-11-07T02:25:00.000Z",
             "description": "crypto/rsa/rsa_ameth.c in OpenSSL 1.0.1 before 1.0.1q and 1.0.2 before 1.0.2e allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) via an RSA PSS ASN.1 signature that lacks a mask generation function parameter."
         },
         "CVE-2015-6764": {
             "id": "CVE-2015-6764",
             "baseScore": 9.8,
             "publishedDate": "2015-12-06T01:59:00.000Z",
-            "lastModifiedDate": "2022-08-16T13:22:00.000Z",
+            "lastModifiedDate": "2023-11-07T02:27:00.000Z",
             "description": "The BasicJsonStringifier::SerializeJSArray function in json-stringifier.h in the JSON stringifier in Google V8, as used in Google Chrome before 47.0.2526.73, improperly loads array elements, which allows remote attackers to cause a denial of service (out-of-bounds memory access) or possibly have unspecified other impact via crafted JavaScript code."
         },
         "CVE-2015-7384": {
@@ -3990,35 +3990,35 @@
             "id": "CVE-2016-702",
             "baseScore": 5.1,
             "publishedDate": "2016-03-03T20:59:00.000Z",
-            "lastModifiedDate": "2022-12-13T12:15:00.000Z",
+            "lastModifiedDate": "2023-11-07T02:29:00.000Z",
             "description": "The MOD_EXP_CTIME_COPY_FROM_PREBUF function in crypto/bn/bn_exp.c in OpenSSL 1.0.1 before 1.0.1s and 1.0.2 before 1.0.2g does not properly consider cache-bank access times during modular exponentiation, which makes it easier for local users to discover RSA keys by running a crafted application on the same Intel Sandy Bridge CPU core as a victim and leveraging cache-bank conflicts, aka a \"CacheBleed\" attack."
         },
         "CVE-2016-705": {
             "id": "CVE-2016-705",
             "baseScore": 9.8,
             "publishedDate": "2016-03-03T20:59:00.000Z",
-            "lastModifiedDate": "2022-12-13T12:15:00.000Z",
+            "lastModifiedDate": "2023-11-07T02:29:00.000Z",
             "description": "Double free vulnerability in the dsa_priv_decode function in crypto/dsa/dsa_ameth.c in OpenSSL 1.0.1 before 1.0.1s and 1.0.2 before 1.0.2g allows remote attackers to cause a denial of service (memory corruption) or possibly have unspecified other impact via a malformed DSA private key."
         },
         "CVE-2016-797": {
             "id": "CVE-2016-797",
             "baseScore": 7.5,
             "publishedDate": "2016-03-03T20:59:00.000Z",
-            "lastModifiedDate": "2022-12-13T12:15:00.000Z",
+            "lastModifiedDate": "2023-11-07T02:29:00.000Z",
             "description": "Multiple integer overflows in OpenSSL 1.0.1 before 1.0.1s and 1.0.2 before 1.0.2g allow remote attackers to cause a denial of service (heap memory corruption or NULL pointer dereference) or possibly have unspecified other impact via a long digit string that is mishandled by the (1) BN_dec2bn or (2) BN_hex2bn function, related to crypto/bn/bn.h and crypto/bn/bn_print.c."
         },
         "CVE-2016-1669": {
             "id": "CVE-2016-1669",
             "baseScore": 8.8,
             "publishedDate": "2016-05-14T21:59:00.000Z",
-            "lastModifiedDate": "2023-01-19T16:26:00.000Z",
+            "lastModifiedDate": "2023-11-07T02:30:00.000Z",
             "description": "The Zone::New function in zone.cc in Google V8 before 5.0.71.47, as used in Google Chrome before 50.0.2661.102, does not properly determine when to expand certain memory allocations, which allows remote attackers to cause a denial of service (buffer overflow) or possibly have unspecified other impact via crafted JavaScript code."
         },
         "CVE-2016-1699": {
             "id": "CVE-2016-1699",
             "baseScore": 6.5,
             "publishedDate": "2016-06-05T23:59:00.000Z",
-            "lastModifiedDate": "2018-10-30T16:27:00.000Z",
+            "lastModifiedDate": "2023-11-07T02:30:00.000Z",
             "description": "WebKit/Source/devtools/front_end/devtools.js in the Developer Tools (aka DevTools) subsystem in Blink, as used in Google Chrome before 51.0.2704.79, does not ensure that the remoteFrontendUrl parameter is associated with a chrome-devtools-frontend.appspot.com URL, which allows remote attackers to bypass intended access restrictions via a crafted URL."
         },
         "CVE-2016-2086": {
@@ -4032,21 +4032,21 @@
             "id": "CVE-2016-2105",
             "baseScore": 7.5,
             "publishedDate": "2016-05-05T01:59:00.000Z",
-            "lastModifiedDate": "2022-12-13T12:15:00.000Z",
+            "lastModifiedDate": "2023-11-07T02:30:00.000Z",
             "description": "Integer overflow in the EVP_EncodeUpdate function in crypto/evp/encode.c in OpenSSL before 1.0.1t and 1.0.2 before 1.0.2h allows remote attackers to cause a denial of service (heap memory corruption) via a large amount of binary data."
         },
         "CVE-2016-2107": {
             "id": "CVE-2016-2107",
             "baseScore": 5.9,
             "publishedDate": "2016-05-05T01:59:00.000Z",
-            "lastModifiedDate": "2022-12-13T12:15:00.000Z",
+            "lastModifiedDate": "2023-11-07T02:30:00.000Z",
             "description": "The AES-NI implementation in OpenSSL before 1.0.1t and 1.0.2 before 1.0.2h does not consider memory allocation during a certain padding check, which allows remote attackers to obtain sensitive cleartext information via a padding-oracle attack against an AES CBC session. NOTE: this vulnerability exists because of an incorrect fix for CVE-2013-0169."
         },
         "CVE-2016-2178": {
             "id": "CVE-2016-2178",
             "baseScore": 5.5,
             "publishedDate": "2016-06-20T01:59:00.000Z",
-            "lastModifiedDate": "2022-12-13T12:15:00.000Z",
+            "lastModifiedDate": "2023-11-07T02:31:00.000Z",
             "description": "The dsa_sign_setup function in crypto/dsa/dsa_ossl.c in OpenSSL through 1.0.2h does not properly ensure the use of constant-time operations, which makes it easier for local users to discover a DSA private key via a timing side-channel attack."
         },
         "CVE-2016-2183": {
@@ -4067,14 +4067,14 @@
             "id": "CVE-2016-5172",
             "baseScore": 6.5,
             "publishedDate": "2016-09-25T20:59:00.000Z",
-            "lastModifiedDate": "2022-08-29T20:43:00.000Z",
+            "lastModifiedDate": "2023-11-07T02:33:00.000Z",
             "description": "The parser in Google V8, as used in Google Chrome before 53.0.2785.113, mishandles scopes, which allows remote attackers to obtain sensitive information from arbitrary memory locations via crafted JavaScript code."
         },
         "CVE-2016-5180": {
             "id": "CVE-2016-5180",
             "baseScore": 9.8,
             "publishedDate": "2016-10-03T15:59:00.000Z",
-            "lastModifiedDate": "2023-09-15T11:42:00.000Z",
+            "lastModifiedDate": "2023-11-07T02:33:00.000Z",
             "description": "Heap-based buffer overflow in the ares_create_query function in c-ares 1.x before 1.12.0 allows remote attackers to cause a denial of service (out-of-bounds write) or possibly execute arbitrary code via a hostname with an escaped trailing dot."
         },
         "CVE-2016-5325": {
@@ -4095,21 +4095,21 @@
             "id": "CVE-2016-6304",
             "baseScore": 7.5,
             "publishedDate": "2016-09-26T19:59:00.000Z",
-            "lastModifiedDate": "2022-12-13T12:15:00.000Z",
+            "lastModifiedDate": "2023-11-07T02:33:00.000Z",
             "description": "Multiple memory leaks in t1_lib.c in OpenSSL before 1.0.1u, 1.0.2 before 1.0.2i, and 1.1.0 before 1.1.0a allow remote attackers to cause a denial of service (memory consumption) via large OCSP Status Request extensions."
         },
         "CVE-2016-6306": {
             "id": "CVE-2016-6306",
             "baseScore": 5.9,
             "publishedDate": "2016-09-26T19:59:00.000Z",
-            "lastModifiedDate": "2022-12-13T12:15:00.000Z",
+            "lastModifiedDate": "2023-11-07T02:33:00.000Z",
             "description": "The certificate parser in OpenSSL before 1.0.1u and 1.0.2 before 1.0.2i might allow remote attackers to cause a denial of service (out-of-bounds read) via crafted certificate operations, related to s3_clnt.c and s3_srvr.c."
         },
         "CVE-2016-7052": {
             "id": "CVE-2016-7052",
             "baseScore": 7.5,
             "publishedDate": "2016-09-26T19:59:00.000Z",
-            "lastModifiedDate": "2022-08-16T13:17:00.000Z",
+            "lastModifiedDate": "2023-11-07T02:34:00.000Z",
             "description": "crypto/x509/x509_vfy.c in OpenSSL 1.0.2i allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) by triggering a CRL operation."
         },
         "CVE-2016-7099": {
@@ -4158,28 +4158,28 @@
             "id": "CVE-2018-732",
             "baseScore": 7.5,
             "publishedDate": "2018-06-12T13:29:00.000Z",
-            "lastModifiedDate": "2022-08-16T13:00:00.000Z",
+            "lastModifiedDate": "2023-11-07T02:51:00.000Z",
             "description": "During key agreement in a TLS handshake using a DH(E) based ciphersuite a malicious server can send a very large prime value to the client. This will cause the client to spend an unreasonably long period of time generating a key for this prime resulting in a hang until the client has finished. This could be exploited in a Denial Of Service attack. Fixed in OpenSSL 1.1.0i-dev (Affected 1.1.0-1.1.0h). Fixed in OpenSSL 1.0.2p-dev (Affected 1.0.2-1.0.2o)."
         },
         "CVE-2018-734": {
             "id": "CVE-2018-734",
             "baseScore": 5.9,
             "publishedDate": "2018-10-30T12:29:00.000Z",
-            "lastModifiedDate": "2022-08-29T20:41:00.000Z",
+            "lastModifiedDate": "2023-11-07T02:51:00.000Z",
             "description": "The OpenSSL DSA signature algorithm has been shown to be vulnerable to a timing side channel attack. An attacker could use variations in the signing algorithm to recover the private key. Fixed in OpenSSL 1.1.1a (Affected 1.1.1). Fixed in OpenSSL 1.1.0j (Affected 1.1.0-1.1.0i). Fixed in OpenSSL 1.0.2q (Affected 1.0.2-1.0.2p)."
         },
         "CVE-2018-735": {
             "id": "CVE-2018-735",
             "baseScore": 5.9,
             "publishedDate": "2018-10-29T13:29:00.000Z",
-            "lastModifiedDate": "2022-08-29T20:41:00.000Z",
+            "lastModifiedDate": "2023-11-07T02:51:00.000Z",
             "description": "The OpenSSL ECDSA signature algorithm has been shown to be vulnerable to a timing side channel attack. An attacker could use variations in the signing algorithm to recover the private key. Fixed in OpenSSL 1.1.0j (Affected 1.1.0-1.1.0i). Fixed in OpenSSL 1.1.1a (Affected 1.1.1)."
         },
         "CVE-2018-5407": {
             "id": "CVE-2018-5407",
             "baseScore": 4.7,
             "publishedDate": "2018-11-15T21:29:00.000Z",
-            "lastModifiedDate": "2020-09-18T16:58:00.000Z",
+            "lastModifiedDate": "2023-11-07T02:58:00.000Z",
             "description": "Simultaneous Multi-threading (SMT) in processors can enable local users to exploit software vulnerable to timing attacks via a side-channel timing attack on 'port contention'."
         },
         "CVE-2018-7158": {
@@ -4193,14 +4193,14 @@
             "id": "CVE-2018-7159",
             "baseScore": 5.3,
             "publishedDate": "2018-05-17T14:29:00.000Z",
-            "lastModifiedDate": "2020-02-13T15:55:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:00:00.000Z",
             "description": "The HTTP parser in all current versions of Node.js ignores spaces in the `Content-Length` header, allowing input such as `Content-Length: 1 2` to be interpreted as having a value of `12`. The HTTP specification does not allow for spaces in the `Content-Length` value and the Node.js HTTP parser has been brought into line on this particular difference. The security risk of this flaw to Node.js users is considered to be VERY LOW as it is difficult, and may be impossible, to craft an attack that makes use of this flaw in a way that could not already be achieved by supplying an incorrect value for `Content-Length`. Vulnerabilities may exist in user-code that make incorrect assumptions about the potential accuracy of this value compared to the actual length of the data supplied. Node.js users crafting lower-level HTTP utilities are advised to re-check the length of any input supplied after parsing is complete."
         },
         "CVE-2018-7160": {
             "id": "CVE-2018-7160",
             "baseScore": 8.8,
             "publishedDate": "2018-05-17T14:29:00.000Z",
-            "lastModifiedDate": "2022-08-16T13:01:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:00:00.000Z",
             "description": "The Node.js inspector, in 6.x and later is vulnerable to a DNS rebinding attack which could be exploited to perform remote code execution. An attack is possible from malicious websites open in a web browser on the same computer, or another computer with network access to the computer running the Node.js process. A malicious website could use a DNS rebinding attack to trick the web browser to bypass same-origin-policy checks and to allow HTTP connections to localhost or to hosts on the local network. If a Node.js process with the debug port active is running on localhost or on a host on the local network, the malicious website could connect to it as a debugger, and get full code execution access."
         },
         "CVE-2018-7161": {
@@ -4298,7 +4298,7 @@
             "id": "CVE-2019-1559",
             "baseScore": 5.9,
             "publishedDate": "2019-02-27T23:29:00.000Z",
-            "lastModifiedDate": "2022-08-19T11:14:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:08:00.000Z",
             "description": "If an application encounters a fatal protocol error and then calls SSL_shutdown() twice (once to send a close_notify, and once to receive one) then OpenSSL can respond differently to the calling application if a 0 byte record is received with invalid padding compared to if a 0 byte record is received with an invalid MAC. If the application then behaves differently based on that in a way that is detectable to the remote peer, then this amounts to a padding oracle that could be used to decrypt data. In order for this to be exploitable \"non-stitched\" ciphersuites must be in use. Stitched ciphersuites are optimised implementations of certain commonly used ciphersuites. Also the application must call SSL_shutdown() twice even if a protocol error has occurred (applications should not do this but some do anyway). Fixed in OpenSSL 1.0.2r (Affected 1.0.2-1.0.2q)."
         },
         "CVE-2019-5737": {
@@ -4319,56 +4319,56 @@
             "id": "CVE-2019-9511",
             "baseScore": 7.5,
             "publishedDate": "2019-08-13T21:15:00.000Z",
-            "lastModifiedDate": "2022-08-12T18:43:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:13:00.000Z",
             "description": "Some HTTP/2 implementations are vulnerable to window size manipulation and stream prioritization manipulation, potentially leading to a denial of service. The attacker requests a large amount of data from a specified resource over multiple streams. They manipulate window size and stream priority to force the server to queue the data in 1-byte chunks. Depending on how efficiently this data is queued, this can consume excess CPU, memory, or both."
         },
         "CVE-2019-9512": {
             "id": "CVE-2019-9512",
             "baseScore": 7.5,
             "publishedDate": "2019-08-13T21:15:00.000Z",
-            "lastModifiedDate": "2022-08-12T18:41:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:13:00.000Z",
             "description": "Some HTTP/2 implementations are vulnerable to ping floods, potentially leading to a denial of service. The attacker sends continual pings to an HTTP/2 peer, causing the peer to build an internal queue of responses. Depending on how efficiently this data is queued, this can consume excess CPU, memory, or both."
         },
         "CVE-2019-9513": {
             "id": "CVE-2019-9513",
             "baseScore": 7.5,
             "publishedDate": "2019-08-13T21:15:00.000Z",
-            "lastModifiedDate": "2022-08-12T18:41:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:13:00.000Z",
             "description": "Some HTTP/2 implementations are vulnerable to resource loops, potentially leading to a denial of service. The attacker creates multiple request streams and continually shuffles the priority of the streams in a way that causes substantial churn to the priority tree. This can consume excess CPU."
         },
         "CVE-2019-9514": {
             "id": "CVE-2019-9514",
             "baseScore": 7.5,
             "publishedDate": "2019-08-13T21:15:00.000Z",
-            "lastModifiedDate": "2023-10-19T03:15:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:13:00.000Z",
             "description": "Some HTTP/2 implementations are vulnerable to a reset flood, potentially leading to a denial of service. The attacker opens a number of streams and sends an invalid request over each stream that should solicit a stream of RST_STREAM frames from the peer. Depending on how the peer queues the RST_STREAM frames, this can consume excess memory, CPU, or both."
         },
         "CVE-2019-9515": {
             "id": "CVE-2019-9515",
             "baseScore": 7.5,
             "publishedDate": "2019-08-13T21:15:00.000Z",
-            "lastModifiedDate": "2022-08-12T18:40:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:13:00.000Z",
             "description": "Some HTTP/2 implementations are vulnerable to a settings flood, potentially leading to a denial of service. The attacker sends a stream of SETTINGS frames to the peer. Since the RFC requires that the peer reply with one acknowledgement per SETTINGS frame, an empty SETTINGS frame is almost equivalent in behavior to a ping. Depending on how efficiently this data is queued, this can consume excess CPU, memory, or both."
         },
         "CVE-2019-9516": {
             "id": "CVE-2019-9516",
             "baseScore": 6.5,
             "publishedDate": "2019-08-13T21:15:00.000Z",
-            "lastModifiedDate": "2022-08-05T14:52:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:13:00.000Z",
             "description": "Some HTTP/2 implementations are vulnerable to a header leak, potentially leading to a denial of service. The attacker sends a stream of headers with a 0-length header name and 0-length header value, optionally Huffman encoded into 1-byte or greater headers. Some implementations allocate memory for these headers and keep the allocation alive until the session dies. This can consume excess memory."
         },
         "CVE-2019-9517": {
             "id": "CVE-2019-9517",
             "baseScore": 7.5,
             "publishedDate": "2019-08-13T21:15:00.000Z",
-            "lastModifiedDate": "2023-01-19T20:13:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:13:00.000Z",
             "description": "Some HTTP/2 implementations are vulnerable to unconstrained interal data buffering, potentially leading to a denial of service. The attacker opens the HTTP/2 window so the peer can send without constraint; however, they leave the TCP window closed so the peer cannot actually write (many of) the bytes on the wire. The attacker then sends a stream of requests for a large response object. Depending on how the servers queue the responses, this can consume excess memory, CPU, or both."
         },
         "CVE-2019-9518": {
             "id": "CVE-2019-9518",
             "baseScore": 7.5,
             "publishedDate": "2019-08-13T21:15:00.000Z",
-            "lastModifiedDate": "2022-08-12T18:40:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:13:00.000Z",
             "description": "Some HTTP/2 implementations are vulnerable to a flood of empty frames, potentially leading to a denial of service. The attacker sends a stream of frames with an empty payload and without the end-of-stream flag. These frames can be DATA, HEADERS, CONTINUATION and/or PUSH_PROMISE. The peer spends time processing each frame disproportionate to attack bandwidth. This can consume excess CPU."
         },
         "CVE-2019-15604": {
@@ -4382,7 +4382,7 @@
             "id": "CVE-2019-15605",
             "baseScore": 9.8,
             "publishedDate": "2020-02-07T15:15:00.000Z",
-            "lastModifiedDate": "2022-11-16T02:55:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:05:00.000Z",
             "description": "HTTP request smuggling in Node.js 10, 12, and 13 causes malicious payload delivery when transfer-encoding is malformed"
         },
         "CVE-2019-15606": {
@@ -4396,7 +4396,7 @@
             "id": "CVE-2020-1971",
             "baseScore": 5.9,
             "publishedDate": "2020-12-08T16:15:00.000Z",
-            "lastModifiedDate": "2022-08-29T20:27:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:19:00.000Z",
             "description": "The X.509 GeneralName type is a generic type for representing different types of names. One of those name types is known as EDIPartyName. OpenSSL provides a function GENERAL_NAME_cmp which compares different instances of a GENERAL_NAME to see if they are equal or not. This function behaves incorrectly when both GENERAL_NAMEs contain an EDIPARTYNAME. A NULL pointer dereference and a crash may occur leading to a possible denial of service attack. OpenSSL itself uses the GENERAL_NAME_cmp function for two purposes: 1) Comparing CRL distribution point names between an available CRL and a CRL distribution point embedded in an X509 certificate 2) When verifying that a timestamp response token signer matches the timestamp authority name (exposed via the API functions TS_RESP_verify_response and TS_RESP_verify_token) If an attacker can control both items being compared then that attacker could trigger a crash. For example if the attacker can trick a client or server into checking a malicious certificate against a malicious CRL then this may occur. Note that some applications automatically download CRLs based on a URL embedded in a certificate. This checking happens prior to the signatures on the certificate and CRL being verified. OpenSSL's s_server, s_client and verify tools have support for the \"-crl_download\" option which implements automatic CRL downloading and this attack has been demonstrated to work against those tools. Note that an unrelated bug means that affected versions of OpenSSL cannot parse or construct correct encodings of EDIPARTYNAME. However it is possible to construct a malformed EDIPARTYNAME that OpenSSL's parser will accept and hence trigger this attack. All OpenSSL 1.1.1 and 1.0.2 versions are affected by this issue. Other OpenSSL releases are out of support and have not been checked. Fixed in OpenSSL 1.1.1i (Affected 1.1.1-1.1.1h). Fixed in OpenSSL 1.0.2x (Affected 1.0.2-1.0.2w)."
         },
         "CVE-2020-7774": {
@@ -4424,70 +4424,70 @@
             "id": "CVE-2020-8201",
             "baseScore": 7.4,
             "publishedDate": "2020-09-18T21:15:00.000Z",
-            "lastModifiedDate": "2022-05-24T17:24:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:26:00.000Z",
             "description": "Node.js < 12.18.4 and < 14.11 can be exploited to perform HTTP desync attacks and deliver malicious payloads to unsuspecting users. The payloads can be crafted by an attacker to hijack user sessions, poison cookies, perform clickjacking, and a multitude of other attacks depending on the architecture of the underlying system. The attack was possible due to a bug in processing of carrier-return symbols in the HTTP header names."
         },
         "CVE-2020-8251": {
             "id": "CVE-2020-8251",
             "baseScore": 7.5,
             "publishedDate": "2020-09-18T21:15:00.000Z",
-            "lastModifiedDate": "2022-05-24T16:54:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:26:00.000Z",
             "description": "Node.js < 14.11.0 is vulnerable to HTTP denial of service (DoS) attacks based on delayed requests submission which can make the server unable to accept new connections."
         },
         "CVE-2020-8252": {
             "id": "CVE-2020-8252",
             "baseScore": 7.8,
             "publishedDate": "2020-09-18T21:15:00.000Z",
-            "lastModifiedDate": "2022-05-24T17:16:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:26:00.000Z",
             "description": "The implementation of realpath in libuv < 10.22.1, < 12.18.4, and < 14.9.0 used within Node.js incorrectly determined the buffer size which can result in a buffer overflow if the resolved path is longer than 256 bytes."
         },
         "CVE-2020-8265": {
             "id": "CVE-2020-8265",
             "baseScore": 8.1,
             "publishedDate": "2021-01-06T21:15:00.000Z",
-            "lastModifiedDate": "2022-04-06T16:26:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:26:00.000Z",
             "description": "Node.js versions before 10.23.1, 12.20.1, 14.15.4, 15.5.1 are vulnerable to a use-after-free bug in its TLS implementation. When writing to a TLS enabled socket, node::StreamBase::Write calls node::TLSWrap::DoWrite with a freshly allocated WriteWrap object as first argument. If the DoWrite method does not return an error, this object is passed back to the caller as part of a StreamWriteResult structure. This may be exploited to corrupt memory leading to a Denial of Service or potentially other exploits."
         },
         "CVE-2020-8277": {
             "id": "CVE-2020-8277",
             "baseScore": 7.5,
             "publishedDate": "2020-11-19T01:15:00.000Z",
-            "lastModifiedDate": "2022-05-10T15:25:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:26:00.000Z",
             "description": "A Node.js application that allows an attacker to trigger a DNS request for a host of their choice could trigger a Denial of Service in versions < 15.2.1, < 14.15.1, and < 12.19.1 by getting the application to resolve a DNS record with a larger number of responses. This is fixed in 15.2.1, 14.15.1, and 12.19.1."
         },
         "CVE-2020-8287": {
             "id": "CVE-2020-8287",
             "baseScore": 6.5,
             "publishedDate": "2021-01-06T21:15:00.000Z",
-            "lastModifiedDate": "2023-02-03T19:12:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:26:00.000Z",
             "description": "Node.js versions before 10.23.1, 12.20.1, 14.15.4, 15.5.1 allow two copies of a header field in an HTTP request (for example, two Transfer-Encoding header fields). In this case, Node.js identifies the first header field and ignores the second. This can lead to HTTP Request Smuggling."
         },
         "CVE-2020-10531": {
             "id": "CVE-2020-10531",
             "baseScore": 8.8,
             "publishedDate": "2020-03-12T19:15:00.000Z",
-            "lastModifiedDate": "2022-08-12T18:28:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:14:00.000Z",
             "description": "An issue was discovered in International Components for Unicode (ICU) for C/C++ through 66.1. An integer overflow, leading to a heap-based buffer overflow, exists in the UnicodeString::doAppend() function in common/unistr.cpp."
         },
         "CVE-2020-11080": {
             "id": "CVE-2020-11080",
             "baseScore": 7.5,
             "publishedDate": "2020-06-03T23:15:00.000Z",
-            "lastModifiedDate": "2023-10-16T18:15:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:14:00.000Z",
             "description": "In nghttp2 before version 1.41.0, the overly large HTTP/2 SETTINGS frame payload causes denial of service. The proof of concept attack involves a malicious client constructing a SETTINGS frame with a length of 14,400 bytes (2400 individual settings entries) over and over again. The attack causes the CPU to spike at 100%. nghttp2 v1.41.0 fixes this vulnerability. There is a workaround to this vulnerability. Implement nghttp2_on_frame_recv_callback callback, and if received frame is SETTINGS frame and the number of settings entries are large (e.g., > 32), then drop the connection."
         },
         "CVE-2021-3449": {
             "id": "CVE-2021-3449",
             "baseScore": 5.9,
             "publishedDate": "2021-03-25T15:15:00.000Z",
-            "lastModifiedDate": "2022-08-29T20:27:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:38:00.000Z",
             "description": "An OpenSSL TLS server may crash if sent a maliciously crafted renegotiation ClientHello message from a client. If a TLSv1.2 renegotiation ClientHello omits the signature_algorithms extension (where it was present in the initial ClientHello), but includes a signature_algorithms_cert extension then a NULL pointer dereference will result, leading to a crash and a denial of service attack. A server is only vulnerable if it has TLSv1.2 and renegotiation enabled (which is the default configuration). OpenSSL TLS clients are not impacted by this issue. All OpenSSL 1.1.1 versions are affected by this issue. Users of these versions should upgrade to OpenSSL 1.1.1k. OpenSSL 1.0.2 is not impacted by this issue. Fixed in OpenSSL 1.1.1k (Affected 1.1.1-1.1.1j)."
         },
         "CVE-2021-3450": {
             "id": "CVE-2021-3450",
             "baseScore": 7.4,
             "publishedDate": "2021-03-25T15:15:00.000Z",
-            "lastModifiedDate": "2023-08-04T17:06:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:38:00.000Z",
             "description": "The X509_V_FLAG_X509_STRICT flag enables additional security checks of the certificates present in a certificate chain. It is not set by default. Starting from OpenSSL version 1.1.1h a check to disallow certificates in the chain that have explicitly encoded elliptic curve parameters was added as an additional strict check. An error in the implementation of this check meant that the result of a previous check to confirm that certificates in the chain are valid CA certificates was overwritten. This effectively bypasses the check that non-CA certificates must not be able to issue other certificates. If a \"purpose\" has been configured then there is a subsequent opportunity for checks that the certificate is a valid CA. All of the named \"purpose\" values implemented in libcrypto perform this check. Therefore, where a purpose is set the certificate chain will still be rejected even when the strict flag has been used. A purpose is set by default in libssl client and server certificate verification routines, but it can be overridden or removed by an application. In order to be affected, an application must explicitly set the X509_V_FLAG_X509_STRICT verification flag and either not set a purpose for the certificate verification or, in the case of TLS client or server applications, override the default purpose. OpenSSL versions 1.1.1h and newer are affected by this issue. Users of these versions should upgrade to OpenSSL 1.1.1k. OpenSSL 1.0.2 is not impacted by this issue. Fixed in OpenSSL 1.1.1k (Affected 1.1.1h-1.1.1j)."
         },
         "CVE-2021-3672": {
@@ -4501,28 +4501,28 @@
             "id": "CVE-2021-4044",
             "baseScore": 7.5,
             "publishedDate": "2021-12-14T19:15:00.000Z",
-            "lastModifiedDate": "2022-08-29T20:26:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:40:00.000Z",
             "description": "Internally libssl in OpenSSL calls X509_verify_cert() on the client side to verify a certificate supplied by a server. That function may return a negative return value to indicate an internal error (for example out of memory). Such a negative return value is mishandled by OpenSSL and will cause an IO function (such as SSL_connect() or SSL_do_handshake()) to not indicate success and a subsequent call to SSL_get_error() to return the value SSL_ERROR_WANT_RETRY_VERIFY. This return value is only supposed to be returned by OpenSSL if the application has previously called SSL_CTX_set_cert_verify_callback(). Since most applications do not do this the SSL_ERROR_WANT_RETRY_VERIFY return value from SSL_get_error() will be totally unexpected and applications may not behave correctly as a result. The exact behaviour will depend on the application but it could result in crashes, infinite loops or other similar incorrect responses. This issue is made more serious in combination with a separate bug in OpenSSL 3.0 that will cause X509_verify_cert() to indicate an internal error when processing a certificate chain. This will occur where a certificate does not include the Subject Alternative Name extension but where a Certificate Authority has enforced name constraints. This issue can occur even with valid chains. By combining the two issues an attacker could induce incorrect, application dependent behaviour. Fixed in OpenSSL 3.0.1 (Affected 3.0.0)."
         },
         "CVE-2021-21148": {
             "id": "CVE-2021-21148",
             "baseScore": 8.8,
             "publishedDate": "2021-02-09T16:15:00.000Z",
-            "lastModifiedDate": "2021-05-17T19:56:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:29:00.000Z",
             "description": "Heap buffer overflow in V8 in Google Chrome prior to 88.0.4324.150 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page."
         },
         "CVE-2021-22883": {
             "id": "CVE-2021-22883",
             "baseScore": 7.5,
             "publishedDate": "2021-03-03T18:15:00.000Z",
-            "lastModifiedDate": "2022-10-24T17:05:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:30:00.000Z",
             "description": "Node.js before 10.24.0, 12.21.0, 14.16.0, and 15.10.0 is vulnerable to a denial of service attack when too many connection attempts with an 'unknownProtocol' are established. This leads to a leak of file descriptors. If a file descriptor limit is configured on the system, then the server is unable to accept new connections and prevent the process also from opening, e.g. a file. If no file descriptor limit is configured, then this lead to an excessive memory usage and cause the system to run out of memory."
         },
         "CVE-2021-22884": {
             "id": "CVE-2021-22884",
             "baseScore": 7.5,
             "publishedDate": "2021-03-03T18:15:00.000Z",
-            "lastModifiedDate": "2022-04-06T16:24:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:30:00.000Z",
             "description": "Node.js before 10.24.0, 12.21.0, 14.16.0, and 15.10.0 is vulnerable to DNS rebinding attacks as the whitelist includes “localhost6”. When “localhost6” is not present in /etc/hosts, it is just an ordinary domain that is resolved via DNS, i.e., over network. If the attacker controls the victim's DNS server or can spoof its responses, the DNS rebinding protection can be bypassed by using the “localhost6” domain. As long as the attacker uses the “localhost6” domain, they can still apply the attack described in CVE-2018-7160."
         },
         "CVE-2021-22918": {
@@ -4592,7 +4592,7 @@
             "id": "CVE-2021-23840",
             "baseScore": 7.5,
             "publishedDate": "2021-02-16T17:15:00.000Z",
-            "lastModifiedDate": "2022-08-29T20:27:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:30:00.000Z",
             "description": "Calls to EVP_CipherUpdate, EVP_EncryptUpdate and EVP_DecryptUpdate may overflow the output length argument in some cases where the input length is close to the maximum permissable length for an integer on the platform. In such cases the return value from the function call will be 1 (indicating success), but the output length value will be negative. This could cause applications to behave incorrectly or crash. OpenSSL versions 1.1.1i and below are affected by this issue. Users of these versions should upgrade to OpenSSL 1.1.1j. OpenSSL versions 1.0.2x and below are affected by this issue. However OpenSSL 1.0.2 is out of support and no longer receiving public updates. Premium support customers of OpenSSL 1.0.2 should upgrade to 1.0.2y. Other users should upgrade to 1.1.1j. Fixed in OpenSSL 1.1.1j (Affected 1.1.1-1.1.1i). Fixed in OpenSSL 1.0.2y (Affected 1.0.2-1.0.2x)."
         },
         "CVE-2021-27290": {
@@ -4641,14 +4641,14 @@
             "id": "CVE-2021-39134",
             "baseScore": 7.8,
             "publishedDate": "2021-08-31T17:15:00.000Z",
-            "lastModifiedDate": "2022-08-12T17:49:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:37:00.000Z",
             "description": "`@npmcli/arborist`, the library that calculates dependency trees and manages the `node_modules` folder hierarchy for the npm command line interface, aims to guarantee that package dependency contracts will be met, and the extraction of package contents will always be performed into the expected folder. This is, in part, accomplished by resolving dependency specifiers defined in `package.json` manifests for dependencies with a specific name, and nesting folders to resolve conflicting dependencies. When multiple dependencies differ only in the case of their name, Arborist's internal data structure saw them as separate items that could coexist within the same level in the `node_modules` hierarchy. However, on case-insensitive file systems (such as macOS and Windows), this is not the case. Combined with a symlink dependency such as `file:/some/path`, this allowed an attacker to create a situation in which arbitrary contents could be written to any location on the filesystem. For example, a package `pwn-a` could define a dependency in their `package.json` file such as `\"foo\": \"file:/some/path\"`. Another package, `pwn-b` could define a dependency such as `FOO: \"file:foo.tgz\"`. On case-insensitive file systems, if `pwn-a` was installed, and then `pwn-b` was installed afterwards, the contents of `foo.tgz` would be written to `/some/path`, and any existing contents of `/some/path` would be removed. Anyone using npm v7.20.6 or earlier on a case-insensitive filesystem is potentially affected. This is patched in @npmcli/arborist 2.8.2 which is included in npm v7.20.7 and above."
         },
         "CVE-2021-39135": {
             "id": "CVE-2021-39135",
             "baseScore": 7.8,
             "publishedDate": "2021-08-31T17:15:00.000Z",
-            "lastModifiedDate": "2022-10-25T18:03:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:37:00.000Z",
             "description": "`@npmcli/arborist`, the library that calculates dependency trees and manages the node_modules folder hierarchy for the npm command line interface, aims to guarantee that package dependency contracts will be met, and the extraction of package contents will always be performed into the expected folder. This is accomplished by extracting package contents into a project's `node_modules` folder. If the `node_modules` folder of the root project or any of its dependencies is somehow replaced with a symbolic link, it could allow Arborist to write package dependencies to any arbitrary location on the file system. Note that symbolic links contained within package artifact contents are filtered out, so another means of creating a `node_modules` symbolic link would have to be employed. 1. A `preinstall` script could replace `node_modules` with a symlink. (This is prevented by using `--ignore-scripts`.) 2. An attacker could supply the target with a git repository, instructing them to run `npm install --ignore-scripts` in the root. This may be successful, because `npm install --ignore-scripts` is typically not capable of making changes outside of the project directory, so it may be deemed safe. This is patched in @npmcli/arborist 2.8.2 which is included in npm v7.20.7 and above. For more information including workarounds please see the referenced GHSA-gmw6-94gg-2rc2."
         },
         "CVE-2021-44531": {
@@ -4676,14 +4676,14 @@
             "id": "CVE-2022-778",
             "baseScore": 7.5,
             "publishedDate": "2022-03-15T17:15:00.000Z",
-            "lastModifiedDate": "2022-11-09T20:43:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:41:00.000Z",
             "description": "The BN_mod_sqrt() function, which computes a modular square root, contains a bug that can cause it to loop forever for non-prime moduli. Internally this function is used when parsing certificates that contain elliptic curve public keys in compressed form or explicit elliptic curve parameters with a base point encoded in compressed form. It is possible to trigger the infinite loop by crafting a certificate that has invalid explicit curve parameters. Since certificate parsing happens prior to verification of the certificate signature, any process that parses an externally supplied certificate may thus be subject to a denial of service attack. The infinite loop can also be reached when parsing crafted private keys as they can contain explicit elliptic curve parameters. Thus vulnerable situations include: - TLS clients consuming server certificates - TLS servers consuming client certificates - Hosting providers taking certificates or private keys from customers - Certificate authorities parsing certification requests from subscribers - Anything else which parses ASN.1 elliptic curve parameters Also any other applications that use the BN_mod_sqrt() where the attacker can control the parameter values are vulnerable to this DoS issue. In the OpenSSL 1.0.2 version the public key is not parsed during initial parsing of the certificate which makes it slightly harder to trigger the infinite loop. However any operation which requires the public key from the certificate will trigger the infinite loop. In particular the attacker can use a self-signed certificate to trigger the loop during verification of the certificate signature. This issue affects OpenSSL versions 1.0.2, 1.1.1 and 3.0. It was addressed in the releases of 1.1.1n and 3.0.2 on the 15th March 2022. Fixed in OpenSSL 3.0.2 (Affected 3.0.0,3.0.1). Fixed in OpenSSL 1.1.1n (Affected 1.1.1-1.1.1m). Fixed in OpenSSL 1.0.2zd (Affected 1.0.2-1.0.2zc)."
         },
         "CVE-2022-2097": {
             "id": "CVE-2022-2097",
             "baseScore": 5.3,
             "publishedDate": "2022-07-05T11:15:00.000Z",
-            "lastModifiedDate": "2023-08-08T14:22:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:46:00.000Z",
             "description": "AES OCB mode for 32-bit x86 platforms using the AES-NI assembly optimised implementation will not encrypt the entirety of the data under some circumstances. This could reveal sixteen bytes of data that was preexisting in the memory that wasn't written. In the special case of \"in place\" encryption, sixteen bytes of the plaintext would be revealed. Since OpenSSL does not support OCB based cipher suites for TLS and DTLS, they are both unaffected. Fixed in OpenSSL 3.0.5 (Affected 3.0.0-3.0.4). Fixed in OpenSSL 1.1.1q (Affected 1.1.1-1.1.1p)."
         },
         "CVE-2022-3602": {
@@ -4697,8 +4697,8 @@
             "id": "CVE-2022-3786",
             "baseScore": 7.5,
             "publishedDate": "2022-11-01T18:15:00.000Z",
-            "lastModifiedDate": "2023-01-19T15:47:00.000Z",
-            "description": "A buffer overrun can be triggered in X.509 certificate verification, specifically in name constraint checking. Note that this occurs after certificate chain signature verification and requires either a CA to have signed a malicious certificate or for an application to continue certificate verification despite failure to construct a path to a trusted issuer. An attacker can craft a malicious email address in a certificate to overflow an arbitrary number of bytes containing the `.' character (decimal 46) on the stack. This buffer overflow could result in a crash (causing a denial of service). In a TLS client, this can be triggered by connecting to a malicious server. In a TLS server, this can be triggered if the server requests client authentication and a malicious client connects."
+            "lastModifiedDate": "2023-11-07T03:51:00.000Z",
+            "description": "A buffer overrun can be triggered in X.509 certificate verification, specifically in name constraint checking. Note that this occurs after certificate chain signature verification and requires either a CA to have signed a malicious certificate or for an application to continue certificate verification despite failure to construct a path to a trusted issuer. An attacker can craft a malicious email address in a certificate to overflow an arbitrary number of bytes containing the `.' character (decimal 46) on the stack. This buffer overflow could result in a crash (causing a denial of service). In a TLS client, this can be triggered by connecting to a malicious server. In a TLS server, this can be triggered if the server requests client authentication and a malicious client connects.\n\n"
         },
         "CVE-2022-21824": {
             "id": "CVE-2022-21824",
@@ -4718,7 +4718,7 @@
             "id": "CVE-2022-32213",
             "baseScore": 6.5,
             "publishedDate": "2022-07-14T15:15:00.000Z",
-            "lastModifiedDate": "2023-07-19T00:56:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:47:00.000Z",
             "description": "The llhttp parser <v14.20.1, <v16.17.1 and <v18.9.1 in the http module in Node.js does not correctly parse and validate Transfer-Encoding headers and can lead to HTTP Request Smuggling (HRS)."
         },
         "CVE-2022-32214": {
@@ -4732,7 +4732,7 @@
             "id": "CVE-2022-32215",
             "baseScore": 6.5,
             "publishedDate": "2022-07-14T15:15:00.000Z",
-            "lastModifiedDate": "2023-07-19T00:56:00.000Z",
+            "lastModifiedDate": "2023-11-07T03:47:00.000Z",
             "description": "The llhttp parser <v14.20.1, <v16.17.1 and <v18.9.1 in the http module in Node.js does not correctly handle multi-line Transfer-Encoding headers. This can lead to HTTP Request Smuggling (HRS)."
         },
         "CVE-2022-32222": {
@@ -4893,7 +4893,7 @@
             "id": "CVE-2023-44487",
             "baseScore": 7.5,
             "publishedDate": "2023-10-10T14:15:00.000Z",
-            "lastModifiedDate": "2023-11-06T03:15:00.000Z",
+            "lastModifiedDate": "2023-11-07T05:15:00.000Z",
             "description": "The HTTP/2 protocol allows a denial of service (server resource consumption) because request cancellation can reset many streams quickly, as exploited in the wild in August through October 2023."
         },
         "CVE-2023-45143": {
