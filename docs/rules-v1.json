@@ -1,11 +1,11 @@
 {
-    "lastUpdatedDate": "2023-11-22T13:25:57.192Z",
+    "lastUpdatedDate": "2023-11-23T02:01:08.284Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
-    "releasesCount": 584,
-    "cveCount": 143,
+    "releasesCount": 585,
+    "cveCount": 144,
     "supportVersionsCount": 21,
     "latestVersion": "21.2.0",
     "latestVersions": {
@@ -29,7 +29,7 @@
         "17": "17.9.1",
         "18": "18.18.2",
         "19": "19.9.0",
-        "20": "20.9.0",
+        "20": "20.10.0",
         "21": "21.2.0",
         "0.10": "0.10.48",
         "0.12": "0.12.18",
@@ -320,6 +320,7 @@
         "20.7": "20.7.0",
         "20.8": "20.8.1",
         "20.9": "20.9.0",
+        "20.10": "20.10.0",
         "21.0": "21.0.0",
         "21.1": "21.1.0",
         "21.2": "21.2.0"
@@ -3891,6 +3892,11 @@
             "releaseDate": "2023-10-24T00:00:00.000Z",
             "patchedCveIds": []
         },
+        "20.10.0": {
+            "version": "20.10.0",
+            "releaseDate": "2023-11-22T00:00:00.000Z",
+            "patchedCveIds": []
+        },
         "21.0.0": {
             "version": "21.0.0",
             "releaseDate": "2023-10-17T00:00:00.000Z",
@@ -4810,6 +4816,13 @@
             "publishedDate": "2023-02-16T18:15:00.000Z",
             "lastModifiedDate": "2023-02-24T18:38:00.000Z",
             "description": "Undici is an HTTP/1.1 client for Node.js. Prior to version 5.19.1, the `Headers.set()` and `Headers.append()` methods are vulnerable to Regular Expression Denial of Service (ReDoS) attacks when untrusted values are passed into the functions. This is due to the inefficient regular expression used to normalize the values in the `headerValueNormalize()` utility function. This vulnerability was patched in v5.19.1. No known workarounds are available."
+        },
+        "CVE-2023-30581": {
+            "id": "CVE-2023-30581",
+            "baseScore": null,
+            "publishedDate": "2023-11-23T00:15:00.000Z",
+            "lastModifiedDate": "2023-11-23T00:15:00.000Z",
+            "description": "The use of __proto__ in process.mainModule.__proto__.require() can bypass the policy mechanism and require modules outside of the policy.json definition. This vulnerability affects all users using the experimental policy mechanism in all active release lines: v16, v18 and, v20.\n\nPlease note that at the time this CVE was issued, the policy is an experimental feature of Node.js"
         },
         "CVE-2023-30586": {
             "id": "CVE-2023-30586",
