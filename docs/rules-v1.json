@@ -1,11 +1,11 @@
 {
-    "lastUpdatedDate": "2023-11-28T13:24:12.443Z",
+    "lastUpdatedDate": "2023-11-29T02:01:59.163Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
     "releasesCount": 585,
-    "cveCount": 145,
+    "cveCount": 147,
     "supportVersionsCount": 21,
     "latestVersion": "21.2.0",
     "latestVersions": {
@@ -4828,7 +4828,7 @@
             "id": "CVE-2023-30585",
             "baseScore": null,
             "publishedDate": "2023-11-28T02:15:00.000Z",
-            "lastModifiedDate": "2023-11-28T02:15:00.000Z",
+            "lastModifiedDate": "2023-11-28T14:12:00.000Z",
             "description": "A vulnerability has been identified in the Node.js (.msi version) installation process, specifically affecting Windows users who install Node.js using the .msi installer. This vulnerability emerges during the repair operation, where the \"msiexec.exe\" process, running under the NT AUTHORITY\\SYSTEM context, attempts to read the %USERPROFILE% environment variable from the current user's registry.\n\nThe issue arises when the path referenced by the %USERPROFILE% environment variable does not exist. In such cases, the \"msiexec.exe\" process attempts to create the specified path in an unsafe manner, potentially leading to the creation of arbitrary folders in arbitrary locations.\n\nThe severity of this vulnerability is heightened by the fact that the %USERPROFILE% environment variable in the Windows registry can be modified by standard (or \"non-privileged\") users. Consequently, unprivileged actors, including malicious entities or trojans, can manipulate the environment variable key to deceive the privileged \"msiexec.exe\" process. This manipulation can result in the creation of folders in unintended and potentially malicious locations.\n\nIt is important to note that this vulnerability is specific to Windows users who install Node.js using the .msi installer. Users who opt for other installation methods are not affected by this particular issue."
         },
         "CVE-2023-30586": {
@@ -4838,12 +4838,26 @@
             "lastModifiedDate": "2023-11-17T18:10:00.000Z",
             "description": "A privilege escalation vulnerability exists in Node.js 20 that allowed loading arbitrary OpenSSL engines when the experimental permission model is enabled, which can bypass and/or disable the permission model. The attack complexity is high. However, the crypto.setEngine() API can be used to bypass the permission model when called with a compatible OpenSSL engine. The OpenSSL engine can, for example, disable the permission model in the host process by manipulating the process's stack memory to locate the permission model Permission::enabled_ in the host process's heap memory. Please note that at the time this CVE was issued, the permission model is an experimental feature of Node.js."
         },
+        "CVE-2023-30588": {
+            "id": "CVE-2023-30588",
+            "baseScore": null,
+            "publishedDate": "2023-11-28T20:15:00.000Z",
+            "lastModifiedDate": "2023-11-28T20:15:00.000Z",
+            "description": "When an invalid public key is used to create an x509 certificate using the crypto.X509Certificate() API a non-expect termination occurs making it susceptible to DoS attacks when the attacker could force interruptions of application processing, as the process terminates when accessing public key info of provided certificates from user code. The current context of the users will be gone, and that will cause a DoS scenario. This vulnerability affects all active Node.js versions v16, v18, and, v20."
+        },
         "CVE-2023-30589": {
             "id": "CVE-2023-30589",
             "baseScore": 7.5,
             "publishedDate": "2023-07-01T00:15:00.000Z",
             "lastModifiedDate": "2023-08-17T19:15:00.000Z",
             "description": "The llhttp parser in the http module in Node v20.2.0 does not strictly use the CRLF sequence to delimit HTTP requests. This can lead to HTTP Request Smuggling (HRS).\r\n\r\nThe CR character (without LF) is sufficient to delimit HTTP header fields in the llhttp parser. According to RFC7230 section 3, only the CRLF sequence should delimit each header-field. This impacts all Node.js active versions: v16, v18, and, v20\r\n"
+        },
+        "CVE-2023-30590": {
+            "id": "CVE-2023-30590",
+            "baseScore": null,
+            "publishedDate": "2023-11-28T20:15:00.000Z",
+            "lastModifiedDate": "2023-11-28T20:15:00.000Z",
+            "description": "The generateKeys() API function returned from crypto.createDiffieHellman() only generates missing (or outdated) keys, that is, it only generates a private key if none has been set yet, but the function is also needed to compute the corresponding public key after calling setPrivateKey(). However, the documentation says this API call: \"Generates private and public Diffie-Hellman key values\".\n\nThe documented behavior is very different from the actual behavior, and this difference could easily lead to security issues in applications that use these APIs as the DiffieHellman may be used as the basis for application-level security, implications are consequently broad."
         },
         "CVE-2023-32002": {
             "id": "CVE-2023-32002",
