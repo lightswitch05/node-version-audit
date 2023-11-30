@@ -1,10 +1,10 @@
 {
-    "lastUpdatedDate": "2023-11-29T13:24:31.321Z",
+    "lastUpdatedDate": "2023-11-30T02:01:50.536Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
-    "releasesCount": 585,
+    "releasesCount": 586,
     "cveCount": 147,
     "supportVersionsCount": 21,
     "latestVersion": "21.2.0",
@@ -27,7 +27,7 @@
         "15": "15.14.0",
         "16": "16.20.2",
         "17": "17.9.1",
-        "18": "18.18.2",
+        "18": "18.19.0",
         "19": "19.9.0",
         "20": "20.10.0",
         "21": "21.2.0",
@@ -300,6 +300,7 @@
         "18.16": "18.16.1",
         "18.17": "18.17.1",
         "18.18": "18.18.2",
+        "18.19": "18.19.0",
         "19.0": "19.0.1",
         "19.1": "19.1.0",
         "19.2": "19.2.0",
@@ -3723,6 +3724,11 @@
                 "CVE-2023-45143"
             ]
         },
+        "18.19.0": {
+            "version": "18.19.0",
+            "releaseDate": "2023-11-29T00:00:00.000Z",
+            "patchedCveIds": []
+        },
         "19.0.0": {
             "version": "19.0.0",
             "releaseDate": "2022-10-18T00:00:00.000Z",
@@ -4842,7 +4848,7 @@
             "id": "CVE-2023-30588",
             "baseScore": null,
             "publishedDate": "2023-11-28T20:15:00.000Z",
-            "lastModifiedDate": "2023-11-28T20:15:00.000Z",
+            "lastModifiedDate": "2023-11-29T14:18:00.000Z",
             "description": "When an invalid public key is used to create an x509 certificate using the crypto.X509Certificate() API a non-expect termination occurs making it susceptible to DoS attacks when the attacker could force interruptions of application processing, as the process terminates when accessing public key info of provided certificates from user code. The current context of the users will be gone, and that will cause a DoS scenario. This vulnerability affects all active Node.js versions v16, v18, and, v20."
         },
         "CVE-2023-30589": {
@@ -4856,7 +4862,7 @@
             "id": "CVE-2023-30590",
             "baseScore": null,
             "publishedDate": "2023-11-28T20:15:00.000Z",
-            "lastModifiedDate": "2023-11-28T20:15:00.000Z",
+            "lastModifiedDate": "2023-11-29T14:18:00.000Z",
             "description": "The generateKeys() API function returned from crypto.createDiffieHellman() only generates missing (or outdated) keys, that is, it only generates a private key if none has been set yet, but the function is also needed to compute the corresponding public key after calling setPrivateKey(). However, the documentation says this API call: \"Generates private and public Diffie-Hellman key values\".\n\nThe documented behavior is very different from the actual behavior, and this difference could easily lead to security issues in applications that use these APIs as the DiffieHellman may be used as the basis for application-level security, implications are consequently broad."
         },
         "CVE-2023-32002": {
