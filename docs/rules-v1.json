@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2023-12-02T01:57:31.530Z",
+    "lastUpdatedDate": "2023-12-02T13:20:54.910Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4838,9 +4838,9 @@
         },
         "CVE-2023-30585": {
             "id": "CVE-2023-30585",
-            "baseScore": null,
+            "baseScore": 7.5,
             "publishedDate": "2023-11-28T02:15:00.000Z",
-            "lastModifiedDate": "2023-11-28T14:12:00.000Z",
+            "lastModifiedDate": "2023-12-02T04:39:00.000Z",
             "description": "A vulnerability has been identified in the Node.js (.msi version) installation process, specifically affecting Windows users who install Node.js using the .msi installer. This vulnerability emerges during the repair operation, where the \"msiexec.exe\" process, running under the NT AUTHORITY\\SYSTEM context, attempts to read the %USERPROFILE% environment variable from the current user's registry.\n\nThe issue arises when the path referenced by the %USERPROFILE% environment variable does not exist. In such cases, the \"msiexec.exe\" process attempts to create the specified path in an unsafe manner, potentially leading to the creation of arbitrary folders in arbitrary locations.\n\nThe severity of this vulnerability is heightened by the fact that the %USERPROFILE% environment variable in the Windows registry can be modified by standard (or \"non-privileged\") users. Consequently, unprivileged actors, including malicious entities or trojans, can manipulate the environment variable key to deceive the privileged \"msiexec.exe\" process. This manipulation can result in the creation of folders in unintended and potentially malicious locations.\n\nIt is important to note that this vulnerability is specific to Windows users who install Node.js using the .msi installer. Users who opt for other installation methods are not affected by this particular issue."
         },
         "CVE-2023-30586": {
@@ -4945,7 +4945,7 @@
             "id": "CVE-2023-44487",
             "baseScore": 7.5,
             "publishedDate": "2023-10-10T14:15:00.000Z",
-            "lastModifiedDate": "2023-12-01T14:22:00.000Z",
+            "lastModifiedDate": "2023-12-02T01:15:00.000Z",
             "description": "The HTTP/2 protocol allows a denial of service (server resource consumption) because request cancellation can reset many streams quickly, as exploited in the wild in August through October 2023."
         },
         "CVE-2023-45143": {
