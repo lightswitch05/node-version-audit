@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2024-01-05T02:01:42.542Z",
+    "lastUpdatedDate": "2024-01-05T13:23:20.731Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4530,7 +4530,7 @@
             "id": "CVE-2021-3672",
             "baseScore": 5.6,
             "publishedDate": "2021-11-23T19:15:00.000Z",
-            "lastModifiedDate": "2022-10-18T14:57:00.000Z",
+            "lastModifiedDate": "2024-01-05T10:15:00.000Z",
             "description": "A flaw was found in c-ares library, where a missing input validation check of host names returned by DNS (Domain Name Servers) can lead to output of wrong hostnames which might potentially lead to Domain Hijacking. The highest threat from this vulnerability is to confidentiality and integrity as well as system availability."
         },
         "CVE-2021-4044": {
@@ -4579,28 +4579,28 @@
             "id": "CVE-2021-22930",
             "baseScore": 9.8,
             "publishedDate": "2021-10-07T14:15:00.000Z",
-            "lastModifiedDate": "2022-11-03T20:41:00.000Z",
+            "lastModifiedDate": "2024-01-05T10:15:00.000Z",
             "description": "Node.js before 16.6.0, 14.17.4, and 12.22.4 is vulnerable to a use after free attack where an attacker might be able to exploit the memory corruption, to change process behavior."
         },
         "CVE-2021-22931": {
             "id": "CVE-2021-22931",
             "baseScore": 9.8,
             "publishedDate": "2021-08-16T19:15:00.000Z",
-            "lastModifiedDate": "2022-08-12T18:27:00.000Z",
+            "lastModifiedDate": "2024-01-05T10:15:00.000Z",
             "description": "Node.js before 16.6.0, 14.17.4, and 12.22.4 is vulnerable to Remote Code Execution, XSS, Application crashes due to missing input validation of host names returned by Domain Name Servers in Node.js dns library which can lead to output of wrong hostnames (leading to Domain Hijacking) and injection vulnerabilities in applications using the library."
         },
         "CVE-2021-22939": {
             "id": "CVE-2021-22939",
             "baseScore": 5.3,
             "publishedDate": "2021-08-16T19:15:00.000Z",
-            "lastModifiedDate": "2022-11-07T18:32:00.000Z",
+            "lastModifiedDate": "2024-01-05T10:15:00.000Z",
             "description": "If the Node.js https API was used incorrectly and \"undefined\" was in passed for the \"rejectUnauthorized\" parameter, no error was returned and connections to servers with an expired certificate would have been accepted."
         },
         "CVE-2021-22940": {
             "id": "CVE-2021-22940",
             "baseScore": 7.5,
             "publishedDate": "2021-08-16T19:15:00.000Z",
-            "lastModifiedDate": "2022-11-03T20:41:00.000Z",
+            "lastModifiedDate": "2024-01-05T10:15:00.000Z",
             "description": "Node.js before 16.6.1, 14.17.5, and 12.22.5 is vulnerable to a use after free attack where an attacker might be able to exploit the memory corruption, to change process behavior."
         },
         "CVE-2021-22959": {
