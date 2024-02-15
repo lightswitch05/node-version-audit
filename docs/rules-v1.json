@@ -1,13 +1,13 @@
 {
-    "lastUpdatedDate": "2024-02-14T13:20:52.224Z",
+    "lastUpdatedDate": "2024-02-15T01:54:33.970Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
-    "releasesCount": 592,
-    "cveCount": 147,
+    "releasesCount": 595,
+    "cveCount": 148,
     "supportVersionsCount": 21,
-    "latestVersion": "21.6.1",
+    "latestVersion": "21.6.2",
     "latestVersions": {
         "0": "0.12.18",
         "1": "1.8.4",
@@ -27,10 +27,10 @@
         "15": "15.14.0",
         "16": "16.20.2",
         "17": "17.9.1",
-        "18": "18.19.0",
+        "18": "18.19.1",
         "19": "19.9.0",
-        "20": "20.11.0",
-        "21": "21.6.1",
+        "20": "20.11.1",
+        "21": "21.6.2",
         "0.10": "0.10.48",
         "0.12": "0.12.18",
         "1.0": "1.0.4",
@@ -300,7 +300,7 @@
         "18.16": "18.16.1",
         "18.17": "18.17.1",
         "18.18": "18.18.2",
-        "18.19": "18.19.0",
+        "18.19": "18.19.1",
         "19.0": "19.0.1",
         "19.1": "19.1.0",
         "19.2": "19.2.0",
@@ -322,14 +322,14 @@
         "20.8": "20.8.1",
         "20.9": "20.9.0",
         "20.10": "20.10.0",
-        "20.11": "20.11.0",
+        "20.11": "20.11.1",
         "21.0": "21.0.0",
         "21.1": "21.1.0",
         "21.2": "21.2.0",
         "21.3": "21.3.0",
         "21.4": "21.4.0",
         "21.5": "21.5.0",
-        "21.6": "21.6.1"
+        "21.6": "21.6.2"
     },
     "supportEndDates": {
         "4": {
@@ -3734,6 +3734,17 @@
             "releaseDate": "2023-11-29T00:00:00.000Z",
             "patchedCveIds": []
         },
+        "18.19.1": {
+            "version": "18.19.1",
+            "releaseDate": "2024-02-14T00:00:00.000Z",
+            "patchedCveIds": [
+                "CVE-2023-46809",
+                "CVE-2024-21892",
+                "CVE-2024-22019",
+                "CVE-2024-22025",
+                "CVE-2024-24806"
+            ]
+        },
         "19.0.0": {
             "version": "19.0.0",
             "releaseDate": "2022-10-18T00:00:00.000Z",
@@ -3913,6 +3924,21 @@
             "releaseDate": "2024-01-09T00:00:00.000Z",
             "patchedCveIds": []
         },
+        "20.11.1": {
+            "version": "20.11.1",
+            "releaseDate": "2024-02-14T00:00:00.000Z",
+            "patchedCveIds": [
+                "CVE-2023-46809",
+                "CVE-2024-21890",
+                "CVE-2024-21891",
+                "CVE-2024-21892",
+                "CVE-2024-21896",
+                "CVE-2024-22017",
+                "CVE-2024-22019",
+                "CVE-2024-22025",
+                "CVE-2024-24806"
+            ]
+        },
         "21.0.0": {
             "version": "21.0.0",
             "releaseDate": "2023-10-17T00:00:00.000Z",
@@ -3952,6 +3978,20 @@
             "version": "21.6.1",
             "releaseDate": "2024-01-22T00:00:00.000Z",
             "patchedCveIds": []
+        },
+        "21.6.2": {
+            "version": "21.6.2",
+            "releaseDate": "2024-02-14T00:00:00.000Z",
+            "patchedCveIds": [
+                "CVE-2023-46809",
+                "CVE-2024-21890",
+                "CVE-2024-21891",
+                "CVE-2024-21892",
+                "CVE-2024-21896",
+                "CVE-2024-22017",
+                "CVE-2024-22019",
+                "CVE-2024-22025"
+            ]
         }
     },
     "cves": {
@@ -4983,6 +5023,13 @@
             "publishedDate": "2023-10-12T17:15:00.000Z",
             "lastModifiedDate": "2023-11-03T22:15:00.000Z",
             "description": "Undici is an HTTP/1.1 client written from scratch for Node.js. Prior to version 5.26.2, Undici already cleared Authorization headers on cross-origin redirects, but did not clear `Cookie` headers. By design, `cookie` headers are forbidden request headers, disallowing them to be set in RequestInit.headers in browser environments. Since undici handles headers more liberally than the spec, there was a disconnect from the assumptions the spec made, and undici's implementation of fetch. As such this may lead to accidental leakage of cookie to a third-party site or a malicious attacker who can control the redirection target (ie. an open redirector) to leak the cookie to the third party site. This was patched in version 5.26.2. There are no known workarounds."
+        },
+        "CVE-2024-24806": {
+            "id": "CVE-2024-24806",
+            "baseScore": null,
+            "publishedDate": "2024-02-07T22:15:00.000Z",
+            "lastModifiedDate": "2024-02-11T21:15:00.000Z",
+            "description": "libuv is a multi-platform support library with a focus on asynchronous I/O. The `uv_getaddrinfo` function in `src/unix/getaddrinfo.c` (and its windows counterpart `src/win/getaddrinfo.c`), truncates hostnames to 256 characters before calling `getaddrinfo`. This behavior can be exploited to create addresses like `0x00007f000001`, which are considered valid by `getaddrinfo` and could allow an attacker to craft payloads that resolve to unintended IP addresses, bypassing developer checks. The vulnerability arises due to how the `hostname_ascii` variable (with a length of 256 bytes) is handled in `uv_getaddrinfo` and subsequently in `uv__idna_toascii`. When the hostname exceeds 256 characters, it gets truncated without a terminating null byte. As a result attackers may be able to access internal APIs or for websites (similar to MySpace) that allows users to have `username.example.com` pages. Internal services that crawl or cache these user pages can be exposed to SSRF attacks if a malicious user chooses a long vulnerable username. This issue has been addressed in release version 1.48.0. Users are advised to upgrade. There are no known workarounds for this vulnerability."
         }
     }
 }
