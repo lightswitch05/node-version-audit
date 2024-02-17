@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2024-02-16T13:21:05.161Z",
+    "lastUpdatedDate": "2024-02-17T01:52:53.219Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4132,7 +4132,7 @@
             "id": "CVE-2016-2107",
             "baseScore": 5.9,
             "publishedDate": "2016-05-05T01:59:00.000Z",
-            "lastModifiedDate": "2023-11-07T02:30:00.000Z",
+            "lastModifiedDate": "2024-02-16T19:19:00.000Z",
             "description": "The AES-NI implementation in OpenSSL before 1.0.1t and 1.0.2 before 1.0.2h does not consider memory allocation during a certain padding check, which allows remote attackers to obtain sensitive cleartext information via a padding-oracle attack against an AES CBC session. NOTE: this vulnerability exists because of an incorrect fix for CVE-2013-0169."
         },
         "CVE-2016-2178": {
@@ -4993,7 +4993,7 @@
             "id": "CVE-2023-38552",
             "baseScore": 7.5,
             "publishedDate": "2023-10-18T04:15:00.000Z",
-            "lastModifiedDate": "2023-11-16T16:15:00.000Z",
+            "lastModifiedDate": "2024-02-16T17:11:00.000Z",
             "description": "When the Node.js policy feature checks the integrity of a resource against a trusted manifest, the application can intercept the operation and return a forged checksum to the node's policy implementation, thus effectively disabling the integrity check.\nImpacts:\nThis vulnerability affects all users using the experimental policy mechanism in all active release lines: 18.x and, 20.x.\nPlease note that at the time this CVE was issued, the policy mechanism is an experimental feature of Node.js."
         },
         "CVE-2023-39331": {
@@ -5021,7 +5021,7 @@
             "id": "CVE-2023-45143",
             "baseScore": 3.5,
             "publishedDate": "2023-10-12T17:15:00.000Z",
-            "lastModifiedDate": "2023-11-03T22:15:00.000Z",
+            "lastModifiedDate": "2024-02-16T16:09:00.000Z",
             "description": "Undici is an HTTP/1.1 client written from scratch for Node.js. Prior to version 5.26.2, Undici already cleared Authorization headers on cross-origin redirects, but did not clear `Cookie` headers. By design, `cookie` headers are forbidden request headers, disallowing them to be set in RequestInit.headers in browser environments. Since undici handles headers more liberally than the spec, there was a disconnect from the assumptions the spec made, and undici's implementation of fetch. As such this may lead to accidental leakage of cookie to a third-party site or a malicious attacker who can control the redirection target (ie. an open redirector) to leak the cookie to the third party site. This was patched in version 5.26.2. There are no known workarounds."
         },
         "CVE-2024-24806": {
