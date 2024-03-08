@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2024-03-07T13:20:23.537Z",
+    "lastUpdatedDate": "2024-03-08T01:53:35.627Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4404,7 +4404,7 @@
             "id": "CVE-2019-5737",
             "baseScore": 7.5,
             "publishedDate": "2019-03-28T17:29:00.000Z",
-            "lastModifiedDate": "2020-10-16T19:08:00.000Z",
+            "lastModifiedDate": "2024-03-07T21:36:00.000Z",
             "description": "In Node.js including 6.x before 6.17.0, 8.x before 8.15.1, 10.x before 10.15.2, and 11.x before 11.10.1, an attacker can cause a Denial of Service (DoS) by establishing an HTTP or HTTPS connection in keep-alive mode and by sending headers very slowly. This keeps the connection and associated resources alive for a long period of time. Potential attacks are mitigated by the use of a load balancer or other proxy layer. This vulnerability is an extension of CVE-2018-12121, addressed in November and impacts all active Node.js release lines including 6.x before 6.17.0, 8.x before 8.15.1, 10.x before 10.15.2, and 11.x before 11.10.1."
         },
         "CVE-2019-5739": {
@@ -4474,21 +4474,21 @@
             "id": "CVE-2019-15604",
             "baseScore": 7.5,
             "publishedDate": "2020-02-07T15:15:00.000Z",
-            "lastModifiedDate": "2022-11-16T03:02:00.000Z",
+            "lastModifiedDate": "2024-03-07T21:24:00.000Z",
             "description": "Improper Certificate Validation in Node.js 10, 12, and 13 causes the process to abort when sending a crafted X.509 certificate"
         },
         "CVE-2019-15605": {
             "id": "CVE-2019-15605",
             "baseScore": 9.8,
             "publishedDate": "2020-02-07T15:15:00.000Z",
-            "lastModifiedDate": "2023-11-07T03:05:00.000Z",
+            "lastModifiedDate": "2024-03-07T21:24:00.000Z",
             "description": "HTTP request smuggling in Node.js 10, 12, and 13 causes malicious payload delivery when transfer-encoding is malformed"
         },
         "CVE-2019-15606": {
             "id": "CVE-2019-15606",
             "baseScore": 9.8,
             "publishedDate": "2020-02-07T15:15:00.000Z",
-            "lastModifiedDate": "2022-10-05T20:47:00.000Z",
+            "lastModifiedDate": "2024-03-07T21:24:00.000Z",
             "description": "Including trailing white space in HTTP header values in Nodejs 10, 12, and 13 causes bypass of authorization based on header value comparisons"
         },
         "CVE-2020-1971": {
