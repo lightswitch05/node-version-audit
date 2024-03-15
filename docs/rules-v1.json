@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2024-03-15T01:55:35.998Z",
+    "lastUpdatedDate": "2024-03-15T13:21:23.566Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -5039,14 +5039,14 @@
             "id": "CVE-2024-21890",
             "baseScore": null,
             "publishedDate": "2024-02-20T02:15:00.000Z",
-            "lastModifiedDate": "2024-02-20T19:50:00.000Z",
+            "lastModifiedDate": "2024-03-15T11:15:00.000Z",
             "description": "The Node.js Permission Model does not clarify in the documentation that wildcards should be only used as the last character of a file path. For example:\n```\n --allow-fs-read=/home/node/.ssh/*.pub\n```\n\nwill ignore `pub` and give access to everything after `.ssh/`.\n\nThis misleading documentation affects all users using the experimental permission model in Node.js 20 and Node.js 21.\n\nPlease note that at the time this CVE was issued, the permission model is an experimental feature of Node.js."
         },
         "CVE-2024-21891": {
             "id": "CVE-2024-21891",
             "baseScore": null,
             "publishedDate": "2024-02-20T02:15:00.000Z",
-            "lastModifiedDate": "2024-02-20T19:50:00.000Z",
+            "lastModifiedDate": "2024-03-15T11:15:00.000Z",
             "description": "Node.js depends on multiple built-in utility functions to normalize paths provided to node:fs functions, which can be overwitten with user-defined implementations leading to filesystem permission model bypass through path traversal attack.\nThis vulnerability affects all users using the experimental permission model in Node.js 20 and Node.js 21.\nPlease note that at the time this CVE was issued, the permission model is an experimental feature of Node.js."
         },
         "CVE-2024-21892": {
@@ -5067,7 +5067,7 @@
             "id": "CVE-2024-22019",
             "baseScore": null,
             "publishedDate": "2024-02-20T02:15:00.000Z",
-            "lastModifiedDate": "2024-02-20T19:50:00.000Z",
+            "lastModifiedDate": "2024-03-15T11:15:00.000Z",
             "description": "A vulnerability in Node.js HTTP servers allows an attacker to send a specially crafted HTTP request with chunked encoding, leading to resource exhaustion and denial of service (DoS). The server reads an unbounded number of bytes from a single connection, exploiting the lack of limitations on chunk extension bytes. The issue can cause CPU and network bandwidth exhaustion, bypassing standard safeguards like timeouts and body size limits."
         },
         "CVE-2024-24806": {
