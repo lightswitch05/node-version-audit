@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2024-03-22T13:21:00.133Z",
+    "lastUpdatedDate": "2024-03-23T01:54:18.249Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -5053,7 +5053,7 @@
             "id": "CVE-2024-21892",
             "baseScore": null,
             "publishedDate": "2024-02-20T02:15:00.000Z",
-            "lastModifiedDate": "2024-02-20T19:50:00.000Z",
+            "lastModifiedDate": "2024-03-22T19:15:00.000Z",
             "description": "On Linux, Node.js ignores certain environment variables if those may have been set by an unprivileged user while the process is running with elevated privileges with the only exception of CAP_NET_BIND_SERVICE.\nDue to a bug in the implementation of this exception, Node.js incorrectly applies this exception even when certain other capabilities have been set.\nThis allows unprivileged users to inject code that inherits the process's elevated privileges."
         },
         "CVE-2024-21896": {
