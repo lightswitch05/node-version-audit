@@ -1,10 +1,10 @@
 {
-    "lastUpdatedDate": "2024-03-26T13:23:12.449Z",
+    "lastUpdatedDate": "2024-03-27T01:55:03.084Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
-    "releasesCount": 597,
+    "releasesCount": 599,
     "cveCount": 155,
     "supportVersionsCount": 21,
     "latestVersion": "21.7.1",
@@ -27,9 +27,9 @@
         "15": "15.14.0",
         "16": "16.20.2",
         "17": "17.9.1",
-        "18": "18.19.1",
+        "18": "18.20.0",
         "19": "19.9.0",
-        "20": "20.11.1",
+        "20": "20.12.0",
         "21": "21.7.1",
         "0.10": "0.10.48",
         "0.12": "0.12.18",
@@ -301,6 +301,7 @@
         "18.17": "18.17.1",
         "18.18": "18.18.2",
         "18.19": "18.19.1",
+        "18.20": "18.20.0",
         "19.0": "19.0.1",
         "19.1": "19.1.0",
         "19.2": "19.2.0",
@@ -323,6 +324,7 @@
         "20.9": "20.9.0",
         "20.10": "20.10.0",
         "20.11": "20.11.1",
+        "20.12": "20.12.0",
         "21.0": "21.0.0",
         "21.1": "21.1.0",
         "21.2": "21.2.0",
@@ -3746,6 +3748,11 @@
                 "CVE-2024-24806"
             ]
         },
+        "18.20.0": {
+            "version": "18.20.0",
+            "releaseDate": "2024-03-26T00:00:00.000Z",
+            "patchedCveIds": []
+        },
         "19.0.0": {
             "version": "19.0.0",
             "releaseDate": "2022-10-18T00:00:00.000Z",
@@ -3939,6 +3946,11 @@
                 "CVE-2024-22025",
                 "CVE-2024-24806"
             ]
+        },
+        "20.12.0": {
+            "version": "20.12.0",
+            "releaseDate": "2024-03-26T00:00:00.000Z",
+            "patchedCveIds": []
         },
         "21.0.0": {
             "version": "21.0.0",
