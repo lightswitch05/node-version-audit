@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2024-04-26T13:21:25.964Z",
+    "lastUpdatedDate": "2024-04-27T01:58:02.245Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -437,7 +437,7 @@
             "end": "2024-06-01T00:00:00.000Z"
         },
         "22": {
-            "start": "2024-04-23T00:00:00.000Z",
+            "start": "2024-04-24T00:00:00.000Z",
             "lts": "2024-10-29T00:00:00.000Z",
             "maintenance": "2025-10-21T00:00:00.000Z",
             "end": "2027-04-30T00:00:00.000Z"
