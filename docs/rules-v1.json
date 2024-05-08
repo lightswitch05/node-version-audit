@@ -1,11 +1,11 @@
 {
-    "lastUpdatedDate": "2024-05-07T13:20:27.009Z",
+    "lastUpdatedDate": "2024-05-08T01:39:47.256Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
-    "releasesCount": 607,
-    "cveCount": 156,
+    "releasesCount": 608,
+    "cveCount": 157,
     "supportVersionsCount": 21,
     "latestVersion": "22.1.0",
     "latestVersions": {
@@ -29,7 +29,7 @@
         "17": "17.9.1",
         "18": "18.20.2",
         "19": "19.9.0",
-        "20": "20.12.2",
+        "20": "20.13.0",
         "21": "21.7.3",
         "22": "22.1.0",
         "0.10": "0.10.48",
@@ -326,6 +326,7 @@
         "20.10": "20.10.0",
         "20.11": "20.11.1",
         "20.12": "20.12.2",
+        "20.13": "20.13.0",
         "21.0": "21.0.0",
         "21.1": "21.1.0",
         "21.2": "21.2.0",
@@ -3985,6 +3986,11 @@
                 "CVE-2024-27980"
             ]
         },
+        "20.13.0": {
+            "version": "20.13.0",
+            "releaseDate": "2024-05-07T00:00:00.000Z",
+            "patchedCveIds": []
+        },
         "21.0.0": {
             "version": "21.0.0",
             "releaseDate": "2023-10-17T00:00:00.000Z",
@@ -5162,6 +5168,13 @@
             "publishedDate": "2024-02-07T22:15:00.000Z",
             "lastModifiedDate": "2024-05-01T18:15:00.000Z",
             "description": "libuv is a multi-platform support library with a focus on asynchronous I/O. The `uv_getaddrinfo` function in `src/unix/getaddrinfo.c` (and its windows counterpart `src/win/getaddrinfo.c`), truncates hostnames to 256 characters before calling `getaddrinfo`. This behavior can be exploited to create addresses like `0x00007f000001`, which are considered valid by `getaddrinfo` and could allow an attacker to craft payloads that resolve to unintended IP addresses, bypassing developer checks. The vulnerability arises due to how the `hostname_ascii` variable (with a length of 256 bytes) is handled in `uv_getaddrinfo` and subsequently in `uv__idna_toascii`. When the hostname exceeds 256 characters, it gets truncated without a terminating null byte. As a result attackers may be able to access internal APIs or for websites (similar to MySpace) that allows users to have `username.example.com` pages. Internal services that crawl or cache these user pages can be exposed to SSRF attacks if a malicious user chooses a long vulnerable username. This issue has been addressed in release version 1.48.0. Users are advised to upgrade. There are no known workarounds for this vulnerability."
+        },
+        "CVE-2024-27982": {
+            "id": "CVE-2024-27982",
+            "baseScore": null,
+            "publishedDate": "2024-05-07T17:15:00.000Z",
+            "lastModifiedDate": "2024-05-07T20:07:00.000Z",
+            "description": "The team has identified a critical vulnerability in the http server of the most recent version of Node, where malformed headers can lead to HTTP request smuggling. Specifically, if a space is placed before a content-length header, it is not interpreted correctly, enabling attackers to smuggle in a second request within the body of the first."
         },
         "CVE-2024-27983": {
             "id": "CVE-2024-27983",
