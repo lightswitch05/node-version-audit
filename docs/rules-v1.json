@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2024-06-10T13:25:32.201Z",
+    "lastUpdatedDate": "2024-06-11T02:05:51.132Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -5167,7 +5167,7 @@
             "id": "CVE-2024-22017",
             "baseScore": null,
             "publishedDate": "2024-03-19T05:15:00.000Z",
-            "lastModifiedDate": "2024-05-01T18:15:00.000Z",
+            "lastModifiedDate": "2024-06-10T17:16:00.000Z",
             "description": "setuid() does not affect libuv's internal io_uring operations if initialized before the call to setuid().\nThis allows the process to perform privileged operations despite presumably having dropped such privileges through a call to setuid().\nThis vulnerability affects all users using version greater or equal than Node.js 18.18.0, Node.js 20.4.0 and Node.js 21."
         },
         "CVE-2024-22019": {
@@ -5181,14 +5181,14 @@
             "id": "CVE-2024-22025",
             "baseScore": null,
             "publishedDate": "2024-03-19T05:15:00.000Z",
-            "lastModifiedDate": "2024-03-27T03:15:00.000Z",
+            "lastModifiedDate": "2024-06-10T18:15:00.000Z",
             "description": "A vulnerability in Node.js has been identified, allowing for a Denial of Service (DoS) attack through resource exhaustion when using the fetch() function to retrieve content from an untrusted URL.\nThe vulnerability stems from the fact that the fetch() function in Node.js always decodes Brotli, making it possible for an attacker to cause resource exhaustion when fetching content from an untrusted URL.\nAn attacker controlling the URL passed into fetch() can exploit this vulnerability to exhaust memory, potentially leading to process termination, depending on the system configuration."
         },
         "CVE-2024-24806": {
             "id": "CVE-2024-24806",
             "baseScore": 7.3,
             "publishedDate": "2024-02-07T22:15:00.000Z",
-            "lastModifiedDate": "2024-05-01T18:15:00.000Z",
+            "lastModifiedDate": "2024-06-10T17:16:00.000Z",
             "description": "libuv is a multi-platform support library with a focus on asynchronous I/O. The `uv_getaddrinfo` function in `src/unix/getaddrinfo.c` (and its windows counterpart `src/win/getaddrinfo.c`), truncates hostnames to 256 characters before calling `getaddrinfo`. This behavior can be exploited to create addresses like `0x00007f000001`, which are considered valid by `getaddrinfo` and could allow an attacker to craft payloads that resolve to unintended IP addresses, bypassing developer checks. The vulnerability arises due to how the `hostname_ascii` variable (with a length of 256 bytes) is handled in `uv_getaddrinfo` and subsequently in `uv__idna_toascii`. When the hostname exceeds 256 characters, it gets truncated without a terminating null byte. As a result attackers may be able to access internal APIs or for websites (similar to MySpace) that allows users to have `username.example.com` pages. Internal services that crawl or cache these user pages can be exposed to SSRF attacks if a malicious user chooses a long vulnerable username. This issue has been addressed in release version 1.48.0. Users are advised to upgrade. There are no known workarounds for this vulnerability."
         },
         "CVE-2024-27982": {
@@ -5202,7 +5202,7 @@
             "id": "CVE-2024-27983",
             "baseScore": null,
             "publishedDate": "2024-04-09T01:15:00.000Z",
-            "lastModifiedDate": "2024-05-01T18:15:00.000Z",
+            "lastModifiedDate": "2024-06-10T17:16:00.000Z",
             "description": "An attacker can make the Node.js HTTP/2 server completely unavailable by sending a small amount of HTTP/2 frames packets with a few HTTP/2 frames inside. It is possible to leave some data in nghttp2 memory after reset when headers with HTTP/2 CONTINUATION frame are sent to the server and then a TCP connection is abruptly closed by the client triggering the Http2Session destructor while header frames are still being processed (and stored in memory) causing a race condition."
         }
     }
