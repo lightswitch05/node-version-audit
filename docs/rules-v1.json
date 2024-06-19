@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2024-06-18T13:25:07.865Z",
+    "lastUpdatedDate": "2024-06-19T02:06:45.757Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -5117,7 +5117,7 @@
             "id": "CVE-2023-39331",
             "baseScore": 7.5,
             "publishedDate": "2023-10-18T04:15:00.000Z",
-            "lastModifiedDate": "2023-11-17T19:10:00.000Z",
+            "lastModifiedDate": "2024-06-18T15:09:00.000Z",
             "description": "A previously disclosed vulnerability (CVE-2023-30584) was patched insufficiently in commit 205f1e6. The new path traversal vulnerability arises because the implementation does not protect itself against the application overwriting built-in utility functions with user-defined implementations.\n\nPlease note that at the time this CVE was issued, the permission model is an experimental feature of Node.js."
         },
         "CVE-2023-39332": {
