@@ -1,11 +1,11 @@
 {
-    "lastUpdatedDate": "2024-07-10T02:08:09.212Z",
+    "lastUpdatedDate": "2024-07-10T13:25:55.757Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
     "releasesCount": 618,
-    "cveCount": 158,
+    "cveCount": 159,
     "supportVersionsCount": 21,
     "latestVersion": "22.4.1",
     "latestVersions": {
@@ -5220,6 +5220,13 @@
             "publishedDate": "2024-03-19T05:15:00.000Z",
             "lastModifiedDate": "2024-06-10T17:16:00.000Z",
             "description": "setuid() does not affect libuv's internal io_uring operations if initialized before the call to setuid().\nThis allows the process to perform privileged operations despite presumably having dropped such privileges through a call to setuid().\nThis vulnerability affects all users using version greater or equal than Node.js 18.18.0, Node.js 20.4.0 and Node.js 21."
+        },
+        "CVE-2024-22018": {
+            "id": "CVE-2024-22018",
+            "baseScore": null,
+            "publishedDate": "2024-07-10T02:15:00.000Z",
+            "lastModifiedDate": "2024-07-10T02:15:00.000Z",
+            "description": "A vulnerability has been identified in Node.js, affecting users of the experimental permission model when the --allow-fs-read flag is used.\nThis flaw arises from an inadequate permission model that fails to restrict file stats through the fs.lstat API. As a result, malicious actors can retrieve stats from files that they do not have explicit read access to.\nThis vulnerability affects all users using the experimental permission model in Node.js 20 and Node.js 21.\nPlease note that at the time this CVE was issued, the permission model is an experimental feature of Node.js."
         },
         "CVE-2024-22019": {
             "id": "CVE-2024-22019",
