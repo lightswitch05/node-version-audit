@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2024-07-09T13:24:33.871Z",
+    "lastUpdatedDate": "2024-07-10T02:08:09.212Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -5232,7 +5232,7 @@
             "id": "CVE-2024-22020",
             "baseScore": null,
             "publishedDate": "2024-07-09T02:15:00.000Z",
-            "lastModifiedDate": "2024-07-09T02:15:00.000Z",
+            "lastModifiedDate": "2024-07-09T18:19:00.000Z",
             "description": "A security flaw in Node.js  allows a bypass of network import restrictions.\nBy embedding non-network imports in data URLs, an attacker can execute arbitrary code, compromising system security.\nVerified on various platforms, the vulnerability is mitigated by forbidding data URLs in network imports.\nExploiting this flaw can violate network import security, posing a risk to developers and servers."
         },
         "CVE-2024-22025": {
