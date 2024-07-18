@@ -1,13 +1,13 @@
 {
-    "lastUpdatedDate": "2024-07-17T13:25:03.754Z",
+    "lastUpdatedDate": "2024-07-18T02:07:47.717Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
-    "releasesCount": 618,
+    "releasesCount": 619,
     "cveCount": 159,
     "supportVersionsCount": 21,
-    "latestVersion": "22.4.1",
+    "latestVersion": "22.5.0",
     "latestVersions": {
         "0": "0.12.18",
         "1": "1.8.4",
@@ -31,7 +31,7 @@
         "19": "19.9.0",
         "20": "20.15.1",
         "21": "21.7.3",
-        "22": "22.4.1",
+        "22": "22.5.0",
         "0.10": "0.10.48",
         "0.12": "0.12.18",
         "1.0": "1.0.4",
@@ -341,7 +341,8 @@
         "22.1": "22.1.0",
         "22.2": "22.2.0",
         "22.3": "22.3.0",
-        "22.4": "22.4.1"
+        "22.4": "22.4.1",
+        "22.5": "22.5.0"
     },
     "supportEndDates": {
         "4": {
@@ -4154,6 +4155,11 @@
                 "CVE-2024-36138",
                 "CVE-2024-37372"
             ]
+        },
+        "22.5.0": {
+            "version": "22.5.0",
+            "releaseDate": "2024-07-17T00:00:00.000Z",
+            "patchedCveIds": []
         }
     },
     "cves": {
