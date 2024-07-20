@@ -1,13 +1,13 @@
 {
-    "lastUpdatedDate": "2024-07-19T13:24:49.902Z",
+    "lastUpdatedDate": "2024-07-20T02:05:31.826Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
-    "releasesCount": 619,
+    "releasesCount": 620,
     "cveCount": 159,
     "supportVersionsCount": 21,
-    "latestVersion": "22.5.0",
+    "latestVersion": "22.5.1",
     "latestVersions": {
         "0": "0.12.18",
         "1": "1.8.4",
@@ -31,7 +31,7 @@
         "19": "19.9.0",
         "20": "20.15.1",
         "21": "21.7.3",
-        "22": "22.5.0",
+        "22": "22.5.1",
         "0.10": "0.10.48",
         "0.12": "0.12.18",
         "1.0": "1.0.4",
@@ -342,7 +342,7 @@
         "22.2": "22.2.0",
         "22.3": "22.3.0",
         "22.4": "22.4.1",
-        "22.5": "22.5.0"
+        "22.5": "22.5.1"
     },
     "supportEndDates": {
         "4": {
@@ -4160,6 +4160,11 @@
             "version": "22.5.0",
             "releaseDate": "2024-07-17T00:00:00.000Z",
             "patchedCveIds": []
+        },
+        "22.5.1": {
+            "version": "22.5.1",
+            "releaseDate": "2024-07-19T00:00:00.000Z",
+            "patchedCveIds": []
         }
     },
     "cves": {
@@ -5231,7 +5236,7 @@
             "id": "CVE-2024-22018",
             "baseScore": null,
             "publishedDate": "2024-07-10T02:15:00.000Z",
-            "lastModifiedDate": "2024-07-11T19:15:00.000Z",
+            "lastModifiedDate": "2024-07-19T14:15:00.000Z",
             "description": "A vulnerability has been identified in Node.js, affecting users of the experimental permission model when the --allow-fs-read flag is used.\nThis flaw arises from an inadequate permission model that fails to restrict file stats through the fs.lstat API. As a result, malicious actors can retrieve stats from files that they do not have explicit read access to.\nThis vulnerability affects all users using the experimental permission model in Node.js 20 and Node.js 21.\nPlease note that at the time this CVE was issued, the permission model is an experimental feature of Node.js."
         },
         "CVE-2024-22019": {
@@ -5245,7 +5250,7 @@
             "id": "CVE-2024-22020",
             "baseScore": null,
             "publishedDate": "2024-07-09T02:15:00.000Z",
-            "lastModifiedDate": "2024-07-11T19:15:00.000Z",
+            "lastModifiedDate": "2024-07-19T14:15:00.000Z",
             "description": "A security flaw in Node.js  allows a bypass of network import restrictions.\nBy embedding non-network imports in data URLs, an attacker can execute arbitrary code, compromising system security.\nVerified on various platforms, the vulnerability is mitigated by forbidding data URLs in network imports.\nExploiting this flaw can violate network import security, posing a risk to developers and servers."
         },
         "CVE-2024-22025": {
