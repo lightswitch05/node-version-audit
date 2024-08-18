@@ -361,7 +361,7 @@ describe('CveFeed', () => {
                     CveId.fromString('CVE-2022-27456'),
                     CveId.fromString('CVE-2022-1108'),
                 ],
-                FEED
+                FEED,
             );
         });
     });
