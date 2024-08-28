@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2024-08-27T13:26:27.653Z",
+    "lastUpdatedDate": "2024-08-28T02:13:59.321Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -5246,7 +5246,7 @@
             "id": "CVE-2024-21896",
             "baseScore": null,
             "publishedDate": "2024-02-20T02:15:00.000Z",
-            "lastModifiedDate": "2024-05-01T18:15:00.000Z",
+            "lastModifiedDate": "2024-08-27T16:35:00.000Z",
             "description": "The permission model protects itself against path traversal attacks by calling path.resolve() on any paths given by the user. If the path is to be treated as a Buffer, the implementation uses Buffer.from() to obtain a Buffer from the result of path.resolve(). By monkey-patching Buffer internals, namely, Buffer.prototype.utf8Write, the application can modify the result of path.resolve(), which leads to a path traversal vulnerability.\nThis vulnerability affects all users using the experimental permission model in Node.js 20 and Node.js 21.\nPlease note that at the time this CVE was issued, the permission model is an experimental feature of Node.js."
         },
         "CVE-2024-22017": {
