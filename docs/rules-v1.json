@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2024-09-09T13:29:48.382Z",
+    "lastUpdatedDate": "2024-09-10T02:17:47.058Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -5112,21 +5112,21 @@
             "id": "CVE-2023-30582",
             "baseScore": null,
             "publishedDate": "2024-09-07T16:15:00.000Z",
-            "lastModifiedDate": "2024-09-07T16:15:00.000Z",
+            "lastModifiedDate": "2024-09-09T19:35:00.000Z",
             "description": "A vulnerability has been identified in Node.js version 20, affecting users of the experimental permission model when the --allow-fs-read flag is used with a non-* argument. This flaw arises from an inadequate permission model that fails to restrict file watching through the fs.watchFile API. As a result, malicious actors can monitor files that they do not have explicit read access to.\n\nPlease note that at the time this CVE was issued, the permission model is an experimental feature of Node.js."
         },
         "CVE-2023-30583": {
             "id": "CVE-2023-30583",
             "baseScore": null,
             "publishedDate": "2024-09-07T16:15:00.000Z",
-            "lastModifiedDate": "2024-09-07T16:15:00.000Z",
+            "lastModifiedDate": "2024-09-09T19:35:00.000Z",
             "description": "fs.openAsBlob() can bypass the experimental permission model when using the file system read restriction with the `--allow-fs-read` flag in Node.js 20. This flaw arises from a missing check in the `fs.openAsBlob()` API.\n\nPlease note that at the time this CVE was issued, the permission model is an experimental feature of Node.js."
         },
         "CVE-2023-30584": {
             "id": "CVE-2023-30584",
             "baseScore": null,
             "publishedDate": "2024-09-07T16:15:00.000Z",
-            "lastModifiedDate": "2024-09-07T16:15:00.000Z",
+            "lastModifiedDate": "2024-09-09T19:35:00.000Z",
             "description": "A vulnerability has been discovered in Node.js version 20, specifically within the experimental permission model. This flaw relates to improper handling of path traversal bypass when verifying file permissions.\n\nPlease note that at the time this CVE was issued, the permission model is an experimental feature of Node.js."
         },
         "CVE-2023-30585": {
@@ -5147,7 +5147,7 @@
             "id": "CVE-2023-30587",
             "baseScore": null,
             "publishedDate": "2024-09-07T16:15:00.000Z",
-            "lastModifiedDate": "2024-09-07T16:15:00.000Z",
+            "lastModifiedDate": "2024-09-09T19:35:00.000Z",
             "description": "A vulnerability in Node.js version 20 allows for bypassing restrictions set by the --experimental-permission flag using the built-in inspector module (node:inspector).\n\nBy exploiting the Worker class's ability to create an \"internal worker\" with the kIsInternal Symbol, attackers can modify the isInternal value when an inspector is attached within the Worker constructor before initializing a new WorkerImpl. This vulnerability exclusively affects Node.js users employing the permission model mechanism.\n\nPlease note that at the time this CVE was issued, the permission model is an experimental feature of Node.js."
         },
         "CVE-2023-30588": {
@@ -5245,7 +5245,7 @@
             "id": "CVE-2023-39333",
             "baseScore": null,
             "publishedDate": "2024-09-07T16:15:00.000Z",
-            "lastModifiedDate": "2024-09-07T16:15:00.000Z",
+            "lastModifiedDate": "2024-09-09T18:35:00.000Z",
             "description": "Maliciously crafted export names in an imported WebAssembly module can inject JavaScript code. The injected code may be able to access data and functions that the WebAssembly module itself does not have access to, similar to as if the WebAssembly module was a JavaScript module.\n\nThis vulnerability affects users of any active release line of Node.js. The vulnerable feature is only available if Node.js is started with the `--experimental-wasm-modules` command line option."
         },
         "CVE-2023-44487": {
@@ -5266,7 +5266,7 @@
             "id": "CVE-2023-46809",
             "baseScore": null,
             "publishedDate": "2024-09-07T16:15:00.000Z",
-            "lastModifiedDate": "2024-09-07T16:15:00.000Z",
+            "lastModifiedDate": "2024-09-09T18:35:00.000Z",
             "description": "Node.js versions which bundle an unpatched version of OpenSSL or run against a dynamically linked version of OpenSSL which are unpatched are vulnerable to the Marvin Attack - https://people.redhat.com/~hkario/marvin/, if PCKS #1 v1.5 padding is allowed when performing RSA descryption using a private key."
         },
         "CVE-2024-21890": {
@@ -5357,14 +5357,14 @@
             "id": "CVE-2024-36137",
             "baseScore": null,
             "publishedDate": "2024-09-07T16:15:00.000Z",
-            "lastModifiedDate": "2024-09-07T16:15:00.000Z",
+            "lastModifiedDate": "2024-09-09T13:03:00.000Z",
             "description": "A vulnerability has been identified in Node.js, affecting users of the experimental permission model when the --allow-fs-write flag is used.\r\n\r\nNode.js Permission Model do not operate on file descriptors, however, operations such as fs.fchown or fs.fchmod can use a \"read-only\" file descriptor to change the owner and permissions of a file."
         },
         "CVE-2024-36138": {
             "id": "CVE-2024-36138",
             "baseScore": null,
             "publishedDate": "2024-09-07T16:15:00.000Z",
-            "lastModifiedDate": "2024-09-07T16:15:00.000Z",
+            "lastModifiedDate": "2024-09-09T18:35:00.000Z",
             "description": "Bypass incomplete fix of CVE-2024-27980, that arises from improper handling of batch files with all possible extensions on Windows via child_process.spawn / child_process.spawnSync. A malicious command line argument can inject arbitrary commands and achieve code execution even if the shell option is not enabled."
         }
     }
