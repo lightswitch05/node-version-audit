@@ -1,10 +1,10 @@
 {
-    "lastUpdatedDate": "2024-10-03T13:31:10.198Z",
+    "lastUpdatedDate": "2024-10-04T02:22:37.524Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
-    "releasesCount": 626,
+    "releasesCount": 627,
     "cveCount": 167,
     "supportVersionsCount": 21,
     "latestVersion": "22.9.0",
@@ -29,7 +29,7 @@
         "17": "17.9.1",
         "18": "18.20.4",
         "19": "19.9.0",
-        "20": "20.17.0",
+        "20": "20.18.0",
         "21": "21.7.3",
         "22": "22.9.0",
         "0.10": "0.10.48",
@@ -331,6 +331,7 @@
         "20.15": "20.15.1",
         "20.16": "20.16.0",
         "20.17": "20.17.0",
+        "20.18": "20.18.0",
         "21.0": "21.0.0",
         "21.1": "21.1.0",
         "21.2": "21.2.0",
@@ -4054,6 +4055,11 @@
             "releaseDate": "2024-08-21T00:00:00.000Z",
             "patchedCveIds": []
         },
+        "20.18.0": {
+            "version": "20.18.0",
+            "releaseDate": "2024-10-03T00:00:00.000Z",
+            "patchedCveIds": []
+        },
         "21.0.0": {
             "version": "21.0.0",
             "releaseDate": "2023-10-17T00:00:00.000Z",
@@ -5223,7 +5229,7 @@
             "id": "CVE-2023-32559",
             "baseScore": 7.5,
             "publishedDate": "2023-08-24T02:15:00.000Z",
-            "lastModifiedDate": "2023-10-24T17:48:00.000Z",
+            "lastModifiedDate": "2024-10-03T14:35:00.000Z",
             "description": "A privilege escalation vulnerability exists in the experimental policy mechanism in all active release lines: 16.x, 18.x and, 20.x. The use of the deprecated API `process.binding()` can bypass the policy mechanism by requiring internal modules and eventually take advantage of `process.binding('spawn_sync')` run arbitrary code, outside of the limits defined in a `policy.json` file. Please note that at the time this CVE was issued, the policy is an experimental feature of Node.js."
         },
         "CVE-2023-38552": {
