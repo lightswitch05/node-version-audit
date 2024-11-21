@@ -1,13 +1,13 @@
 {
-    "lastUpdatedDate": "2024-11-20T13:32:48.424Z",
+    "lastUpdatedDate": "2024-11-21T02:33:49.012Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
-    "releasesCount": 633,
+    "releasesCount": 635,
     "cveCount": 167,
     "supportVersionsCount": 21,
-    "latestVersion": "23.2.0",
+    "latestVersion": "23.3.0",
     "latestVersions": {
         "0": "0.12.18",
         "1": "1.8.4",
@@ -29,10 +29,10 @@
         "17": "17.9.1",
         "18": "18.20.5",
         "19": "19.9.0",
-        "20": "20.18.0",
+        "20": "20.18.1",
         "21": "21.7.3",
         "22": "22.11.0",
-        "23": "23.2.0",
+        "23": "23.3.0",
         "0.10": "0.10.48",
         "0.12": "0.12.18",
         "1.0": "1.0.4",
@@ -332,7 +332,7 @@
         "20.15": "20.15.1",
         "20.16": "20.16.0",
         "20.17": "20.17.0",
-        "20.18": "20.18.0",
+        "20.18": "20.18.1",
         "21.0": "21.0.0",
         "21.1": "21.1.0",
         "21.2": "21.2.0",
@@ -355,7 +355,8 @@
         "22.11": "22.11.0",
         "23.0": "23.0.0",
         "23.1": "23.1.0",
-        "23.2": "23.2.0"
+        "23.2": "23.2.0",
+        "23.3": "23.3.0"
     },
     "supportEndDates": {
         "4": {
@@ -4071,6 +4072,11 @@
             "releaseDate": "2024-10-03T00:00:00.000Z",
             "patchedCveIds": []
         },
+        "20.18.1": {
+            "version": "20.18.1",
+            "releaseDate": "2024-11-20T00:00:00.000Z",
+            "patchedCveIds": []
+        },
         "21.0.0": {
             "version": "21.0.0",
             "releaseDate": "2023-10-17T00:00:00.000Z",
@@ -4242,6 +4248,11 @@
         "23.2.0": {
             "version": "23.2.0",
             "releaseDate": "2024-11-11T00:00:00.000Z",
+            "patchedCveIds": []
+        },
+        "23.3.0": {
+            "version": "23.3.0",
+            "releaseDate": "2024-11-20T00:00:00.000Z",
             "patchedCveIds": []
         }
     },
