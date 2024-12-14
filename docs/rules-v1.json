@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2024-12-13T13:33:33.672Z",
+    "lastUpdatedDate": "2024-12-14T02:34:49.965Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4637,14 +4637,14 @@
             "id": "CVE-2018-12122",
             "baseScore": 7.5,
             "publishedDate": "2018-11-28T17:29:00.000Z",
-            "lastModifiedDate": "2024-11-21T03:44:00.000Z",
+            "lastModifiedDate": "2024-12-13T14:15:00.000Z",
             "description": "Node.js: All versions prior to Node.js 6.15.0, 8.14.0, 10.14.0 and 11.3.0: Slowloris HTTP Denial of Service: An attacker can cause a Denial of Service (DoS) by sending headers very slowly keeping HTTP or HTTPS connections and associated resources alive for a long period of time."
         },
         "CVE-2018-12123": {
             "id": "CVE-2018-12123",
             "baseScore": 4.3,
             "publishedDate": "2018-11-28T17:29:00.000Z",
-            "lastModifiedDate": "2024-11-21T03:44:00.000Z",
+            "lastModifiedDate": "2024-12-13T14:15:00.000Z",
             "description": "Node.js: All versions prior to Node.js 6.15.0, 8.14.0, 10.14.0 and 11.3.0: Hostname spoofing in URL parser for javascript protocol: If a Node.js application is using url.parse() to determine the URL hostname, that hostname can be spoofed by using a mixed case \"javascript:\" (e.g. \"javAscript:\") protocol (other protocols are not affected). If security decisions are made about the URL based on the hostname, they may be incorrect."
         },
         "CVE-2018-1000168": {
