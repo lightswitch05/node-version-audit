@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2024-12-27T13:27:21.819Z",
+    "lastUpdatedDate": "2024-12-28T02:18:41.696Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4636,7 +4636,7 @@
             "id": "CVE-2018-12121",
             "baseScore": 7.5,
             "publishedDate": "2018-11-28T17:29:00.000Z",
-            "lastModifiedDate": "2024-11-21T03:44:00.000Z",
+            "lastModifiedDate": "2024-12-27T16:15:00.000Z",
             "description": "Node.js: All versions prior to Node.js 6.15.0, 8.14.0, 10.14.0 and 11.3.0: Denial of Service with large HTTP headers: By using a combination of many requests with maximum sized headers (almost 80 KB per connection), and carefully timed completion of the headers, it is possible to cause the HTTP server to abort from heap allocation failure. Attack potential is mitigated by the use of a load balancer or other proxy layer."
         },
         "CVE-2018-12122": {
