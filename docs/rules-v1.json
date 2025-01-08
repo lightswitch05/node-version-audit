@@ -1,13 +1,13 @@
 {
-    "lastUpdatedDate": "2025-01-07T13:31:07.632Z",
+    "lastUpdatedDate": "2025-01-08T02:21:10.862Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
-    "releasesCount": 638,
+    "releasesCount": 640,
     "cveCount": 167,
     "supportVersionsCount": 21,
-    "latestVersion": "23.5.0",
+    "latestVersion": "23.6.0",
     "latestVersions": {
         "0": "0.12.18",
         "1": "1.8.4",
@@ -31,8 +31,8 @@
         "19": "19.9.0",
         "20": "20.18.1",
         "21": "21.7.3",
-        "22": "22.12.0",
-        "23": "23.5.0",
+        "22": "22.13.0",
+        "23": "23.6.0",
         "0.10": "0.10.48",
         "0.12": "0.12.18",
         "1.0": "1.0.4",
@@ -354,12 +354,14 @@
         "22.10": "22.10.0",
         "22.11": "22.11.0",
         "22.12": "22.12.0",
+        "22.13": "22.13.0",
         "23.0": "23.0.0",
         "23.1": "23.1.0",
         "23.2": "23.2.0",
         "23.3": "23.3.0",
         "23.4": "23.4.0",
-        "23.5": "23.5.0"
+        "23.5": "23.5.0",
+        "23.6": "23.6.0"
     },
     "supportEndDates": {
         "4": {
@@ -4243,6 +4245,11 @@
             "releaseDate": "2024-12-03T00:00:00.000Z",
             "patchedCveIds": []
         },
+        "22.13.0": {
+            "version": "22.13.0",
+            "releaseDate": "2025-01-07T00:00:00.000Z",
+            "patchedCveIds": []
+        },
         "23.0.0": {
             "version": "23.0.0",
             "releaseDate": "2024-10-16T00:00:00.000Z",
@@ -4271,6 +4278,11 @@
         "23.5.0": {
             "version": "23.5.0",
             "releaseDate": "2024-12-19T00:00:00.000Z",
+            "patchedCveIds": []
+        },
+        "23.6.0": {
+            "version": "23.6.0",
+            "releaseDate": "2025-01-07T00:00:00.000Z",
             "patchedCveIds": []
         }
     },
