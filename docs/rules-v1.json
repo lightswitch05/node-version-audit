@@ -1,11 +1,11 @@
 {
-    "lastUpdatedDate": "2025-01-22T02:20:20.359Z",
+    "lastUpdatedDate": "2025-01-22T13:28:29.977Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
     "releasesCount": 644,
-    "cveCount": 170,
+    "cveCount": 171,
     "supportVersionsCount": 21,
     "latestVersion": "23.6.1",
     "latestVersions": {
@@ -5515,6 +5515,13 @@
             "publishedDate": "2025-01-21T18:15:00.000Z",
             "lastModifiedDate": "2025-01-21T18:15:00.000Z",
             "description": "Undici is an HTTP/1.1 client. Starting in version 4.5.0 and prior to versions 5.28.5, 6.21.1, and 7.2.3, undici uses `Math.random()` to choose the boundary for a multipart/form-data request. It is known that the output of `Math.random()` can be predicted if several of its generated values are known. If there is a mechanism in an app that sends multipart requests to an attacker-controlled website, they can use this to leak the necessary values. Therefore, an attacker can tamper with the requests going to the backend APIs if certain conditions are met. This is fixed in versions 5.28.5, 6.21.1, and 7.2.3. As a workaround, do not issue multipart requests to attacker controlled servers."
+        },
+        "CVE-2025-23083": {
+            "id": "CVE-2025-23083",
+            "baseScore": null,
+            "publishedDate": "2025-01-22T02:15:00.000Z",
+            "lastModifiedDate": "2025-01-22T02:15:00.000Z",
+            "description": "With the aid of the diagnostics_channel utility, an event can be hooked into whenever a worker thread is created. This is not limited only to workers but also exposes internal workers, where an instance of them can be fetched, and its constructor can be grabbed and reinstated for malicious usage. \r\n\r\nThis vulnerability affects Permission Model users (--permission) on Node.js v20, v22, and v23."
         }
     }
 }
