@@ -1,13 +1,13 @@
 {
-    "lastUpdatedDate": "2025-01-21T13:28:20.854Z",
+    "lastUpdatedDate": "2025-01-22T02:20:20.359Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
-    "releasesCount": 640,
-    "cveCount": 169,
+    "releasesCount": 644,
+    "cveCount": 170,
     "supportVersionsCount": 21,
-    "latestVersion": "23.6.0",
+    "latestVersion": "23.6.1",
     "latestVersions": {
         "0": "0.12.18",
         "1": "1.8.4",
@@ -27,12 +27,12 @@
         "15": "15.14.0",
         "16": "16.20.2",
         "17": "17.9.1",
-        "18": "18.20.5",
+        "18": "18.20.6",
         "19": "19.9.0",
-        "20": "20.18.1",
+        "20": "20.18.2",
         "21": "21.7.3",
-        "22": "22.13.0",
-        "23": "23.6.0",
+        "22": "22.13.1",
+        "23": "23.6.1",
         "0.10": "0.10.48",
         "0.12": "0.12.18",
         "1.0": "1.0.4",
@@ -303,7 +303,7 @@
         "18.17": "18.17.1",
         "18.18": "18.18.2",
         "18.19": "18.19.1",
-        "18.20": "18.20.5",
+        "18.20": "18.20.6",
         "19.0": "19.0.1",
         "19.1": "19.1.0",
         "19.2": "19.2.0",
@@ -332,7 +332,7 @@
         "20.15": "20.15.1",
         "20.16": "20.16.0",
         "20.17": "20.17.0",
-        "20.18": "20.18.1",
+        "20.18": "20.18.2",
         "21.0": "21.0.0",
         "21.1": "21.1.0",
         "21.2": "21.2.0",
@@ -354,14 +354,14 @@
         "22.10": "22.10.0",
         "22.11": "22.11.0",
         "22.12": "22.12.0",
-        "22.13": "22.13.0",
+        "22.13": "22.13.1",
         "23.0": "23.0.0",
         "23.1": "23.1.0",
         "23.2": "23.2.0",
         "23.3": "23.3.0",
         "23.4": "23.4.0",
         "23.5": "23.5.0",
-        "23.6": "23.6.0"
+        "23.6": "23.6.1"
     },
     "supportEndDates": {
         "4": {
@@ -3816,6 +3816,15 @@
             "releaseDate": "2024-11-12T00:00:00.000Z",
             "patchedCveIds": []
         },
+        "18.20.6": {
+            "version": "18.20.6",
+            "releaseDate": "2025-01-21T00:00:00.000Z",
+            "patchedCveIds": [
+                "CVE-2025-22150",
+                "CVE-2025-23084",
+                "CVE-2025-23085"
+            ]
+        },
         "19.0.0": {
             "version": "19.0.0",
             "releaseDate": "2022-10-18T00:00:00.000Z",
@@ -4082,6 +4091,16 @@
             "releaseDate": "2024-11-20T00:00:00.000Z",
             "patchedCveIds": []
         },
+        "20.18.2": {
+            "version": "20.18.2",
+            "releaseDate": "2025-01-21T00:00:00.000Z",
+            "patchedCveIds": [
+                "CVE-2025-22150",
+                "CVE-2025-23083",
+                "CVE-2025-23084",
+                "CVE-2025-23085"
+            ]
+        },
         "21.0.0": {
             "version": "21.0.0",
             "releaseDate": "2023-10-17T00:00:00.000Z",
@@ -4250,6 +4269,16 @@
             "releaseDate": "2025-01-07T00:00:00.000Z",
             "patchedCveIds": []
         },
+        "22.13.1": {
+            "version": "22.13.1",
+            "releaseDate": "2025-01-21T00:00:00.000Z",
+            "patchedCveIds": [
+                "CVE-2025-22150",
+                "CVE-2025-23083",
+                "CVE-2025-23084",
+                "CVE-2025-23085"
+            ]
+        },
         "23.0.0": {
             "version": "23.0.0",
             "releaseDate": "2024-10-16T00:00:00.000Z",
@@ -4284,6 +4313,16 @@
             "version": "23.6.0",
             "releaseDate": "2025-01-07T00:00:00.000Z",
             "patchedCveIds": []
+        },
+        "23.6.1": {
+            "version": "23.6.1",
+            "releaseDate": "2025-01-21T00:00:00.000Z",
+            "patchedCveIds": [
+                "CVE-2025-22150",
+                "CVE-2025-23083",
+                "CVE-2025-23084",
+                "CVE-2025-23085"
+            ]
         }
     },
     "cves": {
@@ -5469,6 +5508,13 @@
             "publishedDate": "2025-01-09T01:15:00.000Z",
             "lastModifiedDate": "2025-01-09T22:15:00.000Z",
             "description": "The Permission Model assumes that any path starting with two backslashes \\ has a four-character prefix that can be ignored, which is not always true. This subtle bug leads to vulnerable edge cases."
+        },
+        "CVE-2025-22150": {
+            "id": "CVE-2025-22150",
+            "baseScore": null,
+            "publishedDate": "2025-01-21T18:15:00.000Z",
+            "lastModifiedDate": "2025-01-21T18:15:00.000Z",
+            "description": "Undici is an HTTP/1.1 client. Starting in version 4.5.0 and prior to versions 5.28.5, 6.21.1, and 7.2.3, undici uses `Math.random()` to choose the boundary for a multipart/form-data request. It is known that the output of `Math.random()` can be predicted if several of its generated values are known. If there is a mechanism in an app that sends multipart requests to an attacker-controlled website, they can use this to leak the necessary values. Therefore, an attacker can tamper with the requests going to the backend APIs if certain conditions are met. This is fixed in versions 5.28.5, 6.21.1, and 7.2.3. As a workaround, do not issue multipart requests to attacker controlled servers."
         }
     }
 }
