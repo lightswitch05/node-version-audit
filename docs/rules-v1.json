@@ -1,11 +1,11 @@
 {
-    "lastUpdatedDate": "2025-01-28T02:18:02.759Z",
+    "lastUpdatedDate": "2025-01-28T13:28:05.991Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
     "releasesCount": 644,
-    "cveCount": 171,
+    "cveCount": 172,
     "supportVersionsCount": 21,
     "latestVersion": "23.6.1",
     "latestVersions": {
@@ -5522,6 +5522,13 @@
             "publishedDate": "2025-01-22T02:15:00.000Z",
             "lastModifiedDate": "2025-01-22T02:15:00.000Z",
             "description": "With the aid of the diagnostics_channel utility, an event can be hooked into whenever a worker thread is created. This is not limited only to workers but also exposes internal workers, where an instance of them can be fetched, and its constructor can be grabbed and reinstated for malicious usage. \r\n\r\nThis vulnerability affects Permission Model users (--permission) on Node.js v20, v22, and v23."
+        },
+        "CVE-2025-23084": {
+            "id": "CVE-2025-23084",
+            "baseScore": null,
+            "publishedDate": "2025-01-28T05:15:00.000Z",
+            "lastModifiedDate": "2025-01-28T05:15:00.000Z",
+            "description": "A vulnerability has been identified in Node.js, specifically affecting the handling of drive names in the Windows environment. Certain Node.js functions do not treat drive names as special on Windows. As a result, although Node.js assumes a relative path, it actually refers to the root directory.\r\n\r\nOn Windows, a path that does not start with the file separator is treated as relative to the current directory. \r\n\r\nThis vulnerability affects Windows users of `path.join` API."
         }
     }
 }
