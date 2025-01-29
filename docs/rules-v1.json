@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2025-01-28T13:28:05.991Z",
+    "lastUpdatedDate": "2025-01-29T02:17:22.227Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -5527,7 +5527,7 @@
             "id": "CVE-2025-23084",
             "baseScore": null,
             "publishedDate": "2025-01-28T05:15:00.000Z",
-            "lastModifiedDate": "2025-01-28T05:15:00.000Z",
+            "lastModifiedDate": "2025-01-28T16:15:00.000Z",
             "description": "A vulnerability has been identified in Node.js, specifically affecting the handling of drive names in the Windows environment. Certain Node.js functions do not treat drive names as special on Windows. As a result, although Node.js assumes a relative path, it actually refers to the root directory.\r\n\r\nOn Windows, a path that does not start with the file separator is treated as relative to the current directory. \r\n\r\nThis vulnerability affects Windows users of `path.join` API."
         }
     }
