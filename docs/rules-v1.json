@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2025-02-05T13:29:04.245Z",
+    "lastUpdatedDate": "2025-02-06T02:19:52.925Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4938,7 +4938,7 @@
             "id": "CVE-2021-21148",
             "baseScore": 8.8,
             "publishedDate": "2021-02-09T16:15:00.000Z",
-            "lastModifiedDate": "2025-01-29T17:15:00.000Z",
+            "lastModifiedDate": "2025-02-05T13:56:00.000Z",
             "description": "Heap buffer overflow in V8 in Google Chrome prior to 88.0.4324.150 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page."
         },
         "CVE-2021-22883": {
