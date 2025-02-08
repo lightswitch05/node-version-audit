@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2025-02-07T13:28:08.581Z",
+    "lastUpdatedDate": "2025-02-08T02:16:42.784Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -5540,7 +5540,7 @@
             "id": "CVE-2025-23085",
             "baseScore": null,
             "publishedDate": "2025-02-07T07:15:00.000Z",
-            "lastModifiedDate": "2025-02-07T07:15:00.000Z",
+            "lastModifiedDate": "2025-02-07T16:15:00.000Z",
             "description": "A memory leak could occur when a remote peer abruptly closes the socket without sending a GOAWAY notification. Additionally, if an invalid header was detected by nghttp2, causing the connection to be terminated by the peer, the same leak was triggered. This flaw could lead to increased memory consumption and potential denial of service under certain conditions.\r\n\r\nThis vulnerability affects HTTP/2 Server users on Node.js v18.x, v20.x, v22.x and v23.x."
         }
     }
