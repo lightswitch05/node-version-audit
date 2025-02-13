@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2025-02-12T13:29:30.052Z",
+    "lastUpdatedDate": "2025-02-13T02:20:49.117Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -5416,23 +5416,23 @@
         },
         "CVE-2024-21890": {
             "id": "CVE-2024-21890",
-            "baseScore": null,
+            "baseScore": 6.5,
             "publishedDate": "2024-02-20T02:15:00.000Z",
-            "lastModifiedDate": "2024-11-21T08:55:00.000Z",
+            "lastModifiedDate": "2025-02-12T14:59:00.000Z",
             "description": "The Node.js Permission Model does not clarify in the documentation that wildcards should be only used as the last character of a file path. For example:\n```\n --allow-fs-read=/home/node/.ssh/*.pub\n```\n\nwill ignore `pub` and give access to everything after `.ssh/`.\n\nThis misleading documentation affects all users using the experimental permission model in Node.js 20 and Node.js 21.\n\nPlease note that at the time this CVE was issued, the permission model is an experimental feature of Node.js."
         },
         "CVE-2024-21891": {
             "id": "CVE-2024-21891",
-            "baseScore": null,
+            "baseScore": 8.8,
             "publishedDate": "2024-02-20T02:15:00.000Z",
-            "lastModifiedDate": "2024-11-21T08:55:00.000Z",
+            "lastModifiedDate": "2025-02-12T15:08:00.000Z",
             "description": "Node.js depends on multiple built-in utility functions to normalize paths provided to node:fs functions, which can be overwitten with user-defined implementations leading to filesystem permission model bypass through path traversal attack.\nThis vulnerability affects all users using the experimental permission model in Node.js 20 and Node.js 21.\nPlease note that at the time this CVE was issued, the permission model is an experimental feature of Node.js."
         },
         "CVE-2024-21892": {
             "id": "CVE-2024-21892",
-            "baseScore": null,
+            "baseScore": 7.8,
             "publishedDate": "2024-02-20T02:15:00.000Z",
-            "lastModifiedDate": "2024-11-21T08:55:00.000Z",
+            "lastModifiedDate": "2025-02-12T15:17:00.000Z",
             "description": "On Linux, Node.js ignores certain environment variables if those may have been set by an unprivileged user while the process is running with elevated privileges with the only exception of CAP_NET_BIND_SERVICE.\nDue to a bug in the implementation of this exception, Node.js incorrectly applies this exception even when certain other capabilities have been set.\nThis allows unprivileged users to inject code that inherits the process's elevated privileges."
         },
         "CVE-2024-21896": {
