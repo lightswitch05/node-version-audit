@@ -16,32 +16,32 @@ list of CVE exploits, new releases, and end of life dates.
 **Node Version Audit is not:** exploit detection/mitigation, vendor-specific version tracking, a replacement for
 staying informed on Node.js releases and security exploits.
 
-> -   [Features](#features)
-> -   [Example](#example)
-> -   [Usage](#usage)
->     -   [CLI](#cli)
->     -   [Docker](#docker)
->     -   [Direct Invocation](#direct-invocation)
->     -   [JSON Rules](#json-rules)
->     -   [Options](#options)
-> -   [Output](#output)
-> -   [Project Goals](#project-goals)
-> -   [Acknowledgments & License](#acknowledgments--license)
+> - [Features](#features)
+> - [Example](#example)
+> - [Usage](#usage)
+>     - [CLI](#cli)
+>     - [Docker](#docker)
+>     - [Direct Invocation](#direct-invocation)
+>     - [JSON Rules](#json-rules)
+>     - [Options](#options)
+> - [Output](#output)
+> - [Project Goals](#project-goals)
+> - [Acknowledgments & License](#acknowledgments--license)
 
 ## Features:
 
--   List known CVEs for a given version of Node.js
--   Check either the runtime version of Node.js, or a supplied version
--   Display end-of-life dates for a given version of Node.js
--   Display new releases for a given version of Node.js with configurable specificity (latest/minor/patch)
-    -   Patch: 16.13.0 -> 16.13.2
-    -   Minor: 16.13.0 -> 16.14.2
-    -   Latest: 16.13.0 -> 17.9.0
--   Rules automatically updated daily. Information is sourced directly from nodejs.org - you'll never be waiting on someone like me to merge a pull request before getting the latest patch information.
--   Multiple interfaces: CLI (via NPM), Docker, direct code import
--   Easily scriptable for use with CI/CD workflows. All Docker/CLI outputs are in JSON format to be consumed with your favorite tools - such as [jq](https://stedolan.github.io/jq/)
--   Configurable exit conditions. Use CLI flags like `--fail-security` to set a failure exit code if the given version of Node.js has a known CVE or is no longer supported.
--   Zero dependencies
+- List known CVEs for a given version of Node.js
+- Check either the runtime version of Node.js, or a supplied version
+- Display end-of-life dates for a given version of Node.js
+- Display new releases for a given version of Node.js with configurable specificity (latest/minor/patch)
+    - Patch: 16.13.0 -> 16.13.2
+    - Minor: 16.13.0 -> 16.14.2
+    - Latest: 16.13.0 -> 17.9.0
+- Rules automatically updated daily. Information is sourced directly from nodejs.org - you'll never be waiting on someone like me to merge a pull request before getting the latest patch information.
+- Multiple interfaces: CLI (via NPM), Docker, direct code import
+- Easily scriptable for use with CI/CD workflows. All Docker/CLI outputs are in JSON format to be consumed with your favorite tools - such as [jq](https://stedolan.github.io/jq/)
+- Configurable exit conditions. Use CLI flags like `--fail-security` to set a failure exit code if the given version of Node.js has a known CVE or is no longer supported.
+- Zero dependencies
 
 ## Example:
 
@@ -141,37 +141,37 @@ Get the latest Node.js 17 release version directly from the rules using [curl](h
 
 ### Output
 
--   auditVersion: string - The version of Node.js that is being audited.
--   hasVulnerabilities: bool - If the auditVersion has any known CVEs or not.
--   hasSupport: bool - If the auditVersion is still receiving support.
--   supportType: string - The current support status of auditVersion: 'current'|'active'|'maintenance'|'none'.
--   isLatestPatchVersion: bool - If auditVersion is the latest patch-level release (17.9.x).
--   isLatestMinorVersion: bool - If auditVersion is the latest minor-level release (17.x.x).
--   isLatestVersion: bool - If auditVersion is the latest release (x.x.x).
--   latestPatchVersion: string - The latest patch-level version for auditVersion.
--   latestMinorVersion: string - The latest minor-level version for auditVersion.
--   latestVersion: string - The latest Node.js version.
--   activeSupportEndDate: string|null - ISO8601 formatted date for the end of active support for auditVersion.
--   supportEndDate: string|null - ISO8601 formatted date for the end of maintenance support for auditVersion.
--   rulesLastUpdatedDate: string - ISO8601 formatted date for the last time the rules were auto-updated.
--   vulnerabilities: object - CVEs known to affect auditVersion with details about the CVE. CVE Details might be null for recently discovered CVEs.
+- auditVersion: string - The version of Node.js that is being audited.
+- hasVulnerabilities: bool - If the auditVersion has any known CVEs or not.
+- hasSupport: bool - If the auditVersion is still receiving support.
+- supportType: string - The current support status of auditVersion: 'current'|'active'|'maintenance'|'none'.
+- isLatestPatchVersion: bool - If auditVersion is the latest patch-level release (17.9.x).
+- isLatestMinorVersion: bool - If auditVersion is the latest minor-level release (17.x.x).
+- isLatestVersion: bool - If auditVersion is the latest release (x.x.x).
+- latestPatchVersion: string - The latest patch-level version for auditVersion.
+- latestMinorVersion: string - The latest minor-level version for auditVersion.
+- latestVersion: string - The latest Node.js version.
+- activeSupportEndDate: string|null - ISO8601 formatted date for the end of active support for auditVersion.
+- supportEndDate: string|null - ISO8601 formatted date for the end of maintenance support for auditVersion.
+- rulesLastUpdatedDate: string - ISO8601 formatted date for the last time the rules were auto-updated.
+- vulnerabilities: object - CVEs known to affect auditVersion with details about the CVE. CVE Details might be null for recently discovered CVEs.
 
 ## Project Goals:
 
--   Always use update-to-date information and fail if it becomes too stale. Since this tool is designed to help its users stay informed, it must in turn fail if it becomes outdated.
--   Fail if the requested information is unavailable. ex. auditing an unknown version of Node.js like 12.50.0, or 0.9.0. Again, since this tool is designed to help its users stay informed, it must in turn fail if the requested information is unavailable.
--   Work in both open and closed networks (as long as the tool is up-to-date).
--   Minimal footprint and dependencies (no runtime dependencies).
--   Runtime support for the oldest supported version of Node.js. If you are using this tool with an unsupported version of Node.js, then you already have all the answers that this tool can give you: Yes, you have vulnerabilities and are out of date. Of course that is just for the run-time, it is still the goal of this project to supply information about any reasonable version of Node.js.
+- Always use update-to-date information and fail if it becomes too stale. Since this tool is designed to help its users stay informed, it must in turn fail if it becomes outdated.
+- Fail if the requested information is unavailable. ex. auditing an unknown version of Node.js like 12.50.0, or 0.9.0. Again, since this tool is designed to help its users stay informed, it must in turn fail if the requested information is unavailable.
+- Work in both open and closed networks (as long as the tool is up-to-date).
+- Minimal footprint and dependencies (no runtime dependencies).
+- Runtime support for the oldest supported version of Node.js. If you are using this tool with an unsupported version of Node.js, then you already have all the answers that this tool can give you: Yes, you have vulnerabilities and are out of date. Of course that is just for the run-time, it is still the goal of this project to supply information about any reasonable version of Node.js.
 
 ## Acknowledgments & License
 
--   This project is released under the [Apache License 2.0](https://raw.githubusercontent.com/lightswitch05/node-version-audit/master/LICENSE).
--   The accuracy of the information provided by this project cannot be verified or guaranteed. All functions are provided as convenience only and should not be relied on for accuracy or punctuality.
--   The logo was created using Mathias Pettersson and Brian Hammond's [Node.js Logo](https://nodejs.org/en/about/resources/#logo-downloads) as the base image. The logo has been modified from its original form to include overlay graphics.
--   This project and the use of the modified Node.js logo is not endorsed by Mathias Pettersson or Brian Hammond.
--   This project and the use of the Node.js name is not endorsed by OpenJS Foundation.
--   CVE details and descriptions are downloaded from National Institute of Standard and Technology's [National Vulnerability Database](https://nvd.nist.gov/). This project and the use of CVE information is not endorsed by NIST or the NVD. CVE details are provided as convenience only. The accuracy of the information cannot be verified.
--   Node.js release details and support dates are generated from [Changelogs](https://github.com/nodejs/node/tree/master/doc/changelogs) and the [Release Schedule](https://github.com/nodejs/Release/blob/main/schedule.json). The accuracy of the information cannot be verified.
+- This project is released under the [Apache License 2.0](https://raw.githubusercontent.com/lightswitch05/node-version-audit/master/LICENSE).
+- The accuracy of the information provided by this project cannot be verified or guaranteed. All functions are provided as convenience only and should not be relied on for accuracy or punctuality.
+- The logo was created using Mathias Pettersson and Brian Hammond's [Node.js Logo](https://nodejs.org/en/about/resources/#logo-downloads) as the base image. The logo has been modified from its original form to include overlay graphics.
+- This project and the use of the modified Node.js logo is not endorsed by Mathias Pettersson or Brian Hammond.
+- This project and the use of the Node.js name is not endorsed by OpenJS Foundation.
+- CVE details and descriptions are downloaded from National Institute of Standard and Technology's [National Vulnerability Database](https://nvd.nist.gov/). This project and the use of CVE information is not endorsed by NIST or the NVD. CVE details are provided as convenience only. The accuracy of the information cannot be verified.
+- Node.js release details and support dates are generated from [Changelogs](https://github.com/nodejs/node/tree/master/doc/changelogs) and the [Release Schedule](https://github.com/nodejs/Release/blob/main/schedule.json). The accuracy of the information cannot be verified.
 
 Copyright © 2022 Daniel White

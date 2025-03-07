@@ -15,16 +15,16 @@ jobs:
                 node-version: [18.x, 20.x, 22.x]
 
         env:
-            IS_PRIMARY_VERSION: ${{ matrix.node-version == '18.x' }}
+            IS_PRIMARY_VERSION: ${{ matrix.node-version == '22.x' }}
             PUBLISH: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
 
         steps:
-            - uses: actions/checkout@v3
+            - uses: actions/checkout@v4
               with:
                   fetch-depth: 0
 
             - name: Use Node.js ${{ matrix.node-version }}
-              uses: actions/setup-node@v3
+              uses: actions/setup-node@v4
               with:
                   node-version: ${{ matrix.node-version }}
                   registry-url: 'https://registry.npmjs.org'
@@ -40,7 +40,7 @@ jobs:
 
             - name: SonarScanner if primary node version
               if: ${{ env.IS_PRIMARY_VERSION }}
-              uses: sonarsource/sonarcloud-github-action@master
+              uses: SonarSource/sonarqube-scan-action@v5
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                   SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

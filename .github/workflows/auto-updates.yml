@@ -13,16 +13,16 @@ jobs:
     run-updates:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v3
+            - uses: actions/checkout@v4
               with:
                   ref: master
                   fetch-depth: 10
                   token: ${{ secrets.GH_PAT }}
 
-            - name: Use Node.js 18.x
-              uses: actions/setup-node@v3
+            - name: Use Node.js 22.x
+              uses: actions/setup-node@v4
               with:
-                  node-version: 18.x
+                  node-version: 22.x
                   registry-url: 'https://registry.npmjs.org'
 
             - name: Change origin to bypass gh-pages issues with actions
@@ -34,7 +34,7 @@ jobs:
               run: npm ci
 
             - name: Cache downloaded files
-              uses: actions/cache@v2
+              uses: actions/cache@v4
               with:
                   path: ${{ github.workspace }}/tmp
                   key: ${{ runner.os }}-node-version-audit-${{ hashFiles('**/docs/rules-v1.json') }}
@@ -53,25 +53,28 @@ jobs:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             - run: ./scripts/github-commit-auto-updates.sh
 
-            - uses: docker/setup-qemu-action@v1
-            - uses: docker/setup-buildx-action@v1
-            - uses: docker/login-action@v1
+            - uses: docker/setup-qemu-action@v3
+            - uses: docker/setup-buildx-action@v3
+            - uses: docker/login-action@v3
               with:
                   username: lightswitch05
                   password: ${{ secrets.DOCKERHUB_TOKEN }}
-            - uses: docker/login-action@v1
+            - uses: docker/login-action@v3
               with:
                   registry: ghcr.io
                   username: lightswitch05
                   password: ${{ secrets.GITHUB_TOKEN }}
             - name: Build and push
-              uses: docker/build-push-action@v2
+              uses: docker/build-push-action@v6
               with:
                   push: true
+                  pull: true
+                  cache-from: type=registry,ref=lightswitch05/node-version-audit:latest-cache
+                  cache-to: type=registry,ref=lightswitch05/node-version-audit:latest-cache,mode=max
                   context: ./
                   platforms: linux/amd64, linux/arm64
                   build-args: |
-                      NODE_IMAGE_TAG=18
+                      NODE_IMAGE_TAG=22
                   file: ./docker/Dockerfile
                   tags: |
                       lightswitch05/node-version-audit:latest
