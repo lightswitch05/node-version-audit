@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2025-03-14T13:30:38.541Z",
+    "lastUpdatedDate": "2025-03-15T02:23:50.477Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -5496,7 +5496,7 @@
             "id": "CVE-2024-22020",
             "baseScore": null,
             "publishedDate": "2024-07-09T02:15:00.000Z",
-            "lastModifiedDate": "2024-11-22T12:15:00.000Z",
+            "lastModifiedDate": "2025-03-14T19:15:00.000Z",
             "description": "A security flaw in Node.js  allows a bypass of network import restrictions.\nBy embedding non-network imports in data URLs, an attacker can execute arbitrary code, compromising system security.\nVerified on various platforms, the vulnerability is mitigated by forbidding data URLs in network imports.\nExploiting this flaw can violate network import security, posing a risk to developers and servers."
         },
         "CVE-2024-22025": {
@@ -5531,7 +5531,7 @@
             "id": "CVE-2024-27983",
             "baseScore": null,
             "publishedDate": "2024-04-09T01:15:00.000Z",
-            "lastModifiedDate": "2024-11-21T09:05:00.000Z",
+            "lastModifiedDate": "2025-03-14T18:15:00.000Z",
             "description": "An attacker can make the Node.js HTTP/2 server completely unavailable by sending a small amount of HTTP/2 frames packets with a few HTTP/2 frames inside. It is possible to leave some data in nghttp2 memory after reset when headers with HTTP/2 CONTINUATION frame are sent to the server and then a TCP connection is abruptly closed by the client triggering the Http2Session destructor while header frames are still being processed (and stored in memory) causing a race condition."
         },
         "CVE-2024-36137": {
