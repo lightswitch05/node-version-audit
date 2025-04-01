@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2025-03-31T13:34:33.026Z",
+    "lastUpdatedDate": "2025-04-01T02:49:44.452Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4528,7 +4528,7 @@
             "id": "CVE-2016-2183",
             "baseScore": 7.5,
             "publishedDate": "2016-09-01T00:59:00.000Z",
-            "lastModifiedDate": "2024-11-21T02:47:00.000Z",
+            "lastModifiedDate": "2025-03-31T15:15:00.000Z",
             "description": "The DES and Triple DES ciphers, as used in the TLS, SSH, and IPSec protocols and other protocols and products, have a birthday bound of approximately four billion blocks, which makes it easier for remote attackers to obtain cleartext data via a birthday attack against a long-duration encrypted session, as demonstrated by an HTTPS session using Triple DES in CBC mode, aka a \"Sweet32\" attack."
         },
         "CVE-2016-2216": {
