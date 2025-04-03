@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2025-04-02T13:34:51.085Z",
+    "lastUpdatedDate": "2025-04-03T02:37:27.995Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -5477,9 +5477,9 @@
         },
         "CVE-2024-21896": {
             "id": "CVE-2024-21896",
-            "baseScore": null,
+            "baseScore": 9.8,
             "publishedDate": "2024-02-20T02:15:00.000Z",
-            "lastModifiedDate": "2024-11-21T08:55:00.000Z",
+            "lastModifiedDate": "2025-04-02T20:09:00.000Z",
             "description": "The permission model protects itself against path traversal attacks by calling path.resolve() on any paths given by the user. If the path is to be treated as a Buffer, the implementation uses Buffer.from() to obtain a Buffer from the result of path.resolve(). By monkey-patching Buffer internals, namely, Buffer.prototype.utf8Write, the application can modify the result of path.resolve(), which leads to a path traversal vulnerability.\nThis vulnerability affects all users using the experimental permission model in Node.js 20 and Node.js 21.\nPlease note that at the time this CVE was issued, the permission model is an experimental feature of Node.js."
         },
         "CVE-2024-22017": {
@@ -5498,9 +5498,9 @@
         },
         "CVE-2024-22019": {
             "id": "CVE-2024-22019",
-            "baseScore": null,
+            "baseScore": 7.5,
             "publishedDate": "2024-02-20T02:15:00.000Z",
-            "lastModifiedDate": "2024-11-21T08:55:00.000Z",
+            "lastModifiedDate": "2025-04-02T20:10:00.000Z",
             "description": "A vulnerability in Node.js HTTP servers allows an attacker to send a specially crafted HTTP request with chunked encoding, leading to resource exhaustion and denial of service (DoS). The server reads an unbounded number of bytes from a single connection, exploiting the lack of limitations on chunk extension bytes. The issue can cause CPU and network bandwidth exhaustion, bypassing standard safeguards like timeouts and body size limits."
         },
         "CVE-2024-22020": {
