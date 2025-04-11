@@ -1,11 +1,11 @@
 {
-    "lastUpdatedDate": "2025-04-10T13:34:48.914Z",
+    "lastUpdatedDate": "2025-04-11T13:35:09.117Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
     "releasesCount": 655,
-    "cveCount": 173,
+    "cveCount": 172,
     "supportVersionsCount": 21,
     "latestVersion": "23.11.0",
     "latestVersions": {
@@ -4388,13 +4388,6 @@
         }
     },
     "cves": {
-        "CVE-2013-2882": {
-            "id": "CVE-2013-2882",
-            "baseScore": 7.5,
-            "publishedDate": "2013-07-31T13:20:00.000Z",
-            "lastModifiedDate": "2024-11-21T01:52:00.000Z",
-            "description": "Google V8, as used in Google Chrome before 28.0.1500.95, allows remote attackers to cause a denial of service or possibly have unspecified other impact via vectors that leverage \"type confusion.\""
-        },
         "CVE-2013-6668": {
             "id": "CVE-2013-6668",
             "baseScore": 7.5,
