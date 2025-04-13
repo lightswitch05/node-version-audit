@@ -1,11 +1,11 @@
 {
-    "lastUpdatedDate": "2025-04-13T03:47:21.678Z",
+    "lastUpdatedDate": "2025-04-13T13:33:13.114Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
     "releasesCount": 655,
-    "cveCount": 172,
+    "cveCount": 144,
     "supportVersionsCount": 21,
     "latestVersion": "23.11.0",
     "latestVersions": {
@@ -4388,20 +4388,6 @@
         }
     },
     "cves": {
-        "CVE-2013-6668": {
-            "id": "CVE-2013-6668",
-            "baseScore": 7.5,
-            "publishedDate": "2014-03-05T05:11:00.000Z",
-            "lastModifiedDate": "2024-11-21T01:59:00.000Z",
-            "description": "Multiple unspecified vulnerabilities in Google V8 before 3.24.35.10, as used in Google Chrome before 33.0.1750.146, allow attackers to cause a denial of service or possibly have other impact via unknown vectors."
-        },
-        "CVE-2014-224": {
-            "id": "CVE-2014-224",
-            "baseScore": 7.4,
-            "publishedDate": "2014-06-05T21:55:00.000Z",
-            "lastModifiedDate": "2024-11-21T02:01:00.000Z",
-            "description": "OpenSSL before 0.9.8za, 1.0.0 before 1.0.0m, and 1.0.1 before 1.0.1h does not properly restrict processing of ChangeCipherSpec messages, which allows man-in-the-middle attackers to trigger use of a zero-length master key in certain OpenSSL-to-OpenSSL communications, and consequently hijack sessions or obtain sensitive information, via a crafted TLS handshake, aka the \"CCS Injection\" vulnerability."
-        },
         "CVE-2014-9748": {
             "id": "CVE-2014-9748",
             "baseScore": 8.1,
@@ -4409,194 +4395,12 @@
             "lastModifiedDate": "2024-11-21T02:21:00.000Z",
             "description": "The uv_rwlock_t fallback implementation for Windows XP and Server 2003 in libuv before 1.7.4 does not properly prevent threads from releasing the locks of other threads, which allows attackers to cause a denial of service (deadlock) or possibly have unspecified other impact by leveraging a race condition."
         },
-        "CVE-2015-278": {
-            "id": "CVE-2015-278",
-            "baseScore": 10,
-            "publishedDate": "2015-05-18T15:59:00.000Z",
-            "lastModifiedDate": "2024-11-21T02:22:00.000Z",
-            "description": "libuv before 0.10.34 does not properly drop group privileges, which allows context-dependent attackers to gain privileges via unspecified vectors."
-        },
-        "CVE-2015-1788": {
-            "id": "CVE-2015-1788",
-            "baseScore": 4.3,
-            "publishedDate": "2015-06-12T19:59:00.000Z",
-            "lastModifiedDate": "2024-11-21T02:26:00.000Z",
-            "description": "The BN_GF2m_mod_inv function in crypto/bn/bn_gf2m.c in OpenSSL before 0.9.8s, 1.0.0 before 1.0.0e, 1.0.1 before 1.0.1n, and 1.0.2 before 1.0.2b does not properly handle ECParameters structures in which the curve is over a malformed binary polynomial field, which allows remote attackers to cause a denial of service (infinite loop) via a session that uses an Elliptic Curve algorithm, as demonstrated by an attack against a server that supports client authentication."
-        },
-        "CVE-2015-1793": {
-            "id": "CVE-2015-1793",
-            "baseScore": 6.5,
-            "publishedDate": "2015-07-09T19:17:00.000Z",
-            "lastModifiedDate": "2024-11-21T02:26:00.000Z",
-            "description": "The X509_verify_cert function in crypto/x509/x509_vfy.c in OpenSSL 1.0.1n, 1.0.1o, 1.0.2b, and 1.0.2c does not properly process X.509 Basic Constraints cA values during identification of alternative certificate chains, which allows remote attackers to spoof a Certification Authority role and trigger unintended certificate verifications via a valid leaf certificate."
-        },
-        "CVE-2015-3193": {
-            "id": "CVE-2015-3193",
-            "baseScore": 7.5,
-            "publishedDate": "2015-12-06T20:59:00.000Z",
-            "lastModifiedDate": "2024-11-21T02:28:00.000Z",
-            "description": "The Montgomery squaring implementation in crypto/bn/asm/x86_64-mont5.pl in OpenSSL 1.0.2 before 1.0.2e on the x86_64 platform, as used by the BN_mod_exp function, mishandles carry propagation and produces incorrect output, which makes it easier for remote attackers to obtain sensitive private-key information via an attack against use of a (1) Diffie-Hellman (DH) or (2) Diffie-Hellman Ephemeral (DHE) ciphersuite."
-        },
-        "CVE-2015-3194": {
-            "id": "CVE-2015-3194",
-            "baseScore": 7.5,
-            "publishedDate": "2015-12-06T20:59:00.000Z",
-            "lastModifiedDate": "2024-11-21T02:28:00.000Z",
-            "description": "crypto/rsa/rsa_ameth.c in OpenSSL 1.0.1 before 1.0.1q and 1.0.2 before 1.0.2e allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) via an RSA PSS ASN.1 signature that lacks a mask generation function parameter."
-        },
-        "CVE-2015-6764": {
-            "id": "CVE-2015-6764",
-            "baseScore": 9.8,
-            "publishedDate": "2015-12-06T01:59:00.000Z",
-            "lastModifiedDate": "2024-11-21T02:35:00.000Z",
-            "description": "The BasicJsonStringifier::SerializeJSArray function in json-stringifier.h in the JSON stringifier in Google V8, as used in Google Chrome before 47.0.2526.73, improperly loads array elements, which allows remote attackers to cause a denial of service (out-of-bounds memory access) or possibly have unspecified other impact via crafted JavaScript code."
-        },
         "CVE-2015-7384": {
             "id": "CVE-2015-7384",
             "baseScore": 7.5,
             "publishedDate": "2017-10-10T16:29:00.000Z",
             "lastModifiedDate": "2024-11-21T02:36:00.000Z",
             "description": "Node.js 4.0.0, 4.1.0, and 4.1.1 allows remote attackers to cause a denial of service."
-        },
-        "CVE-2015-8027": {
-            "id": "CVE-2015-8027",
-            "baseScore": 7.5,
-            "publishedDate": "2016-01-02T21:59:00.000Z",
-            "lastModifiedDate": "2024-11-21T02:37:00.000Z",
-            "description": "Node.js 0.12.x before 0.12.9, 4.x before 4.2.3, and 5.x before 5.1.1 does not ensure the availability of a parser for each HTTP socket, which allows remote attackers to cause a denial of service (uncaughtException and service outage) via a pipelined HTTP request."
-        },
-        "CVE-2016-702": {
-            "id": "CVE-2016-702",
-            "baseScore": 5.1,
-            "publishedDate": "2016-03-03T20:59:00.000Z",
-            "lastModifiedDate": "2024-11-21T02:42:00.000Z",
-            "description": "The MOD_EXP_CTIME_COPY_FROM_PREBUF function in crypto/bn/bn_exp.c in OpenSSL 1.0.1 before 1.0.1s and 1.0.2 before 1.0.2g does not properly consider cache-bank access times during modular exponentiation, which makes it easier for local users to discover RSA keys by running a crafted application on the same Intel Sandy Bridge CPU core as a victim and leveraging cache-bank conflicts, aka a \"CacheBleed\" attack."
-        },
-        "CVE-2016-705": {
-            "id": "CVE-2016-705",
-            "baseScore": 9.8,
-            "publishedDate": "2016-03-03T20:59:00.000Z",
-            "lastModifiedDate": "2024-11-21T02:42:00.000Z",
-            "description": "Double free vulnerability in the dsa_priv_decode function in crypto/dsa/dsa_ameth.c in OpenSSL 1.0.1 before 1.0.1s and 1.0.2 before 1.0.2g allows remote attackers to cause a denial of service (memory corruption) or possibly have unspecified other impact via a malformed DSA private key."
-        },
-        "CVE-2016-797": {
-            "id": "CVE-2016-797",
-            "baseScore": 7.5,
-            "publishedDate": "2016-03-03T20:59:00.000Z",
-            "lastModifiedDate": "2024-11-21T02:42:00.000Z",
-            "description": "Multiple integer overflows in OpenSSL 1.0.1 before 1.0.1s and 1.0.2 before 1.0.2g allow remote attackers to cause a denial of service (heap memory corruption or NULL pointer dereference) or possibly have unspecified other impact via a long digit string that is mishandled by the (1) BN_dec2bn or (2) BN_hex2bn function, related to crypto/bn/bn.h and crypto/bn/bn_print.c."
-        },
-        "CVE-2016-1669": {
-            "id": "CVE-2016-1669",
-            "baseScore": 8.8,
-            "publishedDate": "2016-05-14T21:59:00.000Z",
-            "lastModifiedDate": "2024-11-21T02:46:00.000Z",
-            "description": "The Zone::New function in zone.cc in Google V8 before 5.0.71.47, as used in Google Chrome before 50.0.2661.102, does not properly determine when to expand certain memory allocations, which allows remote attackers to cause a denial of service (buffer overflow) or possibly have unspecified other impact via crafted JavaScript code."
-        },
-        "CVE-2016-1699": {
-            "id": "CVE-2016-1699",
-            "baseScore": 6.5,
-            "publishedDate": "2016-06-05T23:59:00.000Z",
-            "lastModifiedDate": "2024-11-21T02:46:00.000Z",
-            "description": "WebKit/Source/devtools/front_end/devtools.js in the Developer Tools (aka DevTools) subsystem in Blink, as used in Google Chrome before 51.0.2704.79, does not ensure that the remoteFrontendUrl parameter is associated with a chrome-devtools-frontend.appspot.com URL, which allows remote attackers to bypass intended access restrictions via a crafted URL."
-        },
-        "CVE-2016-2086": {
-            "id": "CVE-2016-2086",
-            "baseScore": 7.5,
-            "publishedDate": "2016-04-07T21:59:00.000Z",
-            "lastModifiedDate": "2024-11-21T02:47:00.000Z",
-            "description": "Node.js 0.10.x before 0.10.42, 0.12.x before 0.12.10, 4.x before 4.3.0, and 5.x before 5.6.0 allow remote attackers to conduct HTTP request smuggling attacks via a crafted Content-Length HTTP header."
-        },
-        "CVE-2016-2105": {
-            "id": "CVE-2016-2105",
-            "baseScore": 7.5,
-            "publishedDate": "2016-05-05T01:59:00.000Z",
-            "lastModifiedDate": "2024-11-21T02:47:00.000Z",
-            "description": "Integer overflow in the EVP_EncodeUpdate function in crypto/evp/encode.c in OpenSSL before 1.0.1t and 1.0.2 before 1.0.2h allows remote attackers to cause a denial of service (heap memory corruption) via a large amount of binary data."
-        },
-        "CVE-2016-2107": {
-            "id": "CVE-2016-2107",
-            "baseScore": 5.9,
-            "publishedDate": "2016-05-05T01:59:00.000Z",
-            "lastModifiedDate": "2024-11-21T02:47:00.000Z",
-            "description": "The AES-NI implementation in OpenSSL before 1.0.1t and 1.0.2 before 1.0.2h does not consider memory allocation during a certain padding check, which allows remote attackers to obtain sensitive cleartext information via a padding-oracle attack against an AES CBC session. NOTE: this vulnerability exists because of an incorrect fix for CVE-2013-0169."
-        },
-        "CVE-2016-2178": {
-            "id": "CVE-2016-2178",
-            "baseScore": 5.5,
-            "publishedDate": "2016-06-20T01:59:00.000Z",
-            "lastModifiedDate": "2024-11-21T02:47:00.000Z",
-            "description": "The dsa_sign_setup function in crypto/dsa/dsa_ossl.c in OpenSSL through 1.0.2h does not properly ensure the use of constant-time operations, which makes it easier for local users to discover a DSA private key via a timing side-channel attack."
-        },
-        "CVE-2016-2183": {
-            "id": "CVE-2016-2183",
-            "baseScore": 7.5,
-            "publishedDate": "2016-09-01T00:59:00.000Z",
-            "lastModifiedDate": "2025-03-31T15:15:00.000Z",
-            "description": "The DES and Triple DES ciphers, as used in the TLS, SSH, and IPSec protocols and other protocols and products, have a birthday bound of approximately four billion blocks, which makes it easier for remote attackers to obtain cleartext data via a birthday attack against a long-duration encrypted session, as demonstrated by an HTTPS session using Triple DES in CBC mode, aka a \"Sweet32\" attack."
-        },
-        "CVE-2016-2216": {
-            "id": "CVE-2016-2216",
-            "baseScore": 7.5,
-            "publishedDate": "2016-04-07T21:59:00.000Z",
-            "lastModifiedDate": "2024-11-21T02:48:00.000Z",
-            "description": "The HTTP header parsing code in Node.js 0.10.x before 0.10.42, 0.11.6 through 0.11.16, 0.12.x before 0.12.10, 4.x before 4.3.0, and 5.x before 5.6.0 allows remote attackers to bypass an HTTP response-splitting protection mechanism via UTF-8 encoded Unicode characters in the HTTP header, as demonstrated by %c4%8d%c4%8a."
-        },
-        "CVE-2016-5172": {
-            "id": "CVE-2016-5172",
-            "baseScore": 6.5,
-            "publishedDate": "2016-09-25T20:59:00.000Z",
-            "lastModifiedDate": "2024-11-21T02:53:00.000Z",
-            "description": "The parser in Google V8, as used in Google Chrome before 53.0.2785.113, mishandles scopes, which allows remote attackers to obtain sensitive information from arbitrary memory locations via crafted JavaScript code."
-        },
-        "CVE-2016-5180": {
-            "id": "CVE-2016-5180",
-            "baseScore": 9.8,
-            "publishedDate": "2016-10-03T15:59:00.000Z",
-            "lastModifiedDate": "2024-11-21T02:53:00.000Z",
-            "description": "Heap-based buffer overflow in the ares_create_query function in c-ares 1.x before 1.12.0 allows remote attackers to cause a denial of service (out-of-bounds write) or possibly execute arbitrary code via a hostname with an escaped trailing dot."
-        },
-        "CVE-2016-5325": {
-            "id": "CVE-2016-5325",
-            "baseScore": 6.1,
-            "publishedDate": "2016-10-10T16:59:00.000Z",
-            "lastModifiedDate": "2024-11-21T02:54:00.000Z",
-            "description": "CRLF injection vulnerability in the ServerResponse#writeHead function in Node.js 0.10.x before 0.10.47, 0.12.x before 0.12.16, 4.x before 4.6.0, and 6.x before 6.7.0 allows remote attackers to inject arbitrary HTTP headers and conduct HTTP response splitting attacks via the reason argument."
-        },
-        "CVE-2016-6303": {
-            "id": "CVE-2016-6303",
-            "baseScore": 9.8,
-            "publishedDate": "2016-09-16T05:59:00.000Z",
-            "lastModifiedDate": "2024-11-21T02:55:00.000Z",
-            "description": "Integer overflow in the MDC2_Update function in crypto/mdc2/mdc2dgst.c in OpenSSL before 1.1.0 allows remote attackers to cause a denial of service (out-of-bounds write and application crash) or possibly have unspecified other impact via unknown vectors."
-        },
-        "CVE-2016-6304": {
-            "id": "CVE-2016-6304",
-            "baseScore": 7.5,
-            "publishedDate": "2016-09-26T19:59:00.000Z",
-            "lastModifiedDate": "2024-11-21T02:55:00.000Z",
-            "description": "Multiple memory leaks in t1_lib.c in OpenSSL before 1.0.1u, 1.0.2 before 1.0.2i, and 1.1.0 before 1.1.0a allow remote attackers to cause a denial of service (memory consumption) via large OCSP Status Request extensions."
-        },
-        "CVE-2016-6306": {
-            "id": "CVE-2016-6306",
-            "baseScore": 5.9,
-            "publishedDate": "2016-09-26T19:59:00.000Z",
-            "lastModifiedDate": "2024-11-21T02:55:00.000Z",
-            "description": "The certificate parser in OpenSSL before 1.0.1u and 1.0.2 before 1.0.2i might allow remote attackers to cause a denial of service (out-of-bounds read) via crafted certificate operations, related to s3_clnt.c and s3_srvr.c."
-        },
-        "CVE-2016-7052": {
-            "id": "CVE-2016-7052",
-            "baseScore": 7.5,
-            "publishedDate": "2016-09-26T19:59:00.000Z",
-            "lastModifiedDate": "2024-11-21T02:57:00.000Z",
-            "description": "crypto/x509/x509_vfy.c in OpenSSL 1.0.2i allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) by triggering a CRL operation."
-        },
-        "CVE-2016-7099": {
-            "id": "CVE-2016-7099",
-            "baseScore": 5.9,
-            "publishedDate": "2016-10-10T16:59:00.000Z",
-            "lastModifiedDate": "2024-11-21T02:57:00.000Z",
-            "description": "The tls.checkServerIdentity function in Node.js 0.10.x before 0.10.47, 0.12.x before 0.12.16, 4.x before 4.6.0, and 6.x before 6.7.0 does not properly handle wildcards in name fields of X.509 certificates, which allows man-in-the-middle attackers to spoof servers via a crafted certificate."
         },
         "CVE-2017-3738": {
             "id": "CVE-2017-3738",
