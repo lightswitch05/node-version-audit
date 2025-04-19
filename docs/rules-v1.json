@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2025-04-19T02:33:36.530Z",
+    "lastUpdatedDate": "2025-04-19T13:30:01.652Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -5337,7 +5337,7 @@
             "id": "CVE-2024-27982",
             "baseScore": null,
             "publishedDate": "2024-05-07T17:15:00.000Z",
-            "lastModifiedDate": "2025-03-28T21:15:00.000Z",
+            "lastModifiedDate": "2025-04-19T01:15:00.000Z",
             "description": "The team has identified a critical vulnerability in the http server of the most recent version of Node, where malformed headers can lead to HTTP request smuggling. Specifically, if a space is placed before a content-length header, it is not interpreted correctly, enabling attackers to smuggle in a second request within the body of the first."
         },
         "CVE-2024-27983": {
