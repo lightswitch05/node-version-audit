@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2025-05-02T13:34:22.635Z",
+    "lastUpdatedDate": "2025-05-03T02:39:44.753Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -483,7 +483,7 @@
             "end": "2025-06-01T00:00:00.000Z"
         },
         "24": {
-            "start": "2025-04-22T00:00:00.000Z",
+            "start": "2025-05-06T00:00:00.000Z",
             "lts": "2025-10-28T00:00:00.000Z",
             "maintenance": "2026-10-20T00:00:00.000Z",
             "end": "2028-04-30T00:00:00.000Z"
@@ -5334,7 +5334,7 @@
             "id": "CVE-2024-37372",
             "baseScore": null,
             "publishedDate": "2025-01-09T01:15:00.000Z",
-            "lastModifiedDate": "2025-01-09T22:15:00.000Z",
+            "lastModifiedDate": "2025-05-02T23:15:00.000Z",
             "description": "The Permission Model assumes that any path starting with two backslashes \\ has a four-character prefix that can be ignored, which is not always true. This subtle bug leads to vulnerable edge cases."
         },
         "CVE-2025-22150": {
