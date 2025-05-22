@@ -1,13 +1,13 @@
 {
-    "lastUpdatedDate": "2025-05-21T13:37:49.492Z",
+    "lastUpdatedDate": "2025-05-22T02:47:36.259Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
-    "releasesCount": 663,
+    "releasesCount": 665,
     "cveCount": 141,
     "supportVersionsCount": 21,
-    "latestVersion": "24.0.2",
+    "latestVersion": "24.1.0",
     "latestVersions": {
         "0": "0.12.18",
         "1": "1.8.4",
@@ -31,9 +31,9 @@
         "19": "19.9.0",
         "20": "20.19.2",
         "21": "21.7.3",
-        "22": "22.15.1",
+        "22": "22.16.0",
         "23": "23.11.1",
-        "24": "24.0.2",
+        "24": "24.1.0",
         "0.10": "0.10.48",
         "0.12": "0.12.18",
         "1.0": "1.0.4",
@@ -359,6 +359,7 @@
         "22.13": "22.13.1",
         "22.14": "22.14.0",
         "22.15": "22.15.1",
+        "22.16": "22.16.0",
         "23.0": "23.0.0",
         "23.1": "23.1.0",
         "23.2": "23.2.0",
@@ -371,7 +372,8 @@
         "23.9": "23.9.0",
         "23.10": "23.10.0",
         "23.11": "23.11.1",
-        "24.0": "24.0.2"
+        "24.0": "24.0.2",
+        "24.1": "24.1.0"
     },
     "supportEndDates": {
         "4": {
@@ -4347,6 +4349,11 @@
                 "CVE-2025-23166"
             ]
         },
+        "22.16.0": {
+            "version": "22.16.0",
+            "releaseDate": "2025-05-21T00:00:00.000Z",
+            "patchedCveIds": []
+        },
         "23.0.0": {
             "version": "23.0.0",
             "releaseDate": "2024-10-16T00:00:00.000Z",
@@ -4440,6 +4447,11 @@
             "patchedCveIds": [
                 "CVE-2025-23166"
             ]
+        },
+        "24.1.0": {
+            "version": "24.1.0",
+            "releaseDate": "2025-05-21T00:00:00.000Z",
+            "patchedCveIds": []
         }
     },
     "cves": {
