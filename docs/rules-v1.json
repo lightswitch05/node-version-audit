@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2025-06-05T13:39:35.250Z",
+    "lastUpdatedDate": "2025-06-06T02:50:34.092Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -5117,7 +5117,7 @@
             "id": "CVE-2023-30581",
             "baseScore": 7.5,
             "publishedDate": "2023-11-23T00:15:00.000Z",
-            "lastModifiedDate": "2024-11-21T08:00:00.000Z",
+            "lastModifiedDate": "2025-06-05T15:15:00.000Z",
             "description": "The use of __proto__ in process.mainModule.__proto__.require() can bypass the policy mechanism and require modules outside of the policy.json definition. This vulnerability affects all users using the experimental policy mechanism in all active release lines: v16, v18 and, v20.\n\nPlease note that at the time this CVE was issued, the policy is an experimental feature of Node.js"
         },
         "CVE-2023-30582": {
