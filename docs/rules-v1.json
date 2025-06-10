@@ -1,13 +1,13 @@
 {
-    "lastUpdatedDate": "2025-06-09T13:39:24.423Z",
+    "lastUpdatedDate": "2025-06-10T02:53:45.529Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
-    "releasesCount": 665,
+    "releasesCount": 666,
     "cveCount": 141,
     "supportVersionsCount": 21,
-    "latestVersion": "24.1.0",
+    "latestVersion": "24.2.0",
     "latestVersions": {
         "0": "0.12.18",
         "1": "1.8.4",
@@ -33,7 +33,7 @@
         "21": "21.7.3",
         "22": "22.16.0",
         "23": "23.11.1",
-        "24": "24.1.0",
+        "24": "24.2.0",
         "0.10": "0.10.48",
         "0.12": "0.12.18",
         "1.0": "1.0.4",
@@ -373,7 +373,8 @@
         "23.10": "23.10.0",
         "23.11": "23.11.1",
         "24.0": "24.0.2",
-        "24.1": "24.1.0"
+        "24.1": "24.1.0",
+        "24.2": "24.2.0"
     },
     "supportEndDates": {
         "4": {
@@ -4452,6 +4453,11 @@
             "version": "24.1.0",
             "releaseDate": "2025-05-21T00:00:00.000Z",
             "patchedCveIds": []
+        },
+        "24.2.0": {
+            "version": "24.2.0",
+            "releaseDate": "2025-06-09T00:00:00.000Z",
+            "patchedCveIds": []
         }
     },
     "cves": {
@@ -4592,7 +4598,7 @@
             "id": "CVE-2018-1000168",
             "baseScore": 7.5,
             "publishedDate": "2018-05-08T15:29:00.000Z",
-            "lastModifiedDate": "2024-11-21T03:39:00.000Z",
+            "lastModifiedDate": "2025-06-09T16:15:00.000Z",
             "description": "nghttp2 version >= 1.10.0 and nghttp2 <= v1.31.0 contains an Improper Input Validation CWE-20 vulnerability in ALTSVC frame handling that can result in segmentation fault leading to denial of service. This attack appears to be exploitable via network client. This vulnerability appears to have been fixed in >= 1.31.1."
         },
         "CVE-2019-735": {
