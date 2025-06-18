@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2025-06-18T02:52:04.250Z",
+    "lastUpdatedDate": "2025-06-18T13:40:41.497Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -4598,7 +4598,7 @@
             "id": "CVE-2018-1000168",
             "baseScore": 7.5,
             "publishedDate": "2018-05-08T15:29:00.000Z",
-            "lastModifiedDate": "2025-06-09T16:15:00.000Z",
+            "lastModifiedDate": "2024-11-21T03:39:00.000Z",
             "description": "nghttp2 version >= 1.10.0 and nghttp2 <= v1.31.0 contains an Improper Input Validation CWE-20 vulnerability in ALTSVC frame handling that can result in segmentation fault leading to denial of service. This attack appears to be exploitable via network client. This vulnerability appears to have been fixed in >= 1.31.1."
         },
         "CVE-2019-735": {
