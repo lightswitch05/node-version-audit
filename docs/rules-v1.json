@@ -1,12 +1,12 @@
 {
-    "lastUpdatedDate": "2025-06-26T13:40:08.560Z",
+    "lastUpdatedDate": "2025-06-27T02:54:26.331Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
     "releasesCount": 669,
     "cveCount": 141,
-    "supportVersionsCount": 21,
+    "supportVersionsCount": 23,
     "latestVersion": "24.3.0",
     "latestVersions": {
         "0": "0.12.18",
@@ -494,6 +494,17 @@
             "lts": "2025-10-28T00:00:00.000Z",
             "maintenance": "2026-10-20T00:00:00.000Z",
             "end": "2028-04-30T00:00:00.000Z"
+        },
+        "25": {
+            "start": "2025-10-15T00:00:00.000Z",
+            "maintenance": "2026-04-01T00:00:00.000Z",
+            "end": "2026-06-01T00:00:00.000Z"
+        },
+        "26": {
+            "start": "2026-04-22T00:00:00.000Z",
+            "lts": "2026-10-28T00:00:00.000Z",
+            "maintenance": "2027-10-20T00:00:00.000Z",
+            "end": "2029-04-30T00:00:00.000Z"
         }
     },
     "releases": {
