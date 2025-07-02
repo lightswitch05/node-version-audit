@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2025-07-01T13:43:56.284Z",
+    "lastUpdatedDate": "2025-07-02T02:53:55.314Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -5263,7 +5263,7 @@
             "id": "CVE-2023-32559",
             "baseScore": 7.5,
             "publishedDate": "2023-08-24T02:15:00.000Z",
-            "lastModifiedDate": "2024-11-21T08:03:00.000Z",
+            "lastModifiedDate": "2025-07-01T14:15:00.000Z",
             "description": "A privilege escalation vulnerability exists in the experimental policy mechanism in all active release lines: 16.x, 18.x and, 20.x. The use of the deprecated API `process.binding()` can bypass the policy mechanism by requiring internal modules and eventually take advantage of `process.binding('spawn_sync')` run arbitrary code, outside of the limits defined in a `policy.json` file. Please note that at the time this CVE was issued, the policy is an experimental feature of Node.js."
         },
         "CVE-2023-38552": {
