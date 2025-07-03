@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2025-07-02T13:39:31.386Z",
+    "lastUpdatedDate": "2025-07-03T02:55:51.377Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -5221,7 +5221,7 @@
             "id": "CVE-2023-32002",
             "baseScore": 9.8,
             "publishedDate": "2023-08-21T17:15:00.000Z",
-            "lastModifiedDate": "2024-11-21T08:02:00.000Z",
+            "lastModifiedDate": "2025-07-02T15:15:00.000Z",
             "description": "The use of `Module._load()` can bypass the policy mechanism and require modules outside of the policy.json definition for a given module.\n\nThis vulnerability affects all users using the experimental policy mechanism in all active release lines: 16.x, 18.x and, 20.x.\n\nPlease note that at the time this CVE was issued, the policy is an experimental feature of Node.js."
         },
         "CVE-2023-32003": {
