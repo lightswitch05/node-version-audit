@@ -1,13 +1,13 @@
 {
-    "lastUpdatedDate": "2025-07-03T13:38:27.361Z",
+    "lastUpdatedDate": "2025-07-15T03:05:09.389Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
-    "releasesCount": 669,
+    "releasesCount": 670,
     "cveCount": 141,
     "supportVersionsCount": 23,
-    "latestVersion": "24.3.0",
+    "latestVersion": "24.4.0",
     "latestVersions": {
         "0": "0.12.18",
         "1": "1.8.4",
@@ -33,7 +33,7 @@
         "21": "21.7.3",
         "22": "22.17.0",
         "23": "23.11.1",
-        "24": "24.3.0",
+        "24": "24.4.0",
         "0.10": "0.10.48",
         "0.12": "0.12.18",
         "1.0": "1.0.4",
@@ -376,7 +376,8 @@
         "24.0": "24.0.2",
         "24.1": "24.1.0",
         "24.2": "24.2.0",
-        "24.3": "24.3.0"
+        "24.3": "24.3.0",
+        "24.4": "24.4.0"
     },
     "supportEndDates": {
         "4": {
@@ -4486,6 +4487,11 @@
             "version": "24.3.0",
             "releaseDate": "2025-06-24T00:00:00.000Z",
             "patchedCveIds": []
+        },
+        "24.4.0": {
+            "version": "24.4.0",
+            "releaseDate": "2025-07-09T00:00:00.000Z",
+            "patchedCveIds": []
         }
     },
     "cves": {
@@ -5228,7 +5234,7 @@
             "id": "CVE-2023-32003",
             "baseScore": 5.3,
             "publishedDate": "2023-08-15T16:15:00.000Z",
-            "lastModifiedDate": "2024-11-21T08:02:00.000Z",
+            "lastModifiedDate": "2025-07-03T14:15:00.000Z",
             "description": "`fs.mkdtemp()` and `fs.mkdtempSync()` can be used to bypass the permission model check using a path traversal attack. This flaw arises from a missing check in the fs.mkdtemp() API and the impact is a malicious actor could create an arbitrary directory.\n\nThis vulnerability affects all users using the experimental permission model in Node.js 20.\n\nPlease note that at the time this CVE was issued, the permission model is an experimental feature of Node.js."
         },
         "CVE-2023-32004": {
