@@ -1,11 +1,11 @@
 {
-    "lastUpdatedDate": "2025-07-18T13:45:38.214Z",
+    "lastUpdatedDate": "2025-07-19T02:56:52.275Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
     "releasesCount": 673,
-    "cveCount": 141,
+    "cveCount": 143,
     "supportVersionsCount": 23,
     "latestVersion": "24.4.1",
     "latestVersions": {
@@ -5503,6 +5503,20 @@
             "publishedDate": "2025-05-19T02:15:00.000Z",
             "lastModifiedDate": "2025-05-19T16:15:00.000Z",
             "description": "A flaw in Node.js 20's HTTP parser allows improper termination of HTTP/1 headers using `\\r\\n\\rX` instead of the required `\\r\\n\\r\\n`.\nThis inconsistency enables request smuggling, allowing attackers to bypass proxy-based access controls and submit unauthorized requests.\n\nThe issue was resolved by upgrading `llhttp` to version 9, which enforces correct header termination.\n\nImpact:\n* This vulnerability affects only Node.js 20.x users prior to the `llhttp` v9 upgrade."
+        },
+        "CVE-2025-27209": {
+            "id": "CVE-2025-27209",
+            "baseScore": null,
+            "publishedDate": "2025-07-18T23:15:00.000Z",
+            "lastModifiedDate": "2025-07-18T23:15:00.000Z",
+            "description": "The V8 release used in Node.js v24.0.0 has changed how string hashes are computed using rapidhash. This implementation re-introduces the HashDoS vulnerability as an attacker who can control the strings to be hashed can generate many hash collisions - an attacker can generate collisions even without knowing the hash-seed.\r\n\r\n* This vulnerability affects Node.js v24.x users."
+        },
+        "CVE-2025-27210": {
+            "id": "CVE-2025-27210",
+            "baseScore": null,
+            "publishedDate": "2025-07-18T23:15:00.000Z",
+            "lastModifiedDate": "2025-07-18T23:15:00.000Z",
+            "description": "An incomplete fix has been identified for CVE-2025-23084 in Node.js, specifically affecting Windows device names like CON, PRN, and AUX. \r\n\r\nThis vulnerability affects Windows users of `path.join` API."
         }
     }
 }
