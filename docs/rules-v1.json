@@ -1,5 +1,5 @@
 {
-    "lastUpdatedDate": "2025-07-21T13:47:21.827Z",
+    "lastUpdatedDate": "2025-07-22T03:03:58.218Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
@@ -5508,14 +5508,14 @@
             "id": "CVE-2025-27209",
             "baseScore": null,
             "publishedDate": "2025-07-18T23:15:00.000Z",
-            "lastModifiedDate": "2025-07-18T23:15:00.000Z",
+            "lastModifiedDate": "2025-07-21T19:15:00.000Z",
             "description": "The V8 release used in Node.js v24.0.0 has changed how string hashes are computed using rapidhash. This implementation re-introduces the HashDoS vulnerability as an attacker who can control the strings to be hashed can generate many hash collisions - an attacker can generate collisions even without knowing the hash-seed.\r\n\r\n* This vulnerability affects Node.js v24.x users."
         },
         "CVE-2025-27210": {
             "id": "CVE-2025-27210",
             "baseScore": null,
             "publishedDate": "2025-07-18T23:15:00.000Z",
-            "lastModifiedDate": "2025-07-18T23:15:00.000Z",
+            "lastModifiedDate": "2025-07-21T19:15:00.000Z",
             "description": "An incomplete fix has been identified for CVE-2025-23084 in Node.js, specifically affecting Windows device names like CON, PRN, and AUX. \r\n\r\nThis vulnerability affects Windows users of `path.join` API."
         }
     }
