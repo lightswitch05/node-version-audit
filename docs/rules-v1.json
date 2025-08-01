@@ -1,13 +1,13 @@
 {
-    "lastUpdatedDate": "2025-07-31T13:47:40.282Z",
+    "lastUpdatedDate": "2025-08-01T03:21:44.115Z",
     "name": "Node Version Audit",
     "website": "https://github.com/lightswitch05/node-version-audit",
     "license": "https://github.com/lightswitch05/node-version-audit/blob/master/LICENSE",
     "source": "https://www.github.developerdan.com/node-version-audit/rules-v1.json",
-    "releasesCount": 673,
+    "releasesCount": 675,
     "cveCount": 143,
     "supportVersionsCount": 23,
-    "latestVersion": "24.4.1",
+    "latestVersion": "24.5.0",
     "latestVersions": {
         "0": "0.12.18",
         "1": "1.8.4",
@@ -31,9 +31,9 @@
         "19": "19.9.0",
         "20": "20.19.4",
         "21": "21.7.3",
-        "22": "22.17.1",
+        "22": "22.18.0",
         "23": "23.11.1",
-        "24": "24.4.1",
+        "24": "24.5.0",
         "0.10": "0.10.48",
         "0.12": "0.12.18",
         "1.0": "1.0.4",
@@ -361,6 +361,7 @@
         "22.15": "22.15.1",
         "22.16": "22.16.0",
         "22.17": "22.17.1",
+        "22.18": "22.18.0",
         "23.0": "23.0.0",
         "23.1": "23.1.0",
         "23.2": "23.2.0",
@@ -377,7 +378,8 @@
         "24.1": "24.1.0",
         "24.2": "24.2.0",
         "24.3": "24.3.0",
-        "24.4": "24.4.1"
+        "24.4": "24.4.1",
+        "24.5": "24.5.0"
     },
     "supportEndDates": {
         "4": {
@@ -4393,6 +4395,11 @@
                 "CVE-2025-27210"
             ]
         },
+        "22.18.0": {
+            "version": "22.18.0",
+            "releaseDate": "2025-07-31T00:00:00.000Z",
+            "patchedCveIds": []
+        },
         "23.0.0": {
             "version": "23.0.0",
             "releaseDate": "2024-10-16T00:00:00.000Z",
@@ -4514,6 +4521,11 @@
                 "CVE-2025-27209",
                 "CVE-2025-27210"
             ]
+        },
+        "24.5.0": {
+            "version": "24.5.0",
+            "releaseDate": "2025-07-31T00:00:00.000Z",
+            "patchedCveIds": []
         }
     },
     "cves": {
